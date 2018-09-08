@@ -46,243 +46,313 @@ import java.nio.ShortBuffer;
 
 public class ParticleTriMesh extends ParticleMesh {
 
-    private int imagesX = 1;
-    private int imagesY = 1;
-    private boolean uniqueTexCoords = false;
-//    private ParticleComparator comparator = new ParticleComparator();
-    private ParticleEmitter emitter;
-//    private Particle[] particlesCopy;
+	private int imagesX = 1;
+	private int imagesY = 1;
+	private boolean uniqueTexCoords = false;
+	// private ParticleComparator comparator = new ParticleComparator();
+	private ParticleEmitter emitter;
+	// private Particle[] particlesCopy;
 
-    @Override
-    public void initParticleData(ParticleEmitter emitter, int numParticles) {
-        setMode(Mode.Triangles);
+	@Override
+	public void initParticleData(ParticleEmitter emitter, int numParticles) {
+		setMode(Mode.Triangles);
 
-        this.emitter = emitter;
+		this.emitter = emitter;
 
-//        particlesCopy = new Particle[numParticles];
+		// particlesCopy = new Particle[numParticles];
 
-        // set positions
-        FloatBuffer pb = BufferUtils.createVector3Buffer(numParticles * 4);
-        // if the buffer is already set only update the data
-        VertexBuffer buf = getBuffer(VertexBuffer.Type.Position);
-        if (buf != null) {
-            buf.updateData(pb);
-        } else {
-            VertexBuffer pvb = new VertexBuffer(VertexBuffer.Type.Position);
-            pvb.setupData(Usage.Stream, 3, Format.Float, pb);
-            setBuffer(pvb);
-        }
-        
-        // set colors
-        ByteBuffer cb = BufferUtils.createByteBuffer(numParticles * 4 * 4);
-        buf = getBuffer(VertexBuffer.Type.Color);
-        if (buf != null) {
-            buf.updateData(cb);
-        } else {
-            VertexBuffer cvb = new VertexBuffer(VertexBuffer.Type.Color);
-            cvb.setupData(Usage.Stream, 4, Format.UnsignedByte, cb);
-            cvb.setNormalized(true);
-            setBuffer(cvb);
-        }
+		// set positions
+		FloatBuffer pb = BufferUtils.createVector3Buffer(numParticles * 4);
+		// if the buffer is already set only update the data
+		VertexBuffer buf = getBuffer(VertexBuffer.Type.Position);
+		if (buf != null) {
+			buf.updateData(pb);
+		} else {
+			VertexBuffer pvb = new VertexBuffer(VertexBuffer.Type.Position);
+			pvb.setupData(Usage.Stream, 3, Format.Float, pb);
+			setBuffer(pvb);
+		}
 
-        // set texcoords
-        FloatBuffer tb = BufferUtils.createVector2Buffer(numParticles * 4);
-        uniqueTexCoords = false;
-        for (int i = 0; i < numParticles; i++){
-            tb.put(0f).put(1f);
-            tb.put(1f).put(1f);
-            tb.put(0f).put(0f);
-            tb.put(1f).put(0f);
-        }
-        tb.flip();
-        
-        buf = getBuffer(VertexBuffer.Type.TexCoord);
-        if (buf != null) {
-            buf.updateData(tb);
-        } else {
-            VertexBuffer tvb = new VertexBuffer(VertexBuffer.Type.TexCoord);
-            tvb.setupData(Usage.Static, 2, Format.Float, tb);
-            setBuffer(tvb);
-        }
+		// set colors
+		ByteBuffer cb = BufferUtils.createByteBuffer(numParticles * 4 * 4);
+		buf = getBuffer(VertexBuffer.Type.Color);
+		if (buf != null) {
+			buf.updateData(cb);
+		} else {
+			VertexBuffer cvb = new VertexBuffer(VertexBuffer.Type.Color);
+			cvb.setupData(Usage.Stream, 4, Format.UnsignedByte, cb);
+			cvb.setNormalized(true);
+			setBuffer(cvb);
+		}
 
-        // set indices
-        ShortBuffer ib = BufferUtils.createShortBuffer(numParticles * 6);
-        for (int i = 0; i < numParticles; i++){
-            int startIdx = (i * 4);
+		// set texcoords
+		FloatBuffer tb = BufferUtils.createVector2Buffer(numParticles * 4);
+		uniqueTexCoords = false;
+		for (int i = 0; i < numParticles; i++) {
+			tb.put(0f).put(1f);
+			tb.put(1f).put(1f);
+			tb.put(0f).put(0f);
+			tb.put(1f).put(0f);
+		}
+		tb.flip();
 
-            // triangle 1
-            ib.put((short)(startIdx + 1))
-              .put((short)(startIdx + 0))
-              .put((short)(startIdx + 2));
+		buf = getBuffer(VertexBuffer.Type.TexCoord);
+		if (buf != null) {
+			buf.updateData(tb);
+		} else {
+			VertexBuffer tvb = new VertexBuffer(VertexBuffer.Type.TexCoord);
+			tvb.setupData(Usage.Static, 2, Format.Float, tb);
+			setBuffer(tvb);
+		}
 
-            // triangle 2
-            ib.put((short)(startIdx + 1))
-              .put((short)(startIdx + 2))
-              .put((short)(startIdx + 3));
-        }
-        ib.flip();
+		// set indices
+		ShortBuffer ib = BufferUtils.createShortBuffer(numParticles * 6);
+		for (int i = 0; i < numParticles; i++) {
+			int startIdx = (i * 4);
 
-        buf = getBuffer(VertexBuffer.Type.Index);
-        if (buf != null) {
-            buf.updateData(ib);
-        } else {
-            VertexBuffer ivb = new VertexBuffer(VertexBuffer.Type.Index);
-            ivb.setupData(Usage.Static, 3, Format.UnsignedShort, ib);
-            setBuffer(ivb);
-        }
-        
-        updateCounts();
-    }
-    
-    @Override
-    public void setImagesXY(int imagesX, int imagesY) {
-        this.imagesX = imagesX;
-        this.imagesY = imagesY;
-        if (imagesX != 1 || imagesY != 1){
-            uniqueTexCoords = true;
-            getBuffer(VertexBuffer.Type.TexCoord).setUsage(Usage.Stream);
-        }
-    }
+			// triangle 1
+			ib.put((short) (startIdx + 1)).put((short) (startIdx + 0)).put((short) (startIdx + 2));
 
-    @Override
-    public void updateParticleData(Particle[] particles, Camera cam, Matrix3f inverseRotation) {
-//        System.arraycopy(particles, 0, particlesCopy, 0, particlesCopy.length);
-//        comparator.setCamera(cam);
-//        Arrays.sort(particlesCopy, comparator);
-//        SortUtil.qsort(particlesCopy, comparator);
-//        SortUtil.msort(particles, particlesCopy, comparator);
-//        particles = particlesCopy;
+			// triangle 2
+			ib.put((short) (startIdx + 1)).put((short) (startIdx + 2)).put((short) (startIdx + 3));
+		}
+		ib.flip();
 
-        VertexBuffer pvb = getBuffer(VertexBuffer.Type.Position);
-        FloatBuffer positions = (FloatBuffer) pvb.getData();
+		buf = getBuffer(VertexBuffer.Type.Index);
+		if (buf != null) {
+			buf.updateData(ib);
+		} else {
+			VertexBuffer ivb = new VertexBuffer(VertexBuffer.Type.Index);
+			ivb.setupData(Usage.Static, 3, Format.UnsignedShort, ib);
+			setBuffer(ivb);
+		}
 
-        VertexBuffer cvb = getBuffer(VertexBuffer.Type.Color);
-        ByteBuffer colors = (ByteBuffer) cvb.getData();
+		updateCounts();
+	}
 
-        VertexBuffer tvb = getBuffer(VertexBuffer.Type.TexCoord);
-        FloatBuffer texcoords = (FloatBuffer) tvb.getData();
+	@Override
+	public void setImagesXY(int imagesX, int imagesY) {
+		this.imagesX = imagesX;
+		this.imagesY = imagesY;
+		if (imagesX != 1 || imagesY != 1) {
+			uniqueTexCoords = true;
+			getBuffer(VertexBuffer.Type.TexCoord).setUsage(Usage.Stream);
+		}
+	}
 
-        Vector3f camUp   = cam.getUp();
-        Vector3f camLeft = cam.getLeft();
-        Vector3f camDir  = cam.getDirection();
+	class UpdateParticleDataHelper {
 
-        inverseRotation.multLocal(camUp);
-        inverseRotation.multLocal(camLeft);
-        inverseRotation.multLocal(camDir);
+		private VertexBuffer pvb;
+		private FloatBuffer positions;
 
-        boolean facingVelocity = emitter.isFacingVelocity();
+		private VertexBuffer cvb;
+		private ByteBuffer colors;
 
-        Vector3f up = new Vector3f(),
-                 left = new Vector3f();
+		private VertexBuffer tvb;
+		private FloatBuffer texcoords;
+		
+		private Vector3f camUp;
+		private Vector3f camLeft; 
+		private Vector3f camDir;
+		
+		private Vector3f up, left;
+		private Vector3f faceNormal;
+		
+		private Camera cam;
+		
+		boolean facingVelocity;
+		
+		UpdateParticleDataHelper(Camera cam) {
+			this.cam = cam;
+			getDataPositions();
+			getDataColor();
+			getDataTexcoord();
+			getCamAxis();
+			up = new Vector3f();
+			left = new Vector3f();
+			faceNormal = emitter.getFaceNormal();
+			facingVelocity = emitter.isFacingVelocity();
+			
+		}
 
-        if (!facingVelocity){
-            up.set(camUp);
-            left.set(camLeft);
-        }
+		private void getCamAxis() {
+			camUp = this.cam.getUp();
+			camLeft = this.cam.getLeft();
+			camDir = this.cam.getDirection();
+		}
 
-        // update data in vertex buffers
-        positions.clear();
-        colors.clear();
-        texcoords.clear();
-        Vector3f faceNormal = emitter.getFaceNormal();
-        
-        for (int i = 0; i < particles.length; i++){
-            Particle p = particles[i];
-            boolean dead = p.life == 0;
-            if (dead){
-                positions.put(0).put(0).put(0);
-                positions.put(0).put(0).put(0);
-                positions.put(0).put(0).put(0);
-                positions.put(0).put(0).put(0);
-                continue;
-            }
-            
-            if (facingVelocity){
-                left.set(p.velocity).normalizeLocal();
-                camDir.cross(left, up);
-                up.multLocal(p.size);
-                left.multLocal(p.size);
-            }else if (faceNormal != null){
-                up.set(faceNormal).crossLocal(Vector3f.UNIT_X);
-                faceNormal.cross(up, left);
-                up.multLocal(p.size);
-                left.multLocal(p.size);
-                if (p.angle != 0) {
-                    TempVars vars = TempVars.get();
-                    vars.vect1.set(faceNormal).normalizeLocal();
-                    vars.quat1.fromAngleNormalAxis(p.angle, vars.vect1);
-                    vars.quat1.multLocal(left);
-                    vars.quat1.multLocal(up);
-                    vars.release();
-                }
-            }else if (p.angle != 0){
-                float cos = FastMath.cos(p.angle) * p.size;
-                float sin = FastMath.sin(p.angle) * p.size;
+		private void getDataTexcoord() {
+			tvb = getBuffer(VertexBuffer.Type.TexCoord);
+			texcoords = (FloatBuffer) tvb.getData();
+		}
 
-                left.x = camLeft.x * cos + camUp.x * sin;
-                left.y = camLeft.y * cos + camUp.y * sin;
-                left.z = camLeft.z * cos + camUp.z * sin;
+		private void getDataColor() {
+			cvb = getBuffer(VertexBuffer.Type.Color);
+			colors = (ByteBuffer) cvb.getData();
+		}
 
-                up.x = camLeft.x * -sin + camUp.x * cos;
-                up.y = camLeft.y * -sin + camUp.y * cos;
-                up.z = camLeft.z * -sin + camUp.z * cos;
-            }else{
-                up.set(camUp);
-                left.set(camLeft);
-                up.multLocal(p.size);
-                left.multLocal(p.size);
-            }
+		private void getDataPositions() {
+			pvb = getBuffer(VertexBuffer.Type.Position);
+			positions = (FloatBuffer) pvb.getData();
+		}
+			
+	}
 
-            positions.put(p.position.x + left.x + up.x)
-                     .put(p.position.y + left.y + up.y)
-                     .put(p.position.z + left.z + up.z);
+	@Override
+	public void updateParticleData(Particle[] particles, Camera cam, Matrix3f inverseRotation) {
+		UpdateParticleDataHelper updh = new UpdateParticleDataHelper(cam);
+		multMatrixByVector(inverseRotation, updh);
+		if (!updh.facingVelocity) {
+			updateVectorCamAxis(updh);
+		}
+		clearVertexBuffers(updh);
+		updateParticles(particles, updh);
+		clearVertexBuffers(updh);
+		forceRenderDataToGPU(updh);
+	}
 
-            positions.put(p.position.x - left.x + up.x)
-                     .put(p.position.y - left.y + up.y)
-                     .put(p.position.z - left.z + up.z);
+	private void updateParticles(Particle[] particles, UpdateParticleDataHelper updh) {
+		for (int i = 0; i < particles.length; i++) {
+			Particle p = particles[i];
+			boolean dead = p.life == 0;
+			if (dead) {
+				updateToDead(updh);
+				continue;
+			}
+			updateVectors(updh, p);
+			updateVertexBuffers(updh, p);
+		}
+	}
 
-            positions.put(p.position.x + left.x - up.x)
-                     .put(p.position.y + left.y - up.y)
-                     .put(p.position.z + left.z - up.z);
+	private void updateVertexBuffers(UpdateParticleDataHelper updh, Particle p) {
+		updateVertexBufferPositions(updh, p);
 
-            positions.put(p.position.x - left.x - up.x)
-                     .put(p.position.y - left.y - up.y)
-                     .put(p.position.z - left.z - up.z);
+		if (uniqueTexCoords) {
+			updateVertexBufferTexCoords(updh, p);
+		}
+		updateVertexBufferColors(updh, p);
+	}
 
-            if (uniqueTexCoords){
-                int imgX = p.imageIndex % imagesX;
-                int imgY = (p.imageIndex - imgX) / imagesY;
+	private void forceRenderDataToGPU(UpdateParticleDataHelper updh) {
+		if (uniqueTexCoords) {
+			updh.tvb.updateData(updh.texcoords);
+		}
+		updh.pvb.updateData(updh.positions);
+		updh.cvb.updateData(updh.colors);
+	}
 
-                float startX = ((float) imgX) / imagesX;
-                float startY = ((float) imgY) / imagesY;
-                float endX   = startX + (1f / imagesX);
-                float endY   = startY + (1f / imagesY);
+	private void clearVertexBuffers(UpdateParticleDataHelper updh) {
+		updh.positions.clear();
+		updh.colors.clear();
+		updh.texcoords.clear();
+	}
 
-                texcoords.put(startX).put(endY);
-                texcoords.put(endX).put(endY);
-                texcoords.put(startX).put(startY);
-                texcoords.put(endX).put(startY);
-            }
+	private void updateVertexBufferTexCoords(UpdateParticleDataHelper updh, Particle p) {
+		int imgX = p.imageIndex % imagesX;
+		int imgY = (p.imageIndex - imgX) / imagesY;
 
-            int abgr = p.color.asIntABGR();
-            colors.putInt(abgr);
-            colors.putInt(abgr);
-            colors.putInt(abgr);
-            colors.putInt(abgr);
-        }
+		float startX = ((float) imgX) / imagesX;
+		float startY = ((float) imgY) / imagesY;
+		float endX = startX + (1f / imagesX);
+		float endY = startY + (1f / imagesY);
 
-        positions.clear();
-        colors.clear();
-        if (!uniqueTexCoords)
-            texcoords.clear();
-        else{
-            texcoords.clear();
-            tvb.updateData(texcoords);
-        }
+		updh.texcoords.put(startX).put(endY);
+		updh.texcoords.put(endX).put(endY);
+		updh.texcoords.put(startX).put(startY);
+		updh.texcoords.put(endX).put(startY);
+	}
 
-        // force renderer to re-send data to GPU
-        pvb.updateData(positions);
-        cvb.updateData(colors);
-    }
+	private void updateVertexBufferColors(UpdateParticleDataHelper updh, Particle p) {
+		int abgr = p.color.asIntABGR();
+		updh.colors.putInt(abgr);
+		updh.colors.putInt(abgr);
+		updh.colors.putInt(abgr);
+		updh.colors.putInt(abgr);
+	}
+
+	
+
+	private void updateVertexBufferPositions(UpdateParticleDataHelper updh, Particle p) {
+		updh.positions.put(p.position.x + updh.left.x + updh.up.x).put(p.position.y + updh.left.y + updh.up.y)
+				.put(p.position.z + updh.left.z + updh.up.z);
+
+		updh.positions.put(p.position.x - updh.left.x + updh.up.x).put(p.position.y - updh.left.y + updh.up.y)
+				.put(p.position.z - updh.left.z + updh.up.z);
+
+		updh.positions.put(p.position.x + updh.left.x - updh.up.x).put(p.position.y + updh.left.y - updh.up.y)
+				.put(p.position.z + updh.left.z - updh.up.z);
+
+		updh.positions.put(p.position.x - updh.left.x - updh.up.x).put(p.position.y - updh.left.y - updh.up.y)
+				.put(p.position.z - updh.left.z - updh.up.z);
+	}
+
+	private void updateVectors(UpdateParticleDataHelper updh, Particle p) {
+		if (updh.facingVelocity) {
+			updateFacingVelocity(updh, p);
+		} else if (updh.faceNormal != null) {
+			updateFaceNormal(updh, p);
+		} else if (p.angle != 0) {
+			updateVectorAngle(updh, p);
+		} else {
+			updateVectorCamAxis(updh);
+			multVectorByScalor(updh, p);
+		}
+	}
+
+	private void updateVectorAngle(UpdateParticleDataHelper updh, Particle p) {
+		float cos = FastMath.cos(p.angle) * p.size;
+		float sin = FastMath.sin(p.angle) * p.size;
+
+		updh.left.x = updh.camLeft.x * cos + updh.camUp.x * sin;
+		updh.left.y = updh.camLeft.y * cos + updh.camUp.y * sin;
+		updh.left.z = updh.camLeft.z * cos + updh.camUp.z * sin;
+
+		updh.up.x = updh.camLeft.x * -sin + updh.camUp.x * cos;
+		updh.up.y = updh.camLeft.y * -sin + updh.camUp.y * cos;
+		updh.up.z = updh.camLeft.z * -sin + updh.camUp.z * cos;
+	}
+	
+	private void updateVectorCamAxis(UpdateParticleDataHelper updh) {
+		updh.up.set(updh.camUp);
+		updh.left.set(updh.camLeft);
+	}
+
+	private void updateFaceNormal(UpdateParticleDataHelper updh, Particle p) {
+		updh.up.set(updh.faceNormal).crossLocal(Vector3f.UNIT_X);
+		updh.faceNormal.cross(updh.up, updh.left);
+		multVectorByScalor(updh, p);
+		if (p.angle != 0) {
+			TempVars vars = TempVars.get();
+			vars.vect1.set(updh.faceNormal).normalizeLocal();
+			vars.quat1.fromAngleNormalAxis(p.angle, vars.vect1);
+			vars.quat1.multLocal(updh.left);
+			vars.quat1.multLocal(updh.up);
+			vars.release();
+		}
+	}
+
+	private void updateFacingVelocity(UpdateParticleDataHelper updh, Particle p) {
+		updh.left.set(p.velocity).normalizeLocal();
+		updh.camDir.cross(updh.left, updh.up);
+		multVectorByScalor(updh, p);
+	}
+
+	private void multVectorByScalor(UpdateParticleDataHelper updh, Particle p) {
+		updh.up.multLocal(p.size);
+		updh.left.multLocal(p.size);
+	}
+
+	private void updateToDead(UpdateParticleDataHelper updh) {
+		updh.positions.put(0).put(0).put(0);
+		updh.positions.put(0).put(0).put(0);
+		updh.positions.put(0).put(0).put(0);
+		updh.positions.put(0).put(0).put(0);
+	}
+
+	private void multMatrixByVector(Matrix3f inverseRotation, UpdateParticleDataHelper updh) {
+		inverseRotation.multLocal(updh.camUp);
+		inverseRotation.multLocal(updh.camLeft);
+		inverseRotation.multLocal(updh.camDir);
+	}
 
 }
