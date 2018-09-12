@@ -139,7 +139,7 @@ public class ParticleTriMesh extends ParticleMesh {
 			getBuffer(VertexBuffer.Type.TexCoord).setUsage(Usage.Stream);
 		}
 	}
-
+	
 	class UpdateParticleDataHelper {
 
 		private VertexBuffer pvb;
@@ -164,10 +164,10 @@ public class ParticleTriMesh extends ParticleMesh {
 		
 		UpdateParticleDataHelper(Camera cam) {
 			this.cam = cam;
-			getDataPositions();
-			getDataColor();
-			getDataTexcoord();
-			getCamAxis();
+			setPosistions();
+			setColors();
+			setTextcoords();
+			setCamAxis();
 			up = new Vector3f();
 			left = new Vector3f();
 			faceNormal = emitter.getFaceNormal();
@@ -175,23 +175,23 @@ public class ParticleTriMesh extends ParticleMesh {
 			
 		}
 
-		private void getCamAxis() {
+		private void setCamAxis() {
 			camUp = this.cam.getUp();
 			camLeft = this.cam.getLeft();
 			camDir = this.cam.getDirection();
 		}
 
-		private void getDataTexcoord() {
+		private void setTextcoords() {
 			tvb = getBuffer(VertexBuffer.Type.TexCoord);
 			texcoords = (FloatBuffer) tvb.getData();
 		}
 
-		private void getDataColor() {
+		private void setColors() {
 			cvb = getBuffer(VertexBuffer.Type.Color);
 			colors = (ByteBuffer) cvb.getData();
 		}
 
-		private void getDataPositions() {
+		private void setPosistions() {
 			pvb = getBuffer(VertexBuffer.Type.Position);
 			positions = (FloatBuffer) pvb.getData();
 		}
@@ -346,7 +346,7 @@ public class ParticleTriMesh extends ParticleMesh {
 		updh.positions.put(0).put(0).put(0);
 		updh.positions.put(0).put(0).put(0);
 		updh.positions.put(0).put(0).put(0);
-		updh.positions.put(0).put(0).put(0);
+		updh.positions.put(0).put(0).put(0);	
 	}
 
 	private void multMatrixByVector(Matrix3f inverseRotation, UpdateParticleDataHelper updh) {
