@@ -29,16 +29,16 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.opencl;
+package com.jme3.system.opencl;
 
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
 import com.jme3.asset.AssetNotFoundException;
-import com.jme3.opencl.Image.ImageDescriptor;
-import com.jme3.opencl.Image.ImageFormat;
-import com.jme3.opencl.Image.ImageType;
 import com.jme3.scene.VertexBuffer;
+import com.jme3.system.opencl.Image.ImageDescriptor;
+import com.jme3.system.opencl.Image.ImageFormat;
+import com.jme3.system.opencl.Image.ImageType;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Texture;
 import java.io.BufferedReader;
@@ -82,7 +82,7 @@ public abstract class Context extends AbstractOpenCLObject {
      * Returns all available devices for this context.
      * These devices all belong to the same {@link Platform}.
      * They are used to create a command queue sending commands to a particular
-     * device, see {@link #createQueue(com.jme3.opencl.Device) }.
+     * device, see {@link #createQueue(com.jme3.system.opencl.Device) }.
      * Also, device capabilities, like the supported OpenCL version, extensions,
      * memory size and so on, are queried over the Device instances.
      * <br>
@@ -92,7 +92,7 @@ public abstract class Context extends AbstractOpenCLObject {
     public abstract List<? extends Device> getDevices();
 
     /**
-     * Alternative version of {@link #createQueue(com.jme3.opencl.Device) },
+     * Alternative version of {@link #createQueue(com.jme3.system.opencl.Device) },
      * just uses the first device returned by {@link #getDevices() }.
      * @return the command queue
      */
@@ -115,7 +115,7 @@ public abstract class Context extends AbstractOpenCLObject {
      */
     public abstract Buffer createBuffer(long size, MemoryAccess access);
     /**
-     * Alternative version of {@link #createBuffer(long, com.jme3.opencl.MemoryAccess) },
+     * Alternative version of {@link #createBuffer(long, com.jme3.system.opencl.MemoryAccess) },
      * creates a buffer with read and write access.
      * @param size the size of the buffer in bytes
      * @return the new buffer
@@ -128,14 +128,14 @@ public abstract class Context extends AbstractOpenCLObject {
      * Creates a new buffer wrapping the specific host memory. This host memory
      * specified by a ByteBuffer can then be used directly by kernel code,
      * although the access might be slower than with native buffers
-     * created by {@link #createBuffer(long, com.jme3.opencl.MemoryAccess) }.
+     * created by {@link #createBuffer(long, com.jme3.system.opencl.MemoryAccess) }.
      * @param data the host buffer to use
      * @param access the allowed access of this buffer from kernel code
      * @return the new buffer
      */
     public abstract Buffer createBufferFromHost(ByteBuffer data, MemoryAccess access);
     /**
-     * Alternative version of {@link #createBufferFromHost(java.nio.ByteBuffer, com.jme3.opencl.MemoryAccess) },
+     * Alternative version of {@link #createBufferFromHost(java.nio.ByteBuffer, com.jme3.system.opencl.MemoryAccess) },
      * creates a buffer with read and write access.
      * @param data the host buffer to use
      * @return the new buffer
@@ -185,8 +185,8 @@ public abstract class Context extends AbstractOpenCLObject {
      * i.e. it must be used at least once for drawing.
      * <p>
      * Before the returned buffer can be used, it must be acquried explicitly
-     * by {@link Buffer#acquireBufferForSharingAsync(com.jme3.opencl.CommandQueue) }
-     * and after modifying it, released by {@link Buffer#releaseBufferForSharingAsync(com.jme3.opencl.CommandQueue) }.
+     * by {@link Buffer#acquireBufferForSharingAsync(com.jme3.system.opencl.CommandQueue) }
+     * and after modifying it, released by {@link Buffer#releaseBufferForSharingAsync(com.jme3.system.opencl.CommandQueue) }.
      * This is needed so that OpenGL and OpenCL operations do not interfer with each other.
      * @param vb the vertex buffer to share
      * @param access the memory access for the kernel
@@ -205,8 +205,8 @@ public abstract class Context extends AbstractOpenCLObject {
      * i.e. it must be used at least once for drawing.
      * <p>
      * Before the returned image can be used, it must be acquried explicitly
-     * by {@link Image#acquireImageForSharingAsync(com.jme3.opencl.CommandQueue) }
-     * and after modifying it, released by {@link Image#releaseImageForSharingAsync(com.jme3.opencl.CommandQueue) }
+     * by {@link Image#acquireImageForSharingAsync(com.jme3.system.opencl.CommandQueue) }
+     * and after modifying it, released by {@link Image#releaseImageForSharingAsync(com.jme3.system.opencl.CommandQueue) }
      * This is needed so that OpenGL and OpenCL operations do not interfer with each other.
      * 
      * @param image the jME3 image object
@@ -227,8 +227,8 @@ public abstract class Context extends AbstractOpenCLObject {
      * i.e. it must be used at least once for drawing.
      * <p>
      * Before the returned image can be used, it must be acquried explicitly
-     * by {@link Image#acquireImageForSharingAsync(com.jme3.opencl.CommandQueue) }
-     * and after modifying it, released by {@link Image#releaseImageForSharingAsync(com.jme3.opencl.CommandQueue) }
+     * by {@link Image#acquireImageForSharingAsync(com.jme3.system.opencl.CommandQueue) }
+     * and after modifying it, released by {@link Image#releaseImageForSharingAsync(com.jme3.system.opencl.CommandQueue) }
      * This is needed so that OpenGL and OpenCL operations do not interfer with each other.
      * <p>
      * This method is equivalent to calling
@@ -243,7 +243,7 @@ public abstract class Context extends AbstractOpenCLObject {
         return bindImage(texture.getImage(), texture.getType(), miplevel, access);
     }
     /**
-     * Alternative version to {@link #bindImage(com.jme3.texture.Texture, int, com.jme3.opencl.MemoryAccess) },
+     * Alternative version to {@link #bindImage(com.jme3.texture.Texture, int, com.jme3.system.opencl.MemoryAccess) },
      * uses {@code miplevel=0}. 
      * @param texture the jME3 texture
      * @param access the allowed memory access for kernels
@@ -264,8 +264,8 @@ public abstract class Context extends AbstractOpenCLObject {
      * i.e. it must be used at least once for drawing.
      * <p>
      * Before the returned image can be used, it must be acquried explicitly
-     * by {@link Image#acquireImageForSharingAsync(com.jme3.opencl.CommandQueue) }
-     * and after modifying it, released by {@link Image#releaseImageForSharingAsync(com.jme3.opencl.CommandQueue) }
+     * by {@link Image#acquireImageForSharingAsync(com.jme3.system.opencl.CommandQueue) }
+     * and after modifying it, released by {@link Image#releaseImageForSharingAsync(com.jme3.system.opencl.CommandQueue) }
      * This is needed so that OpenGL and OpenCL operations do not interfer with each other.
      * 
      * @param buffer
@@ -427,9 +427,9 @@ public abstract class Context extends AbstractOpenCLObject {
     
     /**
      * Creates a program from the specified binaries.
-     * The binaries are created by {@link Program#getBinary(com.jme3.opencl.Device) }.
+     * The binaries are created by {@link Program#getBinary(com.jme3.system.opencl.Device) }.
      * The returned program still needs to be build using
-     * {@link Program#build(java.lang.String, com.jme3.opencl.Device...) }.
+     * {@link Program#build(java.lang.String, com.jme3.system.opencl.Device...) }.
      * <b>Important:</b>The device passed to {@code Program.getBinary(..)},
      * this method and {@code Program#build(..)} must be the same.
      * 

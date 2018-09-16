@@ -29,35 +29,30 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.opencl;
+package com.jme3.system.opencl;
 
 /**
- * Abstract implementation of {@link OpenCLObject} providing the release 
- * mechanisms.
- * @author Sebastian Weiss
+ * This exception is thrown by {@link Program#build() } and {@link Program#build(java.lang.String) }
+ * when the compilation failed.
+ * The error log returned by {@link #getLog() } contains detailed information
+ * where the error occured.
+ * @author shaman
  */
-public abstract class AbstractOpenCLObject implements OpenCLObject {
-    
-    protected final ObjectReleaser releaser;
-    protected AbstractOpenCLObject(ObjectReleaser releaser) {
-        this.releaser = releaser;
-    }
-    @Override
-    public AbstractOpenCLObject register() {
-        OpenCLObjectManager.getInstance().registerObject(this);
-		return this;
-    }
-    @Override
-    public void release() {
-        releaser.release();
-    }
-    @Override
-    @SuppressWarnings("FinalizeDeclaration")
-    protected void finalize() throws Throwable {
-        release();
-    }
-    @Override
-    public ObjectReleaser getReleaser() {
-        return releaser;
-    }
+public class KernelCompilationException extends OpenCLException {
+
+	private final String log;
+	
+	public KernelCompilationException(String msg, int errorCode, String log) {
+		super(msg, errorCode);
+		this.log = log;
+	}
+
+    /**
+     * The output of the compiler
+     * @return 
+     */
+	public String getLog() {
+		return log;
+	}
+
 }

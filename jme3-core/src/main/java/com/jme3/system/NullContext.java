@@ -37,8 +37,9 @@ import com.jme3.app.input.MouseInput;
 import com.jme3.app.input.TouchInput;
 import com.jme3.app.input.dummy.DummyKeyInput;
 import com.jme3.app.input.dummy.DummyMouseInput;
-import com.jme3.opencl.Context;
 import com.jme3.renderer.Renderer;
+import com.jme3.system.opencl.Context;
+
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Level;
 import java.util.logging.Logger;

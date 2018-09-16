@@ -29,26 +29,30 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.opencl;
-
-import com.jme3.system.AppSettings;
-import java.util.List;
+package com.jme3.system.opencl;
 
 /**
- * This SPI is called on startup to specify which platform and which devices
- * are used for context creation.
+ * Specifies the access flags when mapping a {@link Buffer} or {@link Image} object.
+ * @see Buffer#map(com.jme3.opencl.CommandQueue, long, long, com.jme3.opencl.MappingAccess) 
+ * @see Image#map(com.jme3.opencl.CommandQueue, long[], long[], com.jme3.opencl.MappingAccess) 
  * @author shaman
- * @see AppSettings#setOpenCLPlatformChooser(java.lang.Class) 
  */
-public interface PlatformChooser {
-    
+public enum MappingAccess {
     /**
-     * Chooses one or more devices for the opencl context.
-     * All returned devices must belong to the same platform.
-     * If the returned list is empty, no context will be created.
-     * @param platforms the available platforms
-     * @return the list of devices
+     * Only read access is allowed to the mapped memory.
      */
-    List<? extends Device> chooseDevices(List<? extends Platform> platforms);
-    
+	MAP_READ_ONLY,
+    /**
+     * Only write access is allowed to the mapped memory.
+     */
+	MAP_WRITE_ONLY,
+    /**
+     * Both read and write access is allowed.
+     */
+	MAP_READ_WRITE,
+    /**
+     * The old memory content is completely discarded and the buffer is filled
+     * completely with new data. This might be faster than {@link #MAP_WRITE_ONLY}
+     */
+	MAP_WRITE_INVALIDATE
 }

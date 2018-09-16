@@ -29,30 +29,24 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.opencl;
+package com.jme3.system.opencl;
 
 /**
- * This exception is thrown by {@link Program#build() } and {@link Program#build(java.lang.String) }
- * when the compilation failed.
- * The error log returned by {@link #getLog() } contains detailed information
- * where the error occured.
+ * Specifies how a buffer object can be accessed by the kernel.
  * @author shaman
+ * @see Buffer
  */
-public class KernelCompilationException extends OpenCLException {
-
-	private final String log;
-	
-	public KernelCompilationException(String msg, int errorCode, String log) {
-		super(msg, errorCode);
-		this.log = log;
-	}
-
+public enum MemoryAccess {
     /**
-     * The output of the compiler
-     * @return 
+     * A kernel can both read and write the buffer.
      */
-	public String getLog() {
-		return log;
-	}
-
+	READ_WRITE,
+    /**
+     * A kernel can only write this buffer.
+     */
+	WRITE_ONLY,
+    /**
+     * A kernel can only read this buffer
+     */
+	READ_ONLY
 }

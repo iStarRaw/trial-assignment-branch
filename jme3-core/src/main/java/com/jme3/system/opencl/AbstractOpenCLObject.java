@@ -29,37 +29,35 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.opencl;
+package com.jme3.system.opencl;
 
 /**
- * Wrapper for an OpenCL Event object.
- * Events are returned from kernel launches and all asynchronous operations.
- * They allow to test if the action has completed and to block until the operation
- * is done.
- * @author shaman
+ * Abstract implementation of {@link OpenCLObject} providing the release 
+ * mechanisms.
+ * @author Sebastian Weiss
  */
-public abstract class Event extends AbstractOpenCLObject {
-
-    protected Event(ObjectReleaser releaser) {
-        super(releaser);
+public abstract class AbstractOpenCLObject implements OpenCLObject {
+    
+    protected final ObjectReleaser releaser;
+    protected AbstractOpenCLObject(ObjectReleaser releaser) {
+        this.releaser = releaser;
     }
-
-	@Override
-	public Event register() {
-		super.register();
+    @Override
+    public AbstractOpenCLObject register() {
+        OpenCLObjectManager.getInstance().registerObject(this);
 		return this;
-	}
-	
-    /**
-     * Waits until the action has finished (blocking).
-     * This automatically releases the event.
-     */
-	public abstract void waitForFinished();
-	
-    /**
-     * Tests if the action is completed.
-     * If the action is completed, the event is released.
-     * @return {@code true} if the action is completed
-     */
-	public abstract boolean isCompleted();
+    }
+    @Override
+    public void release() {
+        releaser.release();
+    }
+    @Override
+    @SuppressWarnings("FinalizeDeclaration")
+    protected void finalize() throws Throwable {
+        release();
+    }
+    @Override
+    public ObjectReleaser getReleaser() {
+        return releaser;
+    }
 }

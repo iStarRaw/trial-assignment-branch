@@ -31,8 +31,6 @@
  */
 package com.jme3.system;
 
-import com.jme3.opencl.DefaultPlatformChooser;
-import com.jme3.opencl.PlatformChooser;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -41,6 +39,9 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
+
+import com.jme3.system.opencl.DefaultPlatformChooser;
+import com.jme3.system.opencl.PlatformChooser;
 
 /**
  * <code>AppSettings</code> provides a store of configuration

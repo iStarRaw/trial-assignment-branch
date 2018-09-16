@@ -113,7 +113,7 @@ public interface JmeContext {
     /**
      * @return The OpenCL context if available.
      */
-    public com.jme3.opencl.Context getOpenCLContext();
+    public com.jme3.system.opencl.Context getOpenCLContext();
 
     /**
      * @return Mouse input implementation. May be null if not available.

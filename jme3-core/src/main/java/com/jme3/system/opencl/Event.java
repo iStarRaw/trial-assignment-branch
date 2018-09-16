@@ -29,24 +29,37 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.opencl;
+package com.jme3.system.opencl;
 
 /**
- * Specifies how a buffer object can be accessed by the kernel.
+ * Wrapper for an OpenCL Event object.
+ * Events are returned from kernel launches and all asynchronous operations.
+ * They allow to test if the action has completed and to block until the operation
+ * is done.
  * @author shaman
- * @see Buffer
  */
-public enum MemoryAccess {
+public abstract class Event extends AbstractOpenCLObject {
+
+    protected Event(ObjectReleaser releaser) {
+        super(releaser);
+    }
+
+	@Override
+	public Event register() {
+		super.register();
+		return this;
+	}
+	
     /**
-     * A kernel can both read and write the buffer.
+     * Waits until the action has finished (blocking).
+     * This automatically releases the event.
      */
-	READ_WRITE,
+	public abstract void waitForFinished();
+	
     /**
-     * A kernel can only write this buffer.
+     * Tests if the action is completed.
+     * If the action is completed, the event is released.
+     * @return {@code true} if the action is completed
      */
-	WRITE_ONLY,
-    /**
-     * A kernel can only read this buffer
-     */
-	READ_ONLY
+	public abstract boolean isCompleted();
 }
