@@ -32,8 +32,8 @@
 package com.jme3.scene.lighting.material.logic;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.bounding.BoundingSphere;
 import com.jme3.math.*;
+import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.*;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.lighting.light.*;

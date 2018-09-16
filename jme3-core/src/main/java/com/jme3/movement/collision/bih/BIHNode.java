@@ -31,12 +31,12 @@
  */
 package com.jme3.movement.collision.bih;
 
-import com.jme3.bounding.BoundingBox;
 import com.jme3.export.*;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Ray;
 import com.jme3.math.Triangle;
 import com.jme3.math.Vector3f;
+import com.jme3.math.bounding.BoundingBox;
 import com.jme3.movement.collision.Collidable;
 import com.jme3.movement.collision.CollisionResult;
 import com.jme3.movement.collision.CollisionResults;

@@ -33,9 +33,9 @@ package com.jme3.scene;
 
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.CloneableSmartAsset;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.export.*;
 import com.jme3.math.*;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.movement.collision.Collidable;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;

@@ -31,9 +31,9 @@
  */
 package com.jme3.util;
 
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.math.*;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.movement.collision.CollisionResults;
 import com.jme3.movement.collision.bih.BIHNode.BIHStackData;
 import com.jme3.scene.Spatial;

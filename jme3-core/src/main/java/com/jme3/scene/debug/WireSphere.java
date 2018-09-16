@@ -31,8 +31,8 @@
  */
 package com.jme3.scene.debug;
 
-import com.jme3.bounding.BoundingSphere;
 import com.jme3.math.FastMath;
+import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.Mesh.Mode;
 import com.jme3.scene.VertexBuffer;

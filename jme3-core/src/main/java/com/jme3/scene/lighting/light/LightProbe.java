@@ -32,9 +32,6 @@
 package com.jme3.scene.lighting.light;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingSphere;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.environment.EnvironmentCamera;
 import com.jme3.environment.LightProbeFactory;
 import com.jme3.environment.util.EnvMapUtils;
@@ -44,6 +41,9 @@ import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.export.Savable;
 import com.jme3.math.Vector3f;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingSphere;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.renderer.Camera;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;

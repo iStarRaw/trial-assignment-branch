@@ -31,9 +31,9 @@
  */
 package com.jme3.scene.lighting.light;
 
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingSphere;
-import com.jme3.bounding.BoundingVolume;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingSphere;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.renderer.Camera;
 import com.jme3.scene.Geometry;
 import com.jme3.util.TempVars;

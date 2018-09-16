@@ -31,10 +31,10 @@
  */
 package com.jme3.renderer;
 
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.export.*;
 import com.jme3.math.*;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.util.TempVars;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -68,7 +68,7 @@ public class Camera implements Savable, Cloneable {
     /**
      * The <code>FrustumIntersect</code> enum is returned as a result
      * of a culling check operation, 
-     * see {@link #contains(com.jme3.bounding.BoundingVolume) }
+     * see {@link #contains(com.jme3.math.bounding.BoundingVolume) }
      */
     public enum FrustumIntersect {
 

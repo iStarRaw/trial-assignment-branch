@@ -32,12 +32,12 @@
 package com.jme3.scene;
 
 import com.jme3.asset.AssetNotFoundException;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.math.Matrix4f;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.movement.collision.Collidable;
 import com.jme3.movement.collision.CollisionResults;
 import com.jme3.renderer.Camera;
@@ -425,7 +425,7 @@ public class Geometry extends Spatial {
     /**
      * Sets the model bound to use for this geometry.
      * This alters the bound used on the mesh as well via
-     * {@link Mesh#setBound(com.jme3.bounding.BoundingVolume) } and
+     * {@link Mesh#setBound(com.jme3.math.bounding.BoundingVolume) } and
      * forces the world bounding volume to be recomputed.
      *
      * @param modelBound The model bound to set

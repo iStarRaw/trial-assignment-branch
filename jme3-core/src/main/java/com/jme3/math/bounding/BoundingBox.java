@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.bounding;
+package com.jme3.math.bounding;
 
 import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
@@ -582,7 +582,7 @@ public class BoundingBox extends BoundingVolume {
      * intersects determines if this Bounding Box intersects with another given
      * bounding volume. If so, true is returned, otherwise, false is returned.
      * 
-     * @see BoundingVolume#intersects(com.jme3.bounding.BoundingVolume) 
+     * @see BoundingVolume#intersects(com.jme3.math.bounding.BoundingVolume) 
      */
     public boolean intersects(BoundingVolume bv) {
         return bv.intersectsBoundingBox(this);
@@ -591,7 +591,7 @@ public class BoundingBox extends BoundingVolume {
     /**
      * determines if this bounding box intersects a given bounding sphere.
      * 
-     * @see BoundingVolume#intersectsSphere(com.jme3.bounding.BoundingSphere)
+     * @see BoundingVolume#intersectsSphere(com.jme3.math.bounding.BoundingSphere)
      */
     public boolean intersectsSphere(BoundingSphere bs) {
         return bs.intersectsBoundingBox(this);
@@ -602,7 +602,7 @@ public class BoundingBox extends BoundingVolume {
      * two boxes intersect in any way, true is returned. Otherwise, false is
      * returned.
      * 
-     * @see BoundingVolume#intersectsBoundingBox(com.jme3.bounding.BoundingBox)
+     * @see BoundingVolume#intersectsBoundingBox(com.jme3.math.bounding.BoundingBox)
      */
     public boolean intersectsBoundingBox(BoundingBox bb) {
         assert Vector3f.isValidVector(center) && Vector3f.isValidVector(bb.center);

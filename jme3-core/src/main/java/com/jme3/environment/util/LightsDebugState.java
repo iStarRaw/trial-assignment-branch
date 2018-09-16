@@ -33,7 +33,7 @@ package com.jme3.environment.util;
 
 import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
-import com.jme3.bounding.BoundingSphere;
+import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;

@@ -31,7 +31,6 @@
  */
 package com.jme3.effect;
 
-import com.jme3.bounding.BoundingBox;
 import com.jme3.effect.ParticleMesh.Type;
 import com.jme3.effect.influencers.DefaultParticleInfluencer;
 import com.jme3.effect.influencers.ParticleInfluencer;
@@ -45,6 +44,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.math.Matrix3f;
 import com.jme3.math.Vector3f;
+import com.jme3.math.bounding.BoundingBox;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;

@@ -31,10 +31,10 @@
  */
 package com.jme3.scene.lighting.light;
 
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingSphere;
 import com.jme3.export.*;
 import com.jme3.math.ColorRGBA;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.Camera;
 import com.jme3.scene.Spatial;
 import com.jme3.util.TempVars;

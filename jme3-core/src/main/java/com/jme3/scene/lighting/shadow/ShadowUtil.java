@@ -31,13 +31,13 @@
  */
 package com.jme3.scene.lighting.shadow;
 
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.math.FastMath;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Transform;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.GeometryList;

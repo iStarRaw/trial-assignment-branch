@@ -31,9 +31,6 @@
  */
 package com.jme3.movement.collision.bih;
 
-import com.jme3.bounding.BoundingBox;
-import com.jme3.bounding.BoundingSphere;
-import com.jme3.bounding.BoundingVolume;
 import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
@@ -42,6 +39,9 @@ import com.jme3.math.FastMath;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Ray;
 import com.jme3.math.Vector3f;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingSphere;
+import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.movement.collision.Collidable;
 import com.jme3.movement.collision.CollisionResults;
 import com.jme3.movement.collision.UnsupportedCollisionException;
