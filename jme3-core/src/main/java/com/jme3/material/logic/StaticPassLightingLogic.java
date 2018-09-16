@@ -32,11 +32,15 @@
 package com.jme3.material.logic;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.light.DirectionalLight;
-import com.jme3.light.Light;
-import com.jme3.light.LightList;
-import com.jme3.light.PointLight;
-import com.jme3.light.SpotLight;
+import com.jme3.lighting.light.DirectionalLight;
+import com.jme3.lighting.light.Light;
+import com.jme3.lighting.light.LightList;
+import com.jme3.lighting.light.PointLight;
+import com.jme3.lighting.light.SpotLight;
+import com.jme3.lighting.shader.DefineList;
+import com.jme3.lighting.shader.Shader;
+import com.jme3.lighting.shader.Uniform;
+import com.jme3.lighting.shader.VarType;
 import com.jme3.material.TechniqueDef;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Matrix4f;
@@ -45,10 +49,7 @@ import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.scene.Geometry;
-import com.jme3.shader.DefineList;
-import com.jme3.shader.Shader;
-import com.jme3.shader.Uniform;
-import com.jme3.shader.VarType;
+
 import java.util.ArrayList;
 import java.util.EnumSet;
 

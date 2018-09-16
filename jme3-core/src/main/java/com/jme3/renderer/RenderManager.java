@@ -31,9 +31,12 @@
  */
 package com.jme3.renderer;
 
-import com.jme3.light.DefaultLightFilter;
-import com.jme3.light.LightFilter;
-import com.jme3.light.LightList;
+import com.jme3.lighting.light.DefaultLightFilter;
+import com.jme3.lighting.light.LightFilter;
+import com.jme3.lighting.light.LightList;
+import com.jme3.lighting.shader.Shader;
+import com.jme3.lighting.shader.UniformBinding;
+import com.jme3.lighting.shader.UniformBindingManager;
 import com.jme3.material.MatParamOverride;
 import com.jme3.material.Material;
 import com.jme3.material.MaterialDef;
@@ -50,9 +53,6 @@ import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.*;
-import com.jme3.shader.Shader;
-import com.jme3.shader.UniformBinding;
-import com.jme3.shader.UniformBindingManager;
 import com.jme3.system.NullRenderer;
 import com.jme3.system.Timer;
 import com.jme3.util.SafeArrayList;

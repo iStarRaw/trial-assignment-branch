@@ -33,8 +33,8 @@ package com.jme3.material;
 
 import com.jme3.asset.TextureKey;
 import com.jme3.export.*;
+import com.jme3.lighting.shader.VarType;
 import com.jme3.math.*;
-import com.jme3.shader.VarType;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture.WrapMode;
 import java.io.IOException;

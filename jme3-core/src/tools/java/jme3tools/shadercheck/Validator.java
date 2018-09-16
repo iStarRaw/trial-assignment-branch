@@ -1,6 +1,6 @@
 package jme3tools.shadercheck;
 
-import com.jme3.shader.Shader;
+import com.jme3.lighting.shader.Shader;
 
 /**
  * Interface for shader validator tools.

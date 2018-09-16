@@ -51,6 +51,7 @@ import com.jme3.app.state.AppStateManager;
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
+import com.jme3.lighting.shader.Shader;
 import com.jme3.material.MatParam;
 import com.jme3.material.Material;
 import com.jme3.post.Filter;
@@ -61,7 +62,6 @@ import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.shape.Box;
-import com.jme3.shader.Shader;
 
 /**
  * This appState is for debug purpose only, and was made to provide an easy way 

@@ -32,7 +32,9 @@
 package com.jme3.material.logic;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.light.*;
+import com.jme3.lighting.light.*;
+import com.jme3.lighting.shader.DefineList;
+import com.jme3.lighting.shader.Shader;
 import com.jme3.material.TechniqueDef;
 import com.jme3.math.ColorRGBA;
 import com.jme3.renderer.Caps;
@@ -41,8 +43,7 @@ import com.jme3.renderer.Renderer;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.instancing.InstancedGeometry;
-import com.jme3.shader.DefineList;
-import com.jme3.shader.Shader;
+
 import java.util.EnumSet;
 
 public class DefaultTechniqueDefLogic implements TechniqueDefLogic {

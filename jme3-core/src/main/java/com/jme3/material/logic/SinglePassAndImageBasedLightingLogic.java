@@ -33,13 +33,13 @@ package com.jme3.material.logic;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.bounding.BoundingSphere;
-import com.jme3.light.*;
+import com.jme3.lighting.light.*;
+import com.jme3.lighting.shader.*;
 import com.jme3.material.*;
 import com.jme3.material.RenderState.BlendMode;
 import com.jme3.math.*;
 import com.jme3.renderer.*;
 import com.jme3.scene.Geometry;
-import com.jme3.shader.*;
 import com.jme3.util.TempVars;
 
 import java.util.EnumSet;

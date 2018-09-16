@@ -31,8 +31,8 @@
  */
 package com.jme3.asset;
 
+import com.jme3.lighting.shader.Shader;
 import com.jme3.material.Material;
-import com.jme3.shader.Shader;
 
 /**
  * <code>AssetProcessor</code> is used to apply processing to assets

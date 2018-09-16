@@ -36,8 +36,8 @@ import com.jme3.asset.CloneableSmartAsset;
 import com.jme3.bounding.BoundingVolume;
 import com.jme3.collision.Collidable;
 import com.jme3.export.*;
-import com.jme3.light.Light;
-import com.jme3.light.LightList;
+import com.jme3.lighting.light.Light;
+import com.jme3.lighting.light.LightList;
 import com.jme3.material.MatParamOverride;
 import com.jme3.material.Material;
 import com.jme3.math.*;
@@ -407,8 +407,8 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
     /**
      * Returns the local {@link LightList}, which are the lights
      * that were directly attached to this <code>Spatial</code> through the
-     * {@link #addLight(com.jme3.light.Light) } and
-     * {@link #removeLight(com.jme3.light.Light) } methods.
+     * {@link #addLight(com.jme3.lighting.light.Light) } and
+     * {@link #removeLight(com.jme3.lighting.light.Light) } methods.
      *
      * @return The local light list
      */
@@ -1143,7 +1143,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * <code>removeLight</code> removes the given light from the Spatial.
      *
      * @param light The light to remove.
-     * @see Spatial#addLight(com.jme3.light.Light)
+     * @see Spatial#addLight(com.jme3.lighting.light.Light)
      */
     public void removeLight(Light light) {
         localLights.remove(light);

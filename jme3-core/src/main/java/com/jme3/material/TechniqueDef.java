@@ -34,9 +34,9 @@ package com.jme3.material;
 import com.jme3.material.logic.TechniqueDefLogic;
 import com.jme3.asset.AssetManager;
 import com.jme3.export.*;
+import com.jme3.lighting.shader.*;
+import com.jme3.lighting.shader.Shader.ShaderType;
 import com.jme3.renderer.Caps;
-import com.jme3.shader.*;
-import com.jme3.shader.Shader.ShaderType;
 
 import java.io.IOException;
 import java.util.*;

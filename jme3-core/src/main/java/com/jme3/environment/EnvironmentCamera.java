@@ -35,7 +35,7 @@ import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
 import com.jme3.environment.generation.JobProgressListener;
 import com.jme3.environment.util.EnvMapUtils;
-import com.jme3.light.LightProbe;
+import com.jme3.lighting.light.LightProbe;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;

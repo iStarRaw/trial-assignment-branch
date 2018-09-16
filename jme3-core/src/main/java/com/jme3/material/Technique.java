@@ -32,15 +32,15 @@
 package com.jme3.material;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.light.LightList;
+import com.jme3.lighting.light.LightList;
+import com.jme3.lighting.shader.DefineList;
+import com.jme3.lighting.shader.Shader;
+import com.jme3.lighting.shader.VarType;
 import com.jme3.material.TechniqueDef.LightMode;
 import com.jme3.material.logic.TechniqueDefLogic;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
-import com.jme3.shader.DefineList;
-import com.jme3.shader.Shader;
-import com.jme3.shader.VarType;
 import com.jme3.util.ListMap;
 import com.jme3.util.SafeArrayList;
 import java.util.EnumSet;
