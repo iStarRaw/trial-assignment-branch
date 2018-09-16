@@ -39,10 +39,10 @@ import com.jme3.math.Vector3f;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Spatial;
-import com.jme3.scene.lighting.light.DirectionalLight;
-import com.jme3.scene.lighting.light.Light;
-import com.jme3.scene.lighting.light.PointLight;
-import com.jme3.scene.lighting.light.SpotLight;
+import com.jme3.scene.light.DirectionalLight;
+import com.jme3.scene.light.Light;
+import com.jme3.scene.light.PointLight;
+import com.jme3.scene.light.SpotLight;
 import com.jme3.util.TempVars;
 import java.io.IOException;
 

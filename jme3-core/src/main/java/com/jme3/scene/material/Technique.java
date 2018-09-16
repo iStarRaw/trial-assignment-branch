@@ -35,7 +35,7 @@ import com.jme3.asset.AssetManager;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
-import com.jme3.scene.lighting.light.LightList;
+import com.jme3.scene.light.LightList;
 import com.jme3.scene.lighting.shader.DefineList;
 import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.lighting.shader.VarType;

@@ -43,7 +43,7 @@ import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
-import com.jme3.scene.lighting.light.PointLight;
+import com.jme3.scene.light.PointLight;
 import com.jme3.scene.material.Material;
 import com.jme3.util.TempVars;
 import java.io.IOException;

@@ -36,7 +36,7 @@ import com.jme3.math.*;
 import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.*;
 import com.jme3.scene.Geometry;
-import com.jme3.scene.lighting.light.*;
+import com.jme3.scene.light.*;
 import com.jme3.scene.lighting.shader.*;
 import com.jme3.scene.material.*;
 import com.jme3.scene.material.RenderState.BlendMode;

@@ -39,7 +39,7 @@ import com.jme3.renderer.Renderer;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.instancing.InstancedGeometry;
-import com.jme3.scene.lighting.light.*;
+import com.jme3.scene.light.*;
 import com.jme3.scene.lighting.shader.DefineList;
 import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.material.TechniqueDef;

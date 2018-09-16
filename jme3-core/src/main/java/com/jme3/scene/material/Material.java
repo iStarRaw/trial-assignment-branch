@@ -41,7 +41,7 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;
-import com.jme3.scene.lighting.light.LightList;
+import com.jme3.scene.light.LightList;
 import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.lighting.shader.Uniform;
 import com.jme3.scene.lighting.shader.UniformBindingManager;

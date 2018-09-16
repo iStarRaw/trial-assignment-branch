@@ -44,7 +44,7 @@ import com.jme3.renderer.queue.GeometryList;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
-import com.jme3.scene.lighting.light.DirectionalLight;
+import com.jme3.scene.light.DirectionalLight;
 import com.jme3.scene.material.Material;
 
 import java.io.IOException;

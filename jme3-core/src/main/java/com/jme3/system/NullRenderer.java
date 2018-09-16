@@ -42,7 +42,7 @@ import com.jme3.renderer.Renderer;
 import com.jme3.renderer.Statistics;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.lighting.light.LightList;
+import com.jme3.scene.light.LightList;
 import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.lighting.shader.Shader.ShaderSource;
 import com.jme3.scene.material.RenderState;

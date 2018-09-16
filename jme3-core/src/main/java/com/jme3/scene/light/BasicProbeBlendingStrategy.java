@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2012, 2015 jMonkeyEngine
+ * Copyright (c) 2009-2015 jMonkeyEngine
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -29,59 +29,42 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.light;
+package com.jme3.scene.light;
 
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.renderer.Camera;
-import com.jme3.scene.Spatial;
-import com.jme3.util.TempVars;
+import com.jme3.scene.Geometry;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * An ambient light adds a constant color to the scene.
- * <p>
- * Ambient lights are unaffected by the surface normal, and are constant
- * regardless of the model's location. The material's ambient color is
- * multiplied by the ambient light color to get the final ambient color of
- * an object.
+ * This strategy returns the closest probe from the rendered object.
  * 
- * @author Kirill Vainer
+ * This is the most basic strategy : The fastest and the easiest.
+ * Though it has severe graphical draw backs as there might be very visible seams
+ * on static object and some "poping" on dynamic objects.
+ *
+ * @author Nehon
  */
-public class AmbientLight extends Light {
+public class BasicProbeBlendingStrategy implements LightProbeBlendingStrategy {
 
-    public AmbientLight() {
-    }
-
-    public AmbientLight(ColorRGBA color) {
-        super(color);
-    }
+    List<LightProbe> lightProbes = new ArrayList<LightProbe>();
 
     @Override
-    public boolean intersectsBox(BoundingBox box, TempVars vars) {
-        return true;
-    }
-    
-    @Override
-    public boolean intersectsSphere(BoundingSphere sphere, TempVars vars) {
-        return true;
+    public void registerProbe(LightProbe probe) {
+        lightProbes.add(probe);
     }
 
     @Override
-    public boolean intersectsFrustum(Camera camera, TempVars vars) {
-        return true;
-    }
-    
-    @Override
-    public void computeLastDistance(Spatial owner) {
-        // ambient lights must always be before directional lights.
-        lastDistance = -2;
-    }
-
-    @Override
-    public Type getType() {
-        return Type.Ambient;
+    public void populateProbes(Geometry g, LightList lightList) {
+        if (!lightProbes.isEmpty()) {
+            //The first probe is actually the closest to the geometry since the 
+            //light list is sorted according to the distance to the geom.
+            LightProbe p = lightProbes.get(0);
+            if (p.isReady()) {
+                lightList.add(p);
+            }            
+            //clearing the list for next pass.
+            lightProbes.clear();
+        }        
     }
 
 }

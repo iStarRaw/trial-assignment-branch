@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.light;
+package com.jme3.scene.light;
 
 import com.jme3.math.bounding.BoundingBox;
 import com.jme3.math.bounding.BoundingSphere;

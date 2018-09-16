@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009-2014 jMonkeyEngine
+ * Copyright (c) 2009-2012, 2015 jMonkeyEngine
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -29,44 +29,59 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.light;
+package com.jme3.scene.light;
 
+import com.jme3.math.ColorRGBA;
+import com.jme3.math.Vector3f;
+import com.jme3.math.bounding.BoundingBox;
+import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.Camera;
-import com.jme3.scene.Geometry;
+import com.jme3.scene.Spatial;
+import com.jme3.util.TempVars;
 
 /**
- * <code>LightFilter</code> is used to determine which lights should be
- * rendered for a particular {@link Geometry} + {@link Camera} combination.
+ * An ambient light adds a constant color to the scene.
+ * <p>
+ * Ambient lights are unaffected by the surface normal, and are constant
+ * regardless of the model's location. The material's ambient color is
+ * multiplied by the ambient light color to get the final ambient color of
+ * an object.
  * 
  * @author Kirill Vainer
  */
-public interface LightFilter {
+public class AmbientLight extends Light {
+
+    public AmbientLight() {
+    }
+
+    public AmbientLight(ColorRGBA color) {
+        super(color);
+    }
+
+    @Override
+    public boolean intersectsBox(BoundingBox box, TempVars vars) {
+        return true;
+    }
     
-    /**
-     * Sets the camera for which future filtering is to be done against in
-     * {@link #filterLights(com.jme3.scene.Geometry, com.jme3.light.LightList)}.
-     * 
-     * @param camera The camera to perform light filtering against.
-     */
-    public void setCamera(Camera camera);
+    @Override
+    public boolean intersectsSphere(BoundingSphere sphere, TempVars vars) {
+        return true;
+    }
+
+    @Override
+    public boolean intersectsFrustum(Camera camera, TempVars vars) {
+        return true;
+    }
     
-    /**
-     * Determine which lights on the {@link Geometry#getWorldLightList() world
-     * light list} are to be rendered.
-     * <p>
-     * The simplest implementation (e.g. one that performs no filtering) would
-     * simply copy the contents of {@link Geometry#getWorldLightList()} to
-     * {@code filteredLightList}.
-     * <p>
-     * An advanced implementation would determine if the light intersects
-     * the {@link Geometry#getWorldBound() geometry's bounding volume} and if
-     * the light intersects the frustum of the camera set in 
-     * {@link #setCamera(com.jme3.renderer.Camera)} as well as sort the lights
-     * according to some "influence" criteria - this will then provide
-     * an optimal set of lights that should be used for rendering.
-     * 
-     * @param geometry The geometry for which the light filtering is performed.
-     * @param filteredLightList The results are to be stored here. 
-     */
-    public void filterLights(Geometry geometry, LightList filteredLightList);
+    @Override
+    public void computeLastDistance(Spatial owner) {
+        // ambient lights must always be before directional lights.
+        lastDistance = -2;
+    }
+
+    @Override
+    public Type getType() {
+        return Type.Ambient;
+    }
+
 }
