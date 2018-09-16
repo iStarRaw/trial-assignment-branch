@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.animation;
+package com.jme3.cinematic.animation;
 
 import com.jme3.math.FastMath;
 import com.jme3.util.TempVars;
@@ -99,7 +99,7 @@ public final class AnimChannel {
      * 
      * For more information, see the LoopMode enum class.
      * @see LoopMode
-     * @see AnimChannel#setLoopMode(com.jme3.animation.LoopMode)
+     * @see AnimChannel#setLoopMode(com.jme3.cinematic.animation.LoopMode)
      */
     public LoopMode getLoopMode() {
         return loopMode;

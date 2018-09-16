@@ -33,7 +33,7 @@ package com.jme3.scene.debug;
 
 import java.util.Map;
 
-import com.jme3.animation.Skeleton;
+import com.jme3.cinematic.animation.Skeleton;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;

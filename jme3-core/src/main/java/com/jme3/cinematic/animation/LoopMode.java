@@ -29,46 +29,31 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.animation;
+package com.jme3.cinematic.animation;
 
-import com.jme3.export.Savable;
-import com.jme3.util.TempVars;
-
-public interface Track extends Savable, Cloneable {
+/**
+ * <code>LoopMode</code> determines how animations repeat, or if they
+ * do not repeat.
+ */
+public enum LoopMode {
+    /**
+     * The animation will play repeatedly, when it reaches the end
+     * the animation will play again from the beginning, and so on.
+     */
+    Loop,
 
     /**
-     * Sets the time of the animation.
-     * 
-     * Internally, the track will retrieve objects from the control
-     * and modify them according to the properties of the channel and the
-     * given parameters.
-     * 
-     * @param time The time in the animation
-     * @param weight The weight from 0 to 1 on how much to apply the track 
-     * @param control The control which the track should effect
-     * @param channel The channel which the track should effect
+     * The animation will not loop. It will play until the last frame, and then
+     * freeze at that frame. It is possible to decide to play a new animation
+     * when that happens by using a AnimEventListener.
      */
-    public void setTime(float time, float weight, AnimControl control, AnimChannel channel, TempVars vars);
+    DontLoop,
 
     /**
-     * @return the length of the track
+     * The animation will cycle back and forth. When reaching the end, the
+     * animation will play backwards from the last frame until it reaches
+     * the first frame.
      */
-    public float getLength();
+    Cycle,
 
-    /**
-     * This method creates a clone of the current object.
-     * @return a clone of the current object
-     */
-    public Track clone();
-    
-    /**
-     * Get the times in seconds for all keyframes.
-     * 
-     * All keyframe times should be between 0.0 and {@link #getLength() length}.
-     * Modifying the provided array is not allowed, as it may corrupt internal
-     * state.
-     * 
-     * @return the keyframe times
-     */
-    public float[] getKeyFrameTimes();
 }

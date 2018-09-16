@@ -29,41 +29,42 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.animation;
+package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.math.Vector3f;
+import com.jme3.math.Quaternion;
 import java.io.IOException;
 
 /**
- * Serialize and compress Vector3f[] by indexing same values
+ * Serialize and compress {@link Quaternion}[] by indexing same values
+ * It is converted to float[]
  * @author Lim, YongHoon
  */
-public class CompactVector3Array extends CompactArray<Vector3f> implements Savable {
+public class CompactQuaternionArray extends CompactArray<Quaternion> implements Savable {
 
     /**
-     * Creates a compact vector array
+     * creates a compact Quaternion array
      */
-    public CompactVector3Array() {
+    public CompactQuaternionArray() {
     }
 
     /**
-     * creates a compact vector array
+     * creates a compact Quaternion array
      * @param dataArray the data array
-     * @param index the indices
+     * @param index  the indices array
      */
-    public CompactVector3Array(float[] dataArray, int[] index) {
+    public CompactQuaternionArray(float[] dataArray, int[] index) {
         super(dataArray, index);
     }
 
     @Override
     protected final int getTupleSize() {
-        return 3;
+        return 4;
     }
 
     @Override
-    protected final Class<Vector3f> getElementClass() {
-        return Vector3f.class;
+    protected final Class<Quaternion> getElementClass() {
+        return Quaternion.class;
     }
 
     @Override
@@ -80,19 +81,20 @@ public class CompactVector3Array extends CompactArray<Vector3f> implements Savab
         array = in.readFloatArray("array", null);
         index = in.readIntArray("index", null);
     }
-    
+
     @Override
-    protected void serialize(int i, Vector3f store) {
-        int j = i*getTupleSize();
+    protected void serialize(int i, Quaternion store) {
+        int j = i * getTupleSize();
         array[j] = store.getX();
-        array[j+1] = store.getY();
-        array[j+2] = store.getZ();
+        array[j + 1] = store.getY();
+        array[j + 2] = store.getZ();
+        array[j + 3] = store.getW();
     }
 
     @Override
-    protected Vector3f deserialize(int i, Vector3f store) {
-        int j = i*getTupleSize();
-        store.set(array[j], array[j+1], array[j+2]);
+    protected Quaternion deserialize(int i, Quaternion store) {
+        int j = i * getTupleSize();
+        store.set(array[j], array[j + 1], array[j + 2], array[j + 3]);
         return store;
     }
 }

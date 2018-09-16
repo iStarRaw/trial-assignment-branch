@@ -29,11 +29,11 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.animation;
+package com.jme3.cinematic.animation;
 
-import static com.jme3.animation.LoopMode.Cycle;
-import static com.jme3.animation.LoopMode.DontLoop;
-import static com.jme3.animation.LoopMode.Loop;
+import static com.jme3.cinematic.animation.LoopMode.Cycle;
+import static com.jme3.cinematic.animation.LoopMode.DontLoop;
+import static com.jme3.cinematic.animation.LoopMode.Loop;
 
 /**
  *

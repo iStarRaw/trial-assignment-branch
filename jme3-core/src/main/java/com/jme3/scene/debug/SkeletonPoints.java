@@ -31,8 +31,8 @@
  */
 package com.jme3.scene.debug;
 
-import com.jme3.animation.Bone;
-import com.jme3.animation.Skeleton;
+import com.jme3.cinematic.animation.Bone;
+import com.jme3.cinematic.animation.Skeleton;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;

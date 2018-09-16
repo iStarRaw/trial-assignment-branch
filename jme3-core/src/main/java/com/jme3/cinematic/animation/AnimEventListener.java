@@ -29,31 +29,34 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.animation;
+package com.jme3.cinematic.animation;
 
 /**
- * <code>LoopMode</code> determines how animations repeat, or if they
- * do not repeat.
+ * <code>AnimEventListener</code> allows user code to receive various
+ * events regarding an AnimControl. For example, when an animation cycle is done.
+ * 
+ * @author Kirill Vainer
  */
-public enum LoopMode {
-    /**
-     * The animation will play repeatedly, when it reaches the end
-     * the animation will play again from the beginning, and so on.
-     */
-    Loop,
+public interface AnimEventListener {
 
     /**
-     * The animation will not loop. It will play until the last frame, and then
-     * freeze at that frame. It is possible to decide to play a new animation
-     * when that happens by using a AnimEventListener.
+     * Invoked when an animation "cycle" is done. For non-looping animations,
+     * this event is invoked when the animation is finished playing. For
+     * looping animations, this even is invoked each time the animation is restarted.
+     *
+     * @param control The control to which the listener is assigned.
+     * @param channel The channel being altered
+     * @param animName The new animation that is done.
      */
-    DontLoop,
+    public void onAnimCycleDone(AnimControl control, AnimChannel channel, String animName);
 
     /**
-     * The animation will cycle back and forth. When reaching the end, the
-     * animation will play backwards from the last frame until it reaches
-     * the first frame.
+     * Invoked when a animation is set to play by the user on the given channel.
+     *
+     * @param control The control to which the listener is assigned.
+     * @param channel The channel being altered
+     * @param animName The new animation name set.
      */
-    Cycle,
+    public void onAnimChange(AnimControl control, AnimChannel channel, String animName);
 
 }

@@ -31,12 +31,12 @@
  */
 package com.jme3.cinematic.events;
 
-import com.jme3.animation.AnimationUtils;
-import com.jme3.animation.LoopMode;
 import com.jme3.app.Application;
 import com.jme3.cinematic.Cinematic;
 import com.jme3.cinematic.MotionPath;
 import com.jme3.cinematic.PlayState;
+import com.jme3.cinematic.animation.AnimationUtils;
+import com.jme3.cinematic.animation.LoopMode;
 import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;

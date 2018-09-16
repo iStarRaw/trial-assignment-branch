@@ -29,34 +29,46 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.animation;
+package com.jme3.cinematic.animation;
 
-/**
- * <code>AnimEventListener</code> allows user code to receive various
- * events regarding an AnimControl. For example, when an animation cycle is done.
- * 
- * @author Kirill Vainer
- */
-public interface AnimEventListener {
+import com.jme3.export.Savable;
+import com.jme3.util.TempVars;
+
+public interface Track extends Savable, Cloneable {
 
     /**
-     * Invoked when an animation "cycle" is done. For non-looping animations,
-     * this event is invoked when the animation is finished playing. For
-     * looping animations, this even is invoked each time the animation is restarted.
-     *
-     * @param control The control to which the listener is assigned.
-     * @param channel The channel being altered
-     * @param animName The new animation that is done.
+     * Sets the time of the animation.
+     * 
+     * Internally, the track will retrieve objects from the control
+     * and modify them according to the properties of the channel and the
+     * given parameters.
+     * 
+     * @param time The time in the animation
+     * @param weight The weight from 0 to 1 on how much to apply the track 
+     * @param control The control which the track should effect
+     * @param channel The channel which the track should effect
      */
-    public void onAnimCycleDone(AnimControl control, AnimChannel channel, String animName);
+    public void setTime(float time, float weight, AnimControl control, AnimChannel channel, TempVars vars);
 
     /**
-     * Invoked when a animation is set to play by the user on the given channel.
-     *
-     * @param control The control to which the listener is assigned.
-     * @param channel The channel being altered
-     * @param animName The new animation name set.
+     * @return the length of the track
      */
-    public void onAnimChange(AnimControl control, AnimChannel channel, String animName);
+    public float getLength();
 
+    /**
+     * This method creates a clone of the current object.
+     * @return a clone of the current object
+     */
+    public Track clone();
+    
+    /**
+     * Get the times in seconds for all keyframes.
+     * 
+     * All keyframe times should be between 0.0 and {@link #getLength() length}.
+     * Modifying the provided array is not allowed, as it may corrupt internal
+     * state.
+     * 
+     * @return the keyframe times
+     */
+    public float[] getKeyFrameTimes();
 }
