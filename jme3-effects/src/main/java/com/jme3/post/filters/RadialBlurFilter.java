@@ -39,8 +39,8 @@ import com.jme3.export.OutputCapsule;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
-import com.jme3.scene.lighting.shader.VarType;
 import com.jme3.scene.material.Material;
+import com.jme3.scene.shader.VarType;
 
 import java.io.IOException;
 

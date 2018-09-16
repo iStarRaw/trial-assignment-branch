@@ -44,11 +44,11 @@ import com.jme3.scene.light.Light;
 import com.jme3.scene.light.LightList;
 import com.jme3.scene.light.PointLight;
 import com.jme3.scene.light.SpotLight;
-import com.jme3.scene.lighting.shader.DefineList;
-import com.jme3.scene.lighting.shader.Shader;
-import com.jme3.scene.lighting.shader.Uniform;
-import com.jme3.scene.lighting.shader.VarType;
 import com.jme3.scene.material.TechniqueDef;
+import com.jme3.scene.shader.DefineList;
+import com.jme3.scene.shader.Shader;
+import com.jme3.scene.shader.Uniform;
+import com.jme3.scene.shader.VarType;
 
 import java.util.ArrayList;
 import java.util.EnumSet;

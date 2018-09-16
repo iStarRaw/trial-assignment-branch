@@ -58,9 +58,9 @@ import com.jme3.renderer.post.Filter.Pass;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
-import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.material.MatParam;
 import com.jme3.scene.material.Material;
+import com.jme3.scene.shader.Shader;
 import com.jme3.scene.shape.Box;
 
 /**

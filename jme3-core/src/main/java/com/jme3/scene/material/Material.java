@@ -42,14 +42,14 @@ import com.jme3.renderer.Renderer;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.light.LightList;
-import com.jme3.scene.lighting.shader.Shader;
-import com.jme3.scene.lighting.shader.Uniform;
-import com.jme3.scene.lighting.shader.UniformBindingManager;
-import com.jme3.scene.lighting.shader.VarType;
 import com.jme3.scene.material.RenderState.BlendMode;
 import com.jme3.scene.material.RenderState.FaceCullMode;
 import com.jme3.scene.material.TechniqueDef.LightMode;
 import com.jme3.scene.material.TechniqueDef.ShadowMode;
+import com.jme3.scene.shader.Shader;
+import com.jme3.scene.shader.Uniform;
+import com.jme3.scene.shader.UniformBindingManager;
+import com.jme3.scene.shader.VarType;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
 import com.jme3.texture.image.ColorSpace;
@@ -432,7 +432,7 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
      *
      * @return a collection of all parameters set on this material.
      *
-     * @see #setParam(java.lang.String, com.jme3.scene.lighting.shader.VarType, java.lang.Object)
+     * @see #setParam(java.lang.String, com.jme3.scene.shader.VarType, java.lang.Object)
      */
     public Collection<MatParam> getParams() {
         return paramValues.values();
@@ -443,7 +443,7 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
      *
      * @return a ListMap of all parameters set on this material.
      *
-     * @see #setParam(java.lang.String, com.jme3.scene.lighting.shader.VarType, java.lang.Object)
+     * @see #setParam(java.lang.String, com.jme3.scene.shader.VarType, java.lang.Object)
      */
     public ListMap<String, MatParam> getParamsMap() {
         return paramValues;

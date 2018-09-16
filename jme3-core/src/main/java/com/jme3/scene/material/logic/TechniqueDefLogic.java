@@ -36,11 +36,11 @@ import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.light.LightList;
-import com.jme3.scene.lighting.shader.DefineList;
-import com.jme3.scene.lighting.shader.Shader;
-import com.jme3.scene.lighting.shader.Uniform;
-import com.jme3.scene.lighting.shader.UniformBinding;
 import com.jme3.scene.material.TechniqueDef.LightMode;
+import com.jme3.scene.shader.DefineList;
+import com.jme3.scene.shader.Shader;
+import com.jme3.scene.shader.Uniform;
+import com.jme3.scene.shader.UniformBinding;
 import com.jme3.texture.Texture;
 import java.util.EnumSet;
 
@@ -89,7 +89,7 @@ public interface TechniqueDefLogic {
      * 
      * @param renderManager The render manager to perform the rendering against.
      * * @param shader The shader that was selected by this logic in 
-     * {@link #makeCurrent(com.jme3.asset.AssetManager, com.jme3.renderer.RenderManager, java.util.EnumSet, com.jme3.scene.lighting.shader.DefineList)}.
+     * {@link #makeCurrent(com.jme3.asset.AssetManager, com.jme3.renderer.RenderManager, java.util.EnumSet, com.jme3.scene.shader.DefineList)}.
      * @param geometry The geometry to render
      * @param lights Lights which influence the geometry.
      */

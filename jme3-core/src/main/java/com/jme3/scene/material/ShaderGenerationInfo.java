@@ -36,7 +36,7 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.export.Savable;
-import com.jme3.scene.lighting.shader.ShaderNodeVariable;
+import com.jme3.scene.shader.ShaderNodeVariable;
 
 import java.io.IOException;
 import java.util.ArrayList;

@@ -33,7 +33,7 @@ package com.jme3.scene.material;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.export.*;
-import com.jme3.scene.lighting.shader.VarType;
+import com.jme3.scene.shader.VarType;
 import com.jme3.texture.image.ColorSpace;
 
 import java.io.IOException;

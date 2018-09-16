@@ -34,9 +34,9 @@ package com.jme3.renderer;
 import com.jme3.math.ColorRGBA;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.lighting.shader.Shader;
-import com.jme3.scene.lighting.shader.Shader.ShaderSource;
 import com.jme3.scene.material.RenderState;
+import com.jme3.scene.shader.Shader;
+import com.jme3.scene.shader.Shader.ShaderSource;
 import com.jme3.system.AppSettings;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
@@ -172,7 +172,7 @@ public interface Renderer {
      * the attached shader sources.
      * 
      * @param shader Shader to delete.
-     * @see #deleteShaderSource(com.jme3.scene.lighting.shader.Shader.ShaderSource) 
+     * @see #deleteShaderSource(com.jme3.scene.shader.Shader.ShaderSource) 
      */
     public void deleteShader(Shader shader);
 

@@ -34,8 +34,8 @@ package com.jme3.renderer;
 import com.jme3.math.ColorRGBA;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.material.RenderState;
+import com.jme3.scene.shader.Shader;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 
@@ -116,12 +116,12 @@ public class RenderContext {
     public boolean wireframe = false;
 
     /**
-     * @see Renderer#setShader(com.jme3.scene.lighting.shader.Shader) 
+     * @see Renderer#setShader(com.jme3.scene.shader.Shader) 
      */
     public int boundShaderProgram;
     
     /**
-     * @see Renderer#setShader(com.jme3.scene.lighting.shader.Shader) 
+     * @see Renderer#setShader(com.jme3.scene.shader.Shader) 
      */
     public Shader boundShader;
 
