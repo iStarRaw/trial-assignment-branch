@@ -33,9 +33,9 @@ package com.jme3.post.filters;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.lighting.material.Material;
-import com.jme3.post.Filter;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
+import com.jme3.renderer.post.Filter;
 
 /**
  * A Post Processing filter to change colors appear with sharp edges as if the

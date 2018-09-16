@@ -901,7 +901,7 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
      * <li>{@link #getAdditionalRenderState() Material Instance Additional RenderState}
      * - i.e. ad-hoc renderstate set per model</li>
      * <li>{@link RenderManager#getForcedRenderState() RenderManager's Forced RenderState}
-     * - i.e. renderstate requested by a {@link com.jme3.post.SceneProcessor} or
+     * - i.e. renderstate requested by a {@link com.jme3.renderer.post.SceneProcessor} or
      * post-processing filter.</li></ol>
      * <li>If the technique {@link TechniqueDef#isUsingShaders() uses a shader}, then the uniforms of the shader must be updated.<ul>
      * <li>Uniforms bound to material parameters are updated based on the current material parameter values.</li>

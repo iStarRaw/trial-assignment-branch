@@ -41,8 +41,8 @@ import com.jme3.audio.AudioKey;
 import com.jme3.font.BitmapFont;
 import com.jme3.lighting.material.Material;
 import com.jme3.lighting.shader.ShaderGenerator;
-import com.jme3.post.FilterPostProcessor;
 import com.jme3.renderer.Caps;
+import com.jme3.renderer.post.FilterPostProcessor;
 import com.jme3.scene.Spatial;
 import com.jme3.texture.Texture;
 

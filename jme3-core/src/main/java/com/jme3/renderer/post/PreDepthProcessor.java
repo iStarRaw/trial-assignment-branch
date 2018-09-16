@@ -29,65 +29,71 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.post;
+package com.jme3.renderer.post;
 
+import com.jme3.asset.AssetManager;
+import com.jme3.lighting.material.Material;
+import com.jme3.lighting.material.RenderState;
+import com.jme3.lighting.material.RenderState.FaceCullMode;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
 
 /**
- * Scene processors are used to compute/render things before and after the classic render of the scene.
- * They have to be added to a viewport and are rendered in the order they've been added
- *
- * @author Kirill Vainer
+ * Processor that lays depth first, this can improve performance in complex
+ * scenes.
  */
-public interface SceneProcessor {
+public class PreDepthProcessor implements SceneProcessor {
 
-    /**
-     * Called in the render thread to initialize the scene processor.
-     *
-     * @param rm The render manager to which the SP was added to
-     * @param vp The viewport to which the SP is assigned
-     */
-    public void initialize(RenderManager rm, ViewPort vp);
+    private RenderManager rm;
+    private ViewPort vp;
+    private AssetManager assetManager;
+    private Material preDepth;
+    private RenderState forcedRS;
 
-    /**
-     * Called when the resolution of the viewport has been changed.
-     * @param vp
-     */
-    public void reshape(ViewPort vp, int w, int h);
+    public PreDepthProcessor(AssetManager assetManager){
+        this.assetManager = assetManager;
+        preDepth = new Material(assetManager, "Common/MatDefs/Shadow/PreShadow.j3md");
+        preDepth.getAdditionalRenderState().setPolyOffset(0, 0);
+        preDepth.getAdditionalRenderState().setFaceCullMode(FaceCullMode.Back);
 
-    /**
-     * @return True if initialize() has been called on this SceneProcessor,
-     * false if otherwise.
-     */
-    public boolean isInitialized();
+        forcedRS = new RenderState();
+        forcedRS.setDepthTest(true);
+        forcedRS.setDepthWrite(false);
+    }
 
-    /**
-     * Called before a frame
-     *
-     * @param tpf Time per frame
-     */
-    public void preFrame(float tpf);
+    public void initialize(RenderManager rm, ViewPort vp) {
+        this.rm = rm;
+        this.vp = vp;
+    }
 
-    /**
-     * Called after the scene graph has been queued, but before it is flushed.
-     *
-     * @param rq The render queue
-     */
-    public void postQueue(RenderQueue rq);
+    public void reshape(ViewPort vp, int w, int h) {
+        this.vp = vp;
+    }
 
-    /**
-     * Called after a frame has been rendered and the queue flushed.
-     *
-     * @param out The FB to which the scene was rendered.
-     */
-    public void postFrame(FrameBuffer out);
+    public boolean isInitialized() {
+        return vp != null;
+    }
 
-    /**
-     * Called when the SP is removed from the RM.
-     */
-    public void cleanup();
+    public void preFrame(float tpf) {
+    }
+
+    public void postQueue(RenderQueue rq) {
+        // lay depth first
+        rm.setForcedMaterial(preDepth);
+        rq.renderQueue(RenderQueue.Bucket.Opaque, rm, vp.getCamera(), false);
+        rm.setForcedMaterial(null);
+
+        rm.setForcedRenderState(forcedRS);
+    }
+
+    public void postFrame(FrameBuffer out) {
+        rm.setForcedRenderState(null);
+    }
+
+    public void cleanup() {
+        vp = null;
+    }
 
 }

@@ -44,7 +44,7 @@ import com.jme3.lighting.shader.Shader;
 import com.jme3.lighting.shader.UniformBinding;
 import com.jme3.lighting.shader.UniformBindingManager;
 import com.jme3.math.*;
-import com.jme3.post.SceneProcessor;
+import com.jme3.renderer.post.SceneProcessor;
 import com.jme3.renderer.profile.AppProfiler;
 import com.jme3.renderer.profile.AppStep;
 import com.jme3.renderer.profile.VpStep;

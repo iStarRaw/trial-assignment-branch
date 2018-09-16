@@ -32,7 +32,7 @@
 package com.jme3.renderer;
 
 import com.jme3.math.ColorRGBA;
-import com.jme3.post.SceneProcessor;
+import com.jme3.renderer.post.SceneProcessor;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
@@ -110,7 +110,7 @@ public class ViewPort {
      * 
      * @return the list of processors attached to this ViewPort
      * 
-     * @see #addProcessor(com.jme3.post.SceneProcessor) 
+     * @see #addProcessor(com.jme3.renderer.post.SceneProcessor) 
      */
     public SafeArrayList<SceneProcessor> getProcessors(){
         return processors;

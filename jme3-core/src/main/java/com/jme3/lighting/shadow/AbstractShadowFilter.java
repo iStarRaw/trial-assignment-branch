@@ -40,9 +40,9 @@ import com.jme3.lighting.material.Material;
 import com.jme3.lighting.material.RenderState;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Vector4f;
-import com.jme3.post.Filter;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
+import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
 

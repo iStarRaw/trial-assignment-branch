@@ -32,9 +32,9 @@
 package com.jme3.lighting.light;
 
 import com.jme3.bounding.BoundingSphere;
-import com.jme3.post.SceneProcessor;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
+import com.jme3.renderer.post.SceneProcessor;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Spatial;
 import com.jme3.texture.FrameBuffer;
