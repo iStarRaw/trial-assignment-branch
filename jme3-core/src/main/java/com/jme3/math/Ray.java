@@ -32,11 +32,11 @@
 package com.jme3.math;
 
 import com.jme3.bounding.BoundingVolume;
-import com.jme3.collision.Collidable;
-import com.jme3.collision.CollisionResult;
-import com.jme3.collision.CollisionResults;
-import com.jme3.collision.UnsupportedCollisionException;
 import com.jme3.export.*;
+import com.jme3.movement.collision.Collidable;
+import com.jme3.movement.collision.CollisionResult;
+import com.jme3.movement.collision.CollisionResults;
+import com.jme3.movement.collision.UnsupportedCollisionException;
 import com.jme3.util.TempVars;
 import java.io.IOException;
 

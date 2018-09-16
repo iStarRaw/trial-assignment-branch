@@ -29,24 +29,31 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.collision;
+package com.jme3.movement.collision;
 
 /**
- * Interface for Collidable objects.
- * Classes that implement this interface are marked as collidable, meaning
- * they support collision detection between other objects that are also
- * collidable.
+ * Thrown by {@link Collidable} when the requested collision query could not
+ * be completed because one of the collidables does not support colliding with
+ * the other.
  * 
  * @author Kirill Vainer
  */
-public interface Collidable {
+public class UnsupportedCollisionException extends UnsupportedOperationException {
 
-    /**
-     * Check collision with another Collidable.
-     * 
-     * @param other The object to check collision against
-     * @param results Will contain the list of {@link CollisionResult}s.
-     * @return how many collisions were found between this and other
-     */
-    public int collideWith(Collidable other, CollisionResults results) throws UnsupportedCollisionException;
+    public UnsupportedCollisionException(Throwable arg0) {
+        super(arg0);
+    }
+
+    public UnsupportedCollisionException(String arg0, Throwable arg1) {
+        super(arg0, arg1);
+    }
+
+    public UnsupportedCollisionException(String arg0) {
+        super(arg0);
+    }
+
+    public UnsupportedCollisionException() {
+        super();
+    }
+    
 }
