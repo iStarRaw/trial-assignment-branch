@@ -32,13 +32,14 @@
 package com.jme3.font.plugins;
 
 import com.jme3.asset.*;
-import com.jme3.font.BitmapCharacter;
-import com.jme3.font.BitmapCharacterSet;
-import com.jme3.font.BitmapFont;
 import com.jme3.scene.lighting.material.Material;
 import com.jme3.scene.lighting.material.MaterialDef;
 import com.jme3.scene.lighting.material.RenderState.BlendMode;
 import com.jme3.texture.Texture;
+import com.jme3.util.font.BitmapCharacter;
+import com.jme3.util.font.BitmapCharacterSet;
+import com.jme3.util.font.BitmapFont;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

@@ -32,8 +32,6 @@
 package com.jme3.app;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.font.BitmapFont;
-import com.jme3.font.BitmapText;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Statistics;
 import com.jme3.renderer.ViewPort;
@@ -43,6 +41,8 @@ import com.jme3.scene.Spatial;
 import com.jme3.scene.control.Control;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
+import com.jme3.util.font.BitmapFont;
+import com.jme3.util.font.BitmapText;
 
 /**
  * The <code>StatsView</code> provides a heads-up display (HUD) of various

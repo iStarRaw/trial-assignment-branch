@@ -29,11 +29,11 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.font;
+package com.jme3.util.font;
 
-import com.jme3.font.BitmapFont.Align;
-import com.jme3.font.BitmapFont.VAlign;
 import com.jme3.math.ColorRGBA;
+import com.jme3.util.font.BitmapFont.Align;
+import com.jme3.util.font.BitmapFont.VAlign;
 
 /**
  * Defines a String that is to be drawn in one block that can be constrained by a {@link Rectangle}. Also holds
