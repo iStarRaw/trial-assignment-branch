@@ -31,11 +31,11 @@
  */
 package com.jme3.scene;
 
+import com.jme3.cinematic.collision.Collidable;
+import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.export.Savable;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.movement.collision.Collidable;
-import com.jme3.movement.collision.CollisionResults;
 
 /**
  * <code>CollisionData</code> is an interface that can be used to 

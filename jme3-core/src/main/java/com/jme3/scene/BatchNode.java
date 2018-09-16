@@ -40,10 +40,10 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.jme3.cinematic.collision.Collidable;
+import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Vector3f;
-import com.jme3.movement.collision.Collidable;
-import com.jme3.movement.collision.CollisionResults;
 import com.jme3.scene.lighting.material.Material;
 import com.jme3.scene.mesh.IndexBuffer;
 import com.jme3.util.SafeArrayList;

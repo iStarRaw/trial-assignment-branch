@@ -30,7 +30,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.jme3.movement.collision;
+package com.jme3.cinematic.collision;
 
 import com.jme3.math.Vector3f;
 
