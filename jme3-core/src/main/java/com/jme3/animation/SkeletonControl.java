@@ -32,9 +32,9 @@
 package com.jme3.animation;
 
 import com.jme3.export.*;
+import com.jme3.lighting.material.MatParam;
+import com.jme3.lighting.material.Material;
 import com.jme3.lighting.shader.VarType;
-import com.jme3.material.MatParam;
-import com.jme3.material.Material;
 import com.jme3.math.FastMath;
 import com.jme3.math.Matrix4f;
 import com.jme3.renderer.RenderManager;

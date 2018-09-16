@@ -29,11 +29,11 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.material;
+package com.jme3.lighting.material;
 
-import com.jme3.material.logic.TechniqueDefLogic;
 import com.jme3.asset.AssetManager;
 import com.jme3.export.*;
+import com.jme3.lighting.material.logic.TechniqueDefLogic;
 import com.jme3.lighting.shader.*;
 import com.jme3.lighting.shader.Shader.ShaderType;
 import com.jme3.renderer.Caps;
@@ -263,7 +263,7 @@ public class TechniqueDef implements Savable {
     /**
      * Returns the render state that this technique is using
      * @return the render state that this technique is using
-     * @see #setRenderState(com.jme3.material.RenderState)
+     * @see #setRenderState(com.jme3.lighting.material.RenderState)
      */
     public RenderState getRenderState() {
         return renderState;

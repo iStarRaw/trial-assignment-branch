@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.material.logic;
+package com.jme3.lighting.material.logic;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.lighting.light.AmbientLight;
@@ -38,12 +38,12 @@ import com.jme3.lighting.light.Light;
 import com.jme3.lighting.light.LightList;
 import com.jme3.lighting.light.PointLight;
 import com.jme3.lighting.light.SpotLight;
+import com.jme3.lighting.material.RenderState;
+import com.jme3.lighting.material.TechniqueDef;
 import com.jme3.lighting.shader.DefineList;
 import com.jme3.lighting.shader.Shader;
 import com.jme3.lighting.shader.Uniform;
 import com.jme3.lighting.shader.VarType;
-import com.jme3.material.RenderState;
-import com.jme3.material.TechniqueDef;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;

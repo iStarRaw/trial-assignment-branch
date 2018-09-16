@@ -36,7 +36,7 @@ import com.jme3.app.state.BaseAppState;
 import com.jme3.bounding.BoundingSphere;
 import com.jme3.lighting.light.Light;
 import com.jme3.lighting.light.LightProbe;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;

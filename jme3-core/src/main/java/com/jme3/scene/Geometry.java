@@ -39,7 +39,7 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.Matrix4f;
 import com.jme3.renderer.Camera;
 import com.jme3.scene.VertexBuffer.Type;
@@ -259,7 +259,7 @@ public class Geometry extends Spatial {
      *
      * @return the material that is used for this geometry
      *
-     * @see #setMaterial(com.jme3.material.Material)
+     * @see #setMaterial(com.jme3.lighting.material.Material)
      */
     public Material getMaterial() {
         return material;

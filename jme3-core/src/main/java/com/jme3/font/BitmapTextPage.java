@@ -31,7 +31,7 @@
  */
 package com.jme3.font;
 
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;

@@ -29,15 +29,15 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.material;
+package com.jme3.lighting.material;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.lighting.light.LightList;
+import com.jme3.lighting.material.TechniqueDef.LightMode;
+import com.jme3.lighting.material.logic.TechniqueDefLogic;
 import com.jme3.lighting.shader.DefineList;
 import com.jme3.lighting.shader.Shader;
 import com.jme3.lighting.shader.VarType;
-import com.jme3.material.TechniqueDef.LightMode;
-import com.jme3.material.logic.TechniqueDefLogic;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Geometry;

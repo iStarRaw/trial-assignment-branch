@@ -38,8 +38,8 @@ import com.jme3.collision.Collidable;
 import com.jme3.export.*;
 import com.jme3.lighting.light.Light;
 import com.jme3.lighting.light.LightList;
-import com.jme3.material.MatParamOverride;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.MatParamOverride;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.*;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
@@ -627,7 +627,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
     /**
      * Remove all local material parameter overrides.
      *
-     * @see #addMatParamOverride(com.jme3.material.MatParamOverride)
+     * @see #addMatParamOverride(com.jme3.lighting.material.MatParamOverride)
      */
     public void clearMatParamOverrides() {
         if (!localOverrides.isEmpty()) {

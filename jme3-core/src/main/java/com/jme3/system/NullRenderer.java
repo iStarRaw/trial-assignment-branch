@@ -35,9 +35,9 @@ import java.nio.ByteBuffer;
 import java.util.EnumSet;
 
 import com.jme3.lighting.light.LightList;
+import com.jme3.lighting.material.RenderState;
 import com.jme3.lighting.shader.Shader;
 import com.jme3.lighting.shader.Shader.ShaderSource;
-import com.jme3.material.RenderState;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Matrix4f;
 import com.jme3.renderer.Caps;

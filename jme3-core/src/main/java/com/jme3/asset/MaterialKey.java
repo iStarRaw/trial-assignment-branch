@@ -33,7 +33,7 @@ package com.jme3.asset;
 
 import com.jme3.asset.cache.AssetCache;
 import com.jme3.asset.cache.WeakRefCloneAssetCache;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 
 /**
  * Used for loading {@link Material materials} only (not material definitions!).

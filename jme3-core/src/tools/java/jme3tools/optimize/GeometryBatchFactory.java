@@ -1,6 +1,6 @@
 package jme3tools.optimize;
 
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Transform;
 import com.jme3.math.Vector3f;

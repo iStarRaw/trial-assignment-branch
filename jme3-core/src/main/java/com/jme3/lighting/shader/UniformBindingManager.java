@@ -31,7 +31,7 @@
  */
 package com.jme3.lighting.shader;
 
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.*;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;

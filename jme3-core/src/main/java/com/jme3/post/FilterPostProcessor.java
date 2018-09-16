@@ -33,7 +33,7 @@ package com.jme3.post;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.export.*;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.renderer.*;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;

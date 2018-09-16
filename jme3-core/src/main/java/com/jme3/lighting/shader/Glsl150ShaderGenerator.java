@@ -32,8 +32,8 @@
 package com.jme3.lighting.shader;
 
 import com.jme3.asset.AssetManager;
+import com.jme3.lighting.material.ShaderGenerationInfo;
 import com.jme3.lighting.shader.Shader.ShaderType;
-import com.jme3.material.ShaderGenerationInfo;
 
 /**
  * This shader Generator can generate Vertex and Fragment shaders from

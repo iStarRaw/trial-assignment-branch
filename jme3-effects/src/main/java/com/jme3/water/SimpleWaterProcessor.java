@@ -32,7 +32,7 @@
 package com.jme3.water;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.*;
 import com.jme3.post.SceneProcessor;
 import com.jme3.renderer.Camera;

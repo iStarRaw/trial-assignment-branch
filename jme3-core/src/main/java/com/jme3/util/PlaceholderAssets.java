@@ -34,7 +34,7 @@ package com.jme3.util;
 import com.jme3.asset.AssetManager;
 import com.jme3.audio.AudioBuffer;
 import com.jme3.audio.AudioData;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.shape.Box;

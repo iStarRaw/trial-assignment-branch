@@ -34,7 +34,7 @@ package com.jme3.util;
 import com.jme3.asset.AssetManager;
 import com.jme3.asset.TextureKey;
 import com.jme3.bounding.BoundingSphere;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;

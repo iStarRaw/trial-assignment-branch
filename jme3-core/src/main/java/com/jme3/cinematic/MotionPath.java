@@ -34,7 +34,7 @@ package com.jme3.cinematic;
 import com.jme3.asset.AssetManager;
 import com.jme3.cinematic.events.MotionEvent;
 import com.jme3.export.*;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Spline;
 import com.jme3.math.Spline.SplineType;

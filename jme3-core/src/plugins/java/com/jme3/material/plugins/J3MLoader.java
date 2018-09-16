@@ -31,18 +31,17 @@
  */
 package com.jme3.material.plugins;
 
-import com.jme3.material.logic.*;
 import com.jme3.asset.*;
+import com.jme3.lighting.material.*;
+import com.jme3.lighting.material.RenderState.BlendEquation;
+import com.jme3.lighting.material.RenderState.BlendMode;
+import com.jme3.lighting.material.RenderState.FaceCullMode;
+import com.jme3.lighting.material.TechniqueDef.LightMode;
+import com.jme3.lighting.material.TechniqueDef.ShadowMode;
+import com.jme3.lighting.material.logic.*;
 import com.jme3.lighting.shader.DefineList;
 import com.jme3.lighting.shader.Shader;
 import com.jme3.lighting.shader.VarType;
-import com.jme3.material.*;
-import com.jme3.material.RenderState.BlendEquation;
-import com.jme3.material.RenderState.BlendMode;
-import com.jme3.material.RenderState.FaceCullMode;
-import com.jme3.material.TechniqueDef.LightMode;
-import com.jme3.material.TechniqueDef.ShadowMode;
-import com.jme3.material.logic.StaticPassLightingLogic;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;

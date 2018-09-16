@@ -33,10 +33,10 @@ package com.jme3.lighting.shader;
 
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
+import com.jme3.lighting.material.ShaderGenerationInfo;
+import com.jme3.lighting.material.Technique;
+import com.jme3.lighting.material.TechniqueDef;
 import com.jme3.lighting.shader.Shader.ShaderType;
-import com.jme3.material.ShaderGenerationInfo;
-import com.jme3.material.Technique;
-import com.jme3.material.TechniqueDef;
 
 import java.util.List;
 import java.util.regex.*;

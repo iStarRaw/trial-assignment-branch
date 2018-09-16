@@ -37,7 +37,7 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.lighting.light.PointLight;
-import com.jme3.material.Material;
+import com.jme3.lighting.material.Material;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.queue.GeometryList;

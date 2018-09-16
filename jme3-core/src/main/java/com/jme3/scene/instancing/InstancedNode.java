@@ -31,7 +31,6 @@
  */
 package com.jme3.scene.instancing;
 
-import com.jme3.material.Material;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.scene.Geometry;
@@ -43,7 +42,8 @@ import com.jme3.scene.UserData;
 import com.jme3.scene.control.Control;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
-import com.jme3.material.MatParam;
+import com.jme3.lighting.material.MatParam;
+import com.jme3.lighting.material.Material;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
 import java.io.IOException;
