@@ -35,10 +35,6 @@ import com.jme3.asset.AssetKey;
 import com.jme3.asset.CloneableSmartAsset;
 import com.jme3.bounding.BoundingVolume;
 import com.jme3.export.*;
-import com.jme3.lighting.light.Light;
-import com.jme3.lighting.light.LightList;
-import com.jme3.lighting.material.MatParamOverride;
-import com.jme3.lighting.material.Material;
 import com.jme3.math.*;
 import com.jme3.movement.collision.Collidable;
 import com.jme3.renderer.Camera;
@@ -48,6 +44,10 @@ import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 import com.jme3.scene.control.Control;
+import com.jme3.scene.lighting.light.Light;
+import com.jme3.scene.lighting.light.LightList;
+import com.jme3.scene.lighting.material.MatParamOverride;
+import com.jme3.scene.lighting.material.Material;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.IdentityCloneFunction;
 import com.jme3.util.clone.JmeCloneable;
@@ -407,8 +407,8 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
     /**
      * Returns the local {@link LightList}, which are the lights
      * that were directly attached to this <code>Spatial</code> through the
-     * {@link #addLight(com.jme3.lighting.light.Light) } and
-     * {@link #removeLight(com.jme3.lighting.light.Light) } methods.
+     * {@link #addLight(com.jme3.scene.lighting.light.Light) } and
+     * {@link #removeLight(com.jme3.scene.lighting.light.Light) } methods.
      *
      * @return The local light list
      */
@@ -627,7 +627,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
     /**
      * Remove all local material parameter overrides.
      *
-     * @see #addMatParamOverride(com.jme3.lighting.material.MatParamOverride)
+     * @see #addMatParamOverride(com.jme3.scene.lighting.material.MatParamOverride)
      */
     public void clearMatParamOverrides() {
         if (!localOverrides.isEmpty()) {
@@ -1143,7 +1143,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * <code>removeLight</code> removes the given light from the Spatial.
      *
      * @param light The light to remove.
-     * @see Spatial#addLight(com.jme3.lighting.light.Light)
+     * @see Spatial#addLight(com.jme3.scene.lighting.light.Light)
      */
     public void removeLight(Light light) {
         localLights.remove(light);

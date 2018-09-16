@@ -51,9 +51,6 @@ import com.jme3.app.state.AppStateManager;
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
-import com.jme3.lighting.material.MatParam;
-import com.jme3.lighting.material.Material;
-import com.jme3.lighting.shader.Shader;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.RendererException;
 import com.jme3.renderer.post.Filter;
@@ -61,6 +58,9 @@ import com.jme3.renderer.post.Filter.Pass;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
+import com.jme3.scene.lighting.material.MatParam;
+import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.shape.Box;
 
 /**

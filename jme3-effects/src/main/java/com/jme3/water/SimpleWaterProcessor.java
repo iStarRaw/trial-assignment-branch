@@ -32,7 +32,6 @@
 package com.jme3.water;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.lighting.material.Material;
 import com.jme3.math.*;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
@@ -42,6 +41,7 @@ import com.jme3.renderer.post.SceneProcessor;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
+import com.jme3.scene.lighting.material.Material;
 import com.jme3.scene.shape.Quad;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image.Format;

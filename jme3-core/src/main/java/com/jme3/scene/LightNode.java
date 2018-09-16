@@ -33,9 +33,9 @@ package com.jme3.scene;
 
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
-import com.jme3.lighting.light.Light;
 import com.jme3.scene.control.LightControl;
 import com.jme3.scene.control.LightControl.ControlDirection;
+import com.jme3.scene.lighting.light.Light;
 import com.jme3.util.clone.Cloner;
 import java.io.IOException;
 

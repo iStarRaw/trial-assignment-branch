@@ -32,10 +32,10 @@
 package com.jme3.renderer.post;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.lighting.material.Material;
 import com.jme3.math.Vector2f;
 import com.jme3.renderer.*;
 import com.jme3.renderer.queue.RenderQueue;
+import com.jme3.scene.lighting.material.Material;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;

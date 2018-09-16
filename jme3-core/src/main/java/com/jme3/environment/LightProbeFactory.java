@@ -35,11 +35,11 @@ import com.jme3.environment.generation.JobProgressListener;
 import com.jme3.environment.generation.PrefilteredEnvMapFaceGenerator;
 import com.jme3.environment.generation.IrradianceMapGenerator;
 import com.jme3.environment.util.EnvMapUtils;
-import com.jme3.lighting.light.LightProbe;
 import com.jme3.environment.generation.JobProgressAdapter;
 import com.jme3.app.Application;
 import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
+import com.jme3.scene.lighting.light.LightProbe;
 import com.jme3.texture.TextureCubeMap;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
@@ -53,7 +53,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
  * 1. Create an EnvironmentCamera
  * 2. give it a position in the scene
  * 3. call {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, com.jme3.scene.Node)}
- * 4. add the created LightProbe to a node with the {@link Node#addLight(com.jme3.lighting.light.Light) } method.
+ * 4. add the created LightProbe to a node with the {@link Node#addLight(com.jme3.scene.lighting.light.Light) } method.
  * 
  * Optionally for step 3 call {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, com.jme3.scene.Node, com.jme3.environment.generation.JobProgressListener) }
  * with a {@link JobProgressListener} to be notified of the progress of the generation process.

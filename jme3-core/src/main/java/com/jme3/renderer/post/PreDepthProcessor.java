@@ -32,12 +32,12 @@
 package com.jme3.renderer.post;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.lighting.material.Material;
-import com.jme3.lighting.material.RenderState;
-import com.jme3.lighting.material.RenderState.FaceCullMode;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
+import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.lighting.material.RenderState;
+import com.jme3.scene.lighting.material.RenderState.FaceCullMode;
 import com.jme3.texture.FrameBuffer;
 
 /**

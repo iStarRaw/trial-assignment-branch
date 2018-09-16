@@ -31,8 +31,8 @@
  */
 package com.jme3.renderer;
 
-import com.jme3.lighting.shader.Shader;
 import com.jme3.scene.Mesh;
+import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.util.IntMap;

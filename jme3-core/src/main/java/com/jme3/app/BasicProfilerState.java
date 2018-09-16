@@ -37,12 +37,12 @@ import com.jme3.app.input.KeyInput;
 import com.jme3.app.input.controls.ActionListener;
 import com.jme3.app.input.controls.KeyTrigger;
 import com.jme3.app.state.BaseAppState;
-import com.jme3.lighting.material.Material;
-import com.jme3.lighting.material.RenderState.BlendMode;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.Node;
 import com.jme3.scene.VertexBuffer.Type;
+import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.lighting.material.RenderState.BlendMode;
 
 
 /**

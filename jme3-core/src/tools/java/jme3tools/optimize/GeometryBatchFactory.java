@@ -1,6 +1,5 @@
 package jme3tools.optimize;
 
-import com.jme3.lighting.material.Material;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Transform;
 import com.jme3.math.Vector3f;
@@ -9,6 +8,7 @@ import com.jme3.scene.Mesh.Mode;
 import com.jme3.scene.VertexBuffer.Format;
 import com.jme3.scene.VertexBuffer.Type;
 import com.jme3.scene.VertexBuffer.Usage;
+import com.jme3.scene.lighting.material.Material;
 import com.jme3.scene.mesh.IndexBuffer;
 import com.jme3.util.BufferUtils;
 import java.nio.Buffer;
