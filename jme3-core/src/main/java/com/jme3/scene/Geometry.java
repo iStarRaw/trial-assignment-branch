@@ -42,7 +42,7 @@ import com.jme3.math.Matrix4f;
 import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.renderer.Camera;
 import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.IdentityCloneFunction;
 import com.jme3.util.TempVars;
@@ -259,7 +259,7 @@ public class Geometry extends Spatial {
      *
      * @return the material that is used for this geometry
      *
-     * @see #setMaterial(com.jme3.scene.lighting.material.Material)
+     * @see #setMaterial(com.jme3.scene.material.Material)
      */
     public Material getMaterial() {
         return material;

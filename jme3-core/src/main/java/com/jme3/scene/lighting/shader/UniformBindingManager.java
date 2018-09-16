@@ -34,7 +34,7 @@ package com.jme3.scene.lighting.shader;
 import com.jme3.math.*;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 import com.jme3.system.Timer;
 import java.util.ArrayList;
 

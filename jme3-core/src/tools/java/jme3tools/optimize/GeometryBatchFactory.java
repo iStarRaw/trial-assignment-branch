@@ -8,7 +8,7 @@ import com.jme3.scene.Mesh.Mode;
 import com.jme3.scene.VertexBuffer.Format;
 import com.jme3.scene.VertexBuffer.Type;
 import com.jme3.scene.VertexBuffer.Usage;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 import com.jme3.scene.mesh.IndexBuffer;
 import com.jme3.util.BufferUtils;
 import java.nio.Buffer;

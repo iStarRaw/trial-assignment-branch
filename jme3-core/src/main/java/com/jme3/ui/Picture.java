@@ -37,8 +37,8 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;
-import com.jme3.scene.lighting.material.Material;
-import com.jme3.scene.lighting.material.RenderState.BlendMode;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.material.RenderState.BlendMode;
 import com.jme3.scene.shape.Quad;
 import com.jme3.texture.Texture2D;
 

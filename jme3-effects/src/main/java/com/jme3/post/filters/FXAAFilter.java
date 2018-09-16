@@ -35,7 +35,7 @@ import com.jme3.asset.AssetManager;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 
 /**
  * <a href="http://www.geeks3d.com/20110405/fxaa-fast-approximate-anti-aliasing-demo-glsl-opengl-test-radeon-geforce/3/" rel="nofollow">http://www.geeks3d.com/20110405/fxaa-fast-approximate-anti-aliasing-demo-glsl-<span class="domtooltips" title="OpenGL (Open Graphics Library) is a standard specification defining a cross-language, cross-platform API for writing applications that produce 2D and 3D computer graphics." id="domtooltipsspan11">opengl</span>-test-radeon-geforce/3/</a>

@@ -43,9 +43,9 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.lighting.material.Material;
 import com.jme3.scene.lighting.shadow.PssmShadowRenderer.CompareMode;
 import com.jme3.scene.lighting.shadow.PssmShadowRenderer.FilterMode;
+import com.jme3.scene.material.Material;
 import com.jme3.texture.FrameBuffer;
 import java.io.IOException;
 

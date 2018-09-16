@@ -36,7 +36,7 @@ import com.jme3.audio.AudioBuffer;
 import com.jme3.audio.AudioData;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.Spatial;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 import com.jme3.scene.shape.Box;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;

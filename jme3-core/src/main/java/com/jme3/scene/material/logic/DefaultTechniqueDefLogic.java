@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.material.logic;
+package com.jme3.scene.material.logic;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.math.ColorRGBA;
@@ -40,9 +40,9 @@ import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.instancing.InstancedGeometry;
 import com.jme3.scene.lighting.light.*;
-import com.jme3.scene.lighting.material.TechniqueDef;
 import com.jme3.scene.lighting.shader.DefineList;
 import com.jme3.scene.lighting.shader.Shader;
+import com.jme3.scene.material.TechniqueDef;
 
 import java.util.EnumSet;
 

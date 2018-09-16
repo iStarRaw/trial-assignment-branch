@@ -44,7 +44,7 @@ import com.jme3.cinematic.collision.Collidable;
 import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Vector3f;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 import com.jme3.scene.mesh.IndexBuffer;
 import com.jme3.util.SafeArrayList;
 import com.jme3.util.TempVars;
@@ -348,7 +348,7 @@ public class BatchNode extends GeometryGroupNode {
      *
      * @return the material that is used for the first batch of this BatchNode
      *
-     * @see #setMaterial(com.jme3.scene.lighting.material.Material)
+     * @see #setMaterial(com.jme3.scene.material.Material)
      */
     public Material getMaterial() {
         if (!batches.isEmpty()) {

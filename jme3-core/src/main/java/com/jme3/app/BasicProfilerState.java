@@ -41,8 +41,8 @@ import com.jme3.scene.Geometry;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.Node;
 import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.scene.lighting.material.Material;
-import com.jme3.scene.lighting.material.RenderState.BlendMode;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.material.RenderState.BlendMode;
 
 
 /**

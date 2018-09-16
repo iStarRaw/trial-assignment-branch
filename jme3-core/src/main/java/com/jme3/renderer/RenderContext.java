@@ -34,8 +34,8 @@ package com.jme3.renderer;
 import com.jme3.math.ColorRGBA;
 import com.jme3.scene.Mesh;
 import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.lighting.material.RenderState;
 import com.jme3.scene.lighting.shader.Shader;
+import com.jme3.scene.material.RenderState;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 
@@ -46,7 +46,7 @@ import com.jme3.texture.Image;
 public class RenderContext {
 
     /**
-     * @see RenderState#setFaceCullMode(com.jme3.scene.lighting.material.RenderState.FaceCullMode)
+     * @see RenderState#setFaceCullMode(com.jme3.scene.material.RenderState.FaceCullMode)
      */
     public RenderState.FaceCullMode cullMode = RenderState.FaceCullMode.Off;
 
@@ -96,17 +96,17 @@ public class RenderContext {
     public float lineWidth = 1;
 
     /**
-     * @see RenderState#setBlendMode(com.jme3.scene.lighting.material.RenderState.BlendMode) 
+     * @see RenderState#setBlendMode(com.jme3.scene.material.RenderState.BlendMode) 
      */
     public RenderState.BlendMode blendMode = RenderState.BlendMode.Off;
 
     /**
-     * @see RenderState#setBlendEquation(com.jme3.scene.lighting.material.RenderState.BlendEquation) 
+     * @see RenderState#setBlendEquation(com.jme3.scene.material.RenderState.BlendEquation) 
      */
     public RenderState.BlendEquation blendEquation = RenderState.BlendEquation.Add;
     
     /**
-     * @see RenderState#setBlendEquationAlpha(com.jme3.scene.lighting.material.RenderState.BlendEquationAlpha) 
+     * @see RenderState#setBlendEquationAlpha(com.jme3.scene.material.RenderState.BlendEquationAlpha) 
      */
     public RenderState.BlendEquationAlpha blendEquationAlpha = RenderState.BlendEquationAlpha.InheritColor;
 

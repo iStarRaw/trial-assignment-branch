@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.material;
+package com.jme3.scene.material;
 
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
@@ -42,14 +42,14 @@ import com.jme3.renderer.Renderer;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.lighting.light.LightList;
-import com.jme3.scene.lighting.material.RenderState.BlendMode;
-import com.jme3.scene.lighting.material.RenderState.FaceCullMode;
-import com.jme3.scene.lighting.material.TechniqueDef.LightMode;
-import com.jme3.scene.lighting.material.TechniqueDef.ShadowMode;
 import com.jme3.scene.lighting.shader.Shader;
 import com.jme3.scene.lighting.shader.Uniform;
 import com.jme3.scene.lighting.shader.UniformBindingManager;
 import com.jme3.scene.lighting.shader.VarType;
+import com.jme3.scene.material.RenderState.BlendMode;
+import com.jme3.scene.material.RenderState.FaceCullMode;
+import com.jme3.scene.material.TechniqueDef.LightMode;
+import com.jme3.scene.material.TechniqueDef.ShadowMode;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
 import com.jme3.texture.image.ColorSpace;

@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.material.logic;
+package com.jme3.scene.material.logic;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.math.*;
@@ -37,9 +37,9 @@ import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.*;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.lighting.light.*;
-import com.jme3.scene.lighting.material.*;
-import com.jme3.scene.lighting.material.RenderState.BlendMode;
 import com.jme3.scene.lighting.shader.*;
+import com.jme3.scene.material.*;
+import com.jme3.scene.material.RenderState.BlendMode;
 import com.jme3.util.TempVars;
 
 import java.util.EnumSet;

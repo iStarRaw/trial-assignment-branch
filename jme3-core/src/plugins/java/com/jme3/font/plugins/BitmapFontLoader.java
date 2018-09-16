@@ -32,9 +32,9 @@
 package com.jme3.font.plugins;
 
 import com.jme3.asset.*;
-import com.jme3.scene.lighting.material.Material;
-import com.jme3.scene.lighting.material.MaterialDef;
-import com.jme3.scene.lighting.material.RenderState.BlendMode;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.material.MaterialDef;
+import com.jme3.scene.material.RenderState.BlendMode;
 import com.jme3.texture.Texture;
 import com.jme3.util.font.BitmapCharacter;
 import com.jme3.util.font.BitmapCharacterSet;

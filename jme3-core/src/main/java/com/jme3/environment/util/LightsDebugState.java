@@ -40,7 +40,7 @@ import com.jme3.scene.Node;
 import com.jme3.scene.Spatial;
 import com.jme3.scene.lighting.light.Light;
 import com.jme3.scene.lighting.light.LightProbe;
-import com.jme3.scene.lighting.material.Material;
+import com.jme3.scene.material.Material;
 import com.jme3.scene.shape.Sphere;
 import java.util.ArrayList;
 import java.util.HashMap;
