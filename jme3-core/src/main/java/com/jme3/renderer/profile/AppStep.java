@@ -30,7 +30,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
  
-package com.jme3.profile;
+package com.jme3.renderer.profile;
 
 
 /**

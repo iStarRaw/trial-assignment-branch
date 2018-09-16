@@ -30,34 +30,22 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
  
-package com.jme3.profile;
-
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
+package com.jme3.renderer.profile;
 
 
 /**
- *  Can be hooked into the application (and render manager)
- *  to receive callbacks about specific frame steps.  It is up
- *  to the specific implememtation to decide what to do with
- *  the information.
+ *  Indicates a ViewPort-level step within the profiled
+ *  frame.
  *
  *  @author    Paul Speed
  */
-public interface AppProfiler {
-
-    /**
-     *  Called at the beginning of the specified AppStep.
-     */
-    public void appStep(AppStep step);
-    
-    /**
-     *  Called at the beginning of the specified VpStep during
-     *  the rendering of the specified ViewPort.  For bucket-specific
-     *  steps the Bucket parameter will be non-null.
-     */
-    public void vpStep(VpStep step, ViewPort vp, Bucket bucket);
-    
+public enum VpStep {
+    BeginRender,
+    RenderScene,
+    PostQueue,
+    FlushQueue,
+    PostFrame,
+    RenderBucket,
+    EndRender
 }
-
 
