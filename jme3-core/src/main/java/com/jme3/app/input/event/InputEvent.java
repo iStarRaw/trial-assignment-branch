@@ -29,9 +29,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input.event;
+package com.jme3.app.input.event;
 
-import com.jme3.input.Input;
+import com.jme3.app.input.Input;
 
 /**
  * An abstract input event.

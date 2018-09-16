@@ -31,12 +31,12 @@
  */
 package com.jme3.system;
 
-import com.jme3.input.JoyInput;
-import com.jme3.input.KeyInput;
-import com.jme3.input.MouseInput;
-import com.jme3.input.TouchInput;
-import com.jme3.input.dummy.DummyKeyInput;
-import com.jme3.input.dummy.DummyMouseInput;
+import com.jme3.app.input.JoyInput;
+import com.jme3.app.input.KeyInput;
+import com.jme3.app.input.MouseInput;
+import com.jme3.app.input.TouchInput;
+import com.jme3.app.input.dummy.DummyKeyInput;
+import com.jme3.app.input.dummy.DummyMouseInput;
 import com.jme3.opencl.Context;
 import com.jme3.renderer.Renderer;
 import java.util.concurrent.atomic.AtomicBoolean;

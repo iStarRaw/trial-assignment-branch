@@ -29,11 +29,12 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input;
+package com.jme3.app.input;
 
-import com.jme3.input.controls.JoyAxisTrigger;
-import com.jme3.input.controls.JoyButtonTrigger;
 import java.util.*;
+
+import com.jme3.app.input.controls.JoyAxisTrigger;
+import com.jme3.app.input.controls.JoyButtonTrigger;
 
 /**
  * A joystick represents a single joystick that is installed in the system.

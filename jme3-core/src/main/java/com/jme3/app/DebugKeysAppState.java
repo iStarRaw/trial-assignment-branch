@@ -31,12 +31,12 @@
  */
 package com.jme3.app;
 
+import com.jme3.app.input.InputManager;
+import com.jme3.app.input.KeyInput;
+import com.jme3.app.input.controls.ActionListener;
+import com.jme3.app.input.controls.KeyTrigger;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.input.InputManager;
-import com.jme3.input.KeyInput;
-import com.jme3.input.controls.ActionListener;
-import com.jme3.input.controls.KeyTrigger;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;

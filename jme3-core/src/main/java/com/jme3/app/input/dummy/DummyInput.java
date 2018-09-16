@@ -29,10 +29,10 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input.dummy;
+package com.jme3.app.input.dummy;
 
-import com.jme3.input.Input;
-import com.jme3.input.RawInputListener;
+import com.jme3.app.input.Input;
+import com.jme3.app.input.RawInputListener;
 
 /**
  * DummyInput as an implementation of <code>Input</code> that raises no

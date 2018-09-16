@@ -29,9 +29,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input.controls;
+package com.jme3.app.input.controls;
 
-import com.jme3.input.event.TouchEvent;
+import com.jme3.app.input.event.TouchEvent;
 
 /**
  * <code>TouchListener</code> is used to receive events of inputs from smartphone touch devices 

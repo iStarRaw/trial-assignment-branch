@@ -31,10 +31,10 @@
  */
 package com.jme3.system;
 
-import com.jme3.input.JoyInput;
-import com.jme3.input.KeyInput;
-import com.jme3.input.MouseInput;
-import com.jme3.input.TouchInput;
+import com.jme3.app.input.JoyInput;
+import com.jme3.app.input.KeyInput;
+import com.jme3.app.input.MouseInput;
+import com.jme3.app.input.TouchInput;
 import com.jme3.renderer.Renderer;
 
 /**

@@ -31,9 +31,9 @@
  */
 package com.jme3.system;
 
+import com.jme3.app.input.SoftTextDialogInput;
 import com.jme3.asset.AssetManager;
 import com.jme3.audio.AudioRenderer;
-import com.jme3.input.SoftTextDialogInput;
 import com.jme3.texture.Image;
 import com.jme3.texture.image.DefaultImageRaster;
 import com.jme3.texture.image.ImageRaster;

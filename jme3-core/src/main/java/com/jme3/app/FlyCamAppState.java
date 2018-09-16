@@ -31,9 +31,9 @@
  */
 package com.jme3.app;
 
+import com.jme3.app.input.FlyByCamera;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.input.FlyByCamera;
 
 
 /**

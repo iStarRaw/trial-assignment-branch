@@ -31,16 +31,16 @@
  */
 package com.jme3.app;
 
+import com.jme3.app.input.CameraInput;
+import com.jme3.app.input.InputManager;
+import com.jme3.app.input.MouseInput;
+import com.jme3.app.input.controls.ActionListener;
+import com.jme3.app.input.controls.AnalogListener;
+import com.jme3.app.input.controls.MouseAxisTrigger;
+import com.jme3.app.input.controls.MouseButtonTrigger;
+import com.jme3.app.input.controls.Trigger;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.input.CameraInput;
-import com.jme3.input.InputManager;
-import com.jme3.input.MouseInput;
-import com.jme3.input.controls.ActionListener;
-import com.jme3.input.controls.AnalogListener;
-import com.jme3.input.controls.MouseAxisTrigger;
-import com.jme3.input.controls.MouseButtonTrigger;
-import com.jme3.input.controls.Trigger;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;

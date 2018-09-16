@@ -29,9 +29,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input.controls;
+package com.jme3.app.input.controls;
 
-import com.jme3.input.KeyInput;
+import com.jme3.app.input.KeyInput;
 
 /**
  * A <code>KeyTrigger</code> is used as a mapping to keyboard keys.

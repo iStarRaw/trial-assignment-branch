@@ -29,9 +29,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input.dummy;
+package com.jme3.app.input.dummy;
 
-import com.jme3.input.MouseInput;
+import com.jme3.app.input.MouseInput;
 
 /**
  * DummyMouseInput as an implementation of <code>MouseInput</code> that raises no

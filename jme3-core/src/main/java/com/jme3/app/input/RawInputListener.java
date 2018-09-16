@@ -29,9 +29,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input;
+package com.jme3.app.input;
 
-import com.jme3.input.event.*;
+import com.jme3.app.input.event.*;
 
 /**
  * An interface used for receiving raw input from devices.

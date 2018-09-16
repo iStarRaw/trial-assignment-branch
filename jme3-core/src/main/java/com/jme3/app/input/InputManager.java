@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.input;
+package com.jme3.app.input;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,24 +37,24 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.jme3.app.Application;
-import com.jme3.input.controls.ActionListener;
-import com.jme3.input.controls.AnalogListener;
-import com.jme3.input.controls.InputListener;
-import com.jme3.input.controls.JoyAxisTrigger;
-import com.jme3.input.controls.JoyButtonTrigger;
-import com.jme3.input.controls.KeyTrigger;
-import com.jme3.input.controls.MouseAxisTrigger;
-import com.jme3.input.controls.MouseButtonTrigger;
-import com.jme3.input.controls.TouchListener;
-import com.jme3.input.controls.TouchTrigger;
-import com.jme3.input.controls.Trigger;
-import com.jme3.input.event.InputEvent;
-import com.jme3.input.event.JoyAxisEvent;
-import com.jme3.input.event.JoyButtonEvent;
-import com.jme3.input.event.KeyInputEvent;
-import com.jme3.input.event.MouseButtonEvent;
-import com.jme3.input.event.MouseMotionEvent;
-import com.jme3.input.event.TouchEvent;
+import com.jme3.app.input.controls.ActionListener;
+import com.jme3.app.input.controls.AnalogListener;
+import com.jme3.app.input.controls.InputListener;
+import com.jme3.app.input.controls.JoyAxisTrigger;
+import com.jme3.app.input.controls.JoyButtonTrigger;
+import com.jme3.app.input.controls.KeyTrigger;
+import com.jme3.app.input.controls.MouseAxisTrigger;
+import com.jme3.app.input.controls.MouseButtonTrigger;
+import com.jme3.app.input.controls.TouchListener;
+import com.jme3.app.input.controls.TouchTrigger;
+import com.jme3.app.input.controls.Trigger;
+import com.jme3.app.input.event.InputEvent;
+import com.jme3.app.input.event.JoyAxisEvent;
+import com.jme3.app.input.event.JoyButtonEvent;
+import com.jme3.app.input.event.KeyInputEvent;
+import com.jme3.app.input.event.MouseButtonEvent;
+import com.jme3.app.input.event.MouseMotionEvent;
+import com.jme3.app.input.event.TouchEvent;
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector2f;
 import com.jme3.util.IntMap;
@@ -528,7 +528,7 @@ public class InputManager implements RawInputListener {
      * @param mappingNames The mapping names which the listener will receive
      * events from.
      *
-     * @see InputManager#removeListener(com.jme3.input.controls.InputListener)
+     * @see InputManager#removeListener(com.jme3.app.input.controls.InputListener)
      */
     public void addListener(InputListener listener, String... mappingNames) {
         for (String mappingName : mappingNames) {
@@ -548,11 +548,11 @@ public class InputManager implements RawInputListener {
      *
      * <p>This will unregister the listener from any mappings that it
      * was previously registered with via
-     * {@link InputManager#addListener(com.jme3.input.controls.InputListener, java.lang.String[]) }.
+     * {@link InputManager#addListener(com.jme3.app.input.controls.InputListener, java.lang.String[]) }.
      *
      * @param listener The listener to unregister.
      *
-     * @see InputManager#addListener(com.jme3.input.controls.InputListener, java.lang.String[])
+     * @see InputManager#addListener(com.jme3.app.input.controls.InputListener, java.lang.String[])
      */
     public void removeListener(InputListener listener) {
         for (Mapping mapping : mappings.values()) {
@@ -602,7 +602,7 @@ public class InputManager implements RawInputListener {
      *
      * @param mappingName The mapping name to check.
      *
-     * @see InputManager#addMapping(java.lang.String, com.jme3.input.controls.Trigger[])
+     * @see InputManager#addMapping(java.lang.String, com.jme3.app.input.controls.Trigger[])
      * @see InputManager#deleteMapping(java.lang.String)
      */
     public boolean hasMapping(String mappingName) {
@@ -618,7 +618,7 @@ public class InputManager implements RawInputListener {
      *
      * @param mappingName The mapping name to unregister.
      *
-     * @see InputManager#addMapping(java.lang.String, com.jme3.input.controls.Trigger[])
+     * @see InputManager#addMapping(java.lang.String, com.jme3.app.input.controls.Trigger[])
      */
     public void deleteMapping(String mappingName) {
         Mapping mapping = mappings.remove(mappingName);
@@ -752,7 +752,7 @@ public class InputManager implements RawInputListener {
      *
      * @param listener The listener to cease receiving raw input events.
      *
-     * @see InputManager#addRawInputListener(com.jme3.input.RawInputListener)
+     * @see InputManager#addRawInputListener(com.jme3.app.input.RawInputListener)
      */
     public void removeRawInputListener(RawInputListener listener) {
         rawListeners.remove(listener);
@@ -761,7 +761,7 @@ public class InputManager implements RawInputListener {
     /**
      * Clears all {@link RawInputListener}s.
      *
-     * @see InputManager#addRawInputListener(com.jme3.input.RawInputListener)
+     * @see InputManager#addRawInputListener(com.jme3.app.input.RawInputListener)
      */
     public void clearRawInputListeners() {
         rawListeners.clear();

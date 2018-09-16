@@ -43,14 +43,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.jme3.app.Application;
+import com.jme3.app.input.InputManager;
+import com.jme3.app.input.controls.ActionListener;
+import com.jme3.app.input.controls.Trigger;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
-import com.jme3.input.InputManager;
-import com.jme3.input.controls.ActionListener;
-import com.jme3.input.controls.Trigger;
 import com.jme3.material.MatParam;
 import com.jme3.material.Material;
 import com.jme3.post.Filter;

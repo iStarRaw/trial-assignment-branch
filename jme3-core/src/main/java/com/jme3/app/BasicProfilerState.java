@@ -32,11 +32,11 @@
  
 package com.jme3.app;
 
+import com.jme3.app.input.InputManager;
+import com.jme3.app.input.KeyInput;
+import com.jme3.app.input.controls.ActionListener;
+import com.jme3.app.input.controls.KeyTrigger;
 import com.jme3.app.state.BaseAppState;
-import com.jme3.input.InputManager;
-import com.jme3.input.KeyInput;
-import com.jme3.input.controls.ActionListener;
-import com.jme3.input.controls.KeyTrigger;
 import com.jme3.material.Material;
 import com.jme3.material.RenderState.BlendMode;
 import com.jme3.scene.Geometry;
