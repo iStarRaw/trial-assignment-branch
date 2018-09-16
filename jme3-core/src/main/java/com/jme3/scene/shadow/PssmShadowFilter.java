@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.scene.lighting.shadow;
+package com.jme3.scene.shadow;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.export.InputCapsule;
@@ -43,9 +43,9 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.lighting.shadow.PssmShadowRenderer.CompareMode;
-import com.jme3.scene.lighting.shadow.PssmShadowRenderer.FilterMode;
 import com.jme3.scene.material.Material;
+import com.jme3.scene.shadow.PssmShadowRenderer.CompareMode;
+import com.jme3.scene.shadow.PssmShadowRenderer.FilterMode;
 import com.jme3.texture.FrameBuffer;
 import java.io.IOException;
 
