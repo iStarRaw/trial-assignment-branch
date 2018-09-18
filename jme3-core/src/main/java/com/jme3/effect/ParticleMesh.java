@@ -33,8 +33,8 @@ package com.jme3.effect;
 
 import com.jme3.math.Matrix3f;
 import com.jme3.renderer.Camera;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.material.RenderState;
+import com.scene.Mesh;
+import com.scene.material.RenderState;
 
 /**
  * The <code>ParticleMesh</code> is the underlying visual implementation of a 

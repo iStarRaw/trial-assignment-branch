@@ -39,12 +39,13 @@ import com.jme3.math.Spline;
 import com.jme3.math.Spline.SplineType;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
-import com.jme3.scene.Geometry;
-import com.jme3.scene.Node;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.shape.Box;
-import com.jme3.scene.shape.Curve;
 import com.jme3.util.TempVars;
+import com.scene.Geometry;
+import com.scene.Node;
+import com.scene.material.Material;
+import com.scene.shape.Box;
+import com.scene.shape.Curve;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;

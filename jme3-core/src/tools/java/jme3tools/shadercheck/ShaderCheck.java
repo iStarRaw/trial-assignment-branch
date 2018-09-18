@@ -5,12 +5,13 @@ import com.jme3.asset.plugins.ClasspathLocator;
 import com.jme3.asset.plugins.FileLocator;
 import com.jme3.material.plugins.J3MLoader;
 import com.jme3.renderer.Caps;
-import com.jme3.scene.material.MaterialDef;
-import com.jme3.scene.material.TechniqueDef;
-import com.jme3.scene.shader.DefineList;
-import com.jme3.scene.shader.Shader;
 import com.jme3.shader.plugins.GLSLLoader;
 import com.jme3.system.JmeSystem;
+import com.scene.material.MaterialDef;
+import com.scene.material.TechniqueDef;
+import com.scene.shader.DefineList;
+import com.scene.shader.Shader;
+
 import java.util.EnumSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;

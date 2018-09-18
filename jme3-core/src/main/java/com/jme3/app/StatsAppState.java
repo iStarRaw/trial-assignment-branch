@@ -36,12 +36,12 @@ import com.jme3.app.state.AppStateManager;
 import com.jme3.font.BitmapFont;
 import com.jme3.font.BitmapText;
 import com.jme3.math.ColorRGBA;
-import com.jme3.scene.Geometry;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial.CullHint;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.material.RenderState.BlendMode;
-import com.jme3.scene.shape.Quad;
+import com.scene.Geometry;
+import com.scene.Node;
+import com.scene.Spatial.CullHint;
+import com.scene.material.Material;
+import com.scene.material.RenderState.BlendMode;
+import com.scene.shape.Quad;
 
 
 /**

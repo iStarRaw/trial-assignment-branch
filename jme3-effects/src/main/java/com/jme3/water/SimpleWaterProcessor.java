@@ -39,10 +39,6 @@ import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.SceneProcessor;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.Geometry;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.shape.Quad;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image.Format;
 import com.jme3.texture.Texture;
@@ -50,6 +46,10 @@ import com.jme3.texture.Texture.WrapMode;
 import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
 import com.jme3.util.TempVars;
+import com.scene.Geometry;
+import com.scene.Spatial;
+import com.scene.material.Material;
+import com.scene.shape.Quad;
 
 /**
  *

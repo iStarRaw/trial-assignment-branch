@@ -31,8 +31,8 @@
  */
 package com.jme3.cinematic.animation;
 
-import com.jme3.scene.Spatial;
 import com.jme3.util.clone.JmeCloneable;
+import com.scene.Spatial;
 
 /**
  * An interface that allow to clone a Track for a given Spatial.

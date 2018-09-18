@@ -35,10 +35,10 @@ import com.jme3.font.BitmapFont.Align;
 import com.jme3.font.BitmapFont.VAlign;
 import com.jme3.math.ColorRGBA;
 import com.jme3.renderer.RenderManager;
-import com.jme3.scene.Node;
-import com.jme3.scene.material.MatParam;
-import com.jme3.scene.material.Material;
 import com.jme3.util.clone.Cloner;
+import com.scene.Node;
+import com.scene.material.MatParam;
+import com.scene.material.Material;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

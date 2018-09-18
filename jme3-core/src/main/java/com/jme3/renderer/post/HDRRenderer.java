@@ -35,7 +35,6 @@ import com.jme3.asset.AssetManager;
 import com.jme3.math.Vector2f;
 import com.jme3.renderer.*;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.material.Material;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
@@ -44,6 +43,8 @@ import com.jme3.texture.Texture.MagFilter;
 import com.jme3.texture.Texture.MinFilter;
 import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
+import com.scene.material.Material;
+
 import java.util.Collection;
 import java.util.logging.Logger;
 

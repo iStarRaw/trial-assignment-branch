@@ -36,7 +36,8 @@ import com.jme3.cinematic.collision.bih.BIHNode.BIHStackData;
 import com.jme3.math.*;
 import com.jme3.math.bounding.BoundingBox;
 import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.scene.Spatial;
+import com.scene.Spatial;
+
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.ArrayList;

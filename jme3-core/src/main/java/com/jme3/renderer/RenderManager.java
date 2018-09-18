@@ -40,22 +40,23 @@ import com.jme3.renderer.queue.GeometryList;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
-import com.jme3.scene.*;
-import com.jme3.scene.light.DefaultLightFilter;
-import com.jme3.scene.light.LightFilter;
-import com.jme3.scene.light.LightList;
-import com.jme3.scene.material.MatParamOverride;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.material.MaterialDef;
-import com.jme3.scene.material.RenderState;
-import com.jme3.scene.material.Technique;
-import com.jme3.scene.material.TechniqueDef;
-import com.jme3.scene.shader.Shader;
-import com.jme3.scene.shader.UniformBinding;
-import com.jme3.scene.shader.UniformBindingManager;
 import com.jme3.system.NullRenderer;
 import com.jme3.system.Timer;
 import com.jme3.util.SafeArrayList;
+import com.scene.*;
+import com.scene.light.DefaultLightFilter;
+import com.scene.light.LightFilter;
+import com.scene.light.LightList;
+import com.scene.material.MatParamOverride;
+import com.scene.material.Material;
+import com.scene.material.MaterialDef;
+import com.scene.material.RenderState;
+import com.scene.material.Technique;
+import com.scene.material.TechniqueDef;
+import com.scene.shader.Shader;
+import com.scene.shader.UniformBinding;
+import com.scene.shader.UniformBindingManager;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -360,7 +361,7 @@ public class RenderManager {
 
     /**
      * Returns the forced render state previously set with 
-     * {@link #setForcedRenderState(com.jme3.scene.material.RenderState) }.
+     * {@link #setForcedRenderState(com.scene.material.RenderState) }.
      * @return the forced render state
      */
     public RenderState getForcedRenderState() {
@@ -415,14 +416,14 @@ public class RenderManager {
      * <p>
      * If the specified technique name is available on the geometry's
      * material, then it is used, otherwise, the 
-     * {@link #setForcedMaterial(com.jme3.scene.material.Material) forced material} is used.
+     * {@link #setForcedMaterial(com.scene.material.Material) forced material} is used.
      * If a forced material is not set and the forced technique name cannot
      * be found on the material, the geometry will <em>not</em> be rendered.
      * 
      * @param forcedTechnique The forced technique name to use, set to null
      * to return to normal functionality.
      * 
-     * @see #renderGeometry(com.jme3.scene.Geometry) 
+     * @see #renderGeometry(com.scene.Geometry) 
      */
     public void setForcedTechnique(String forcedTechnique) {
         this.forcedTechnique = forcedTechnique;
@@ -437,7 +438,7 @@ public class RenderManager {
      *
      * @param override The override to add
      * @see MatParamOverride
-     * @see #removeForcedMatParam(com.jme3.scene.material.MatParamOverride)
+     * @see #removeForcedMatParam(com.scene.material.MatParamOverride)
      */
     public void addForcedMatParam(MatParamOverride override) {
         forcedOverrides.add(override);
@@ -447,7 +448,7 @@ public class RenderManager {
      * Remove a forced material parameter previously added.
      *
      * @param override The override to remove.
-     * @see #addForcedMatParam(com.jme3.scene.material.MatParamOverride)
+     * @see #addForcedMatParam(com.scene.material.MatParamOverride)
      */
     public void removeForcedMatParam(MatParamOverride override) {
         forcedOverrides.remove(override);
@@ -457,8 +458,8 @@ public class RenderManager {
      * Get the forced material parameters applied to rendered geometries.
      * <p>
      * Forced parameters can be added via
-     * {@link #addForcedMatParam(com.jme3.scene.material.MatParamOverride)} or removed
-     * via {@link #removeForcedMatParam(com.jme3.scene.material.MatParamOverride)}.
+     * {@link #addForcedMatParam(com.scene.material.MatParamOverride)} or removed
+     * via {@link #removeForcedMatParam(com.scene.material.MatParamOverride)}.
      *
      * @return The forced material parameters.
      */
@@ -508,8 +509,8 @@ public class RenderManager {
     /**
      * Internal use only. Sets the world matrix to use for future
      * rendering. This has no effect unless objects are rendered manually
-     * using {@link Material#render(com.jme3.scene.Geometry, com.jme3.renderer.RenderManager) }.
-     * Using {@link #renderGeometry(com.jme3.scene.Geometry) } will 
+     * using {@link Material#render(com.scene.Geometry, com.jme3.renderer.RenderManager) }.
+     * Using {@link #renderGeometry(com.scene.Geometry) } will 
      * override this value.
      * 
      * @param mat The world matrix to set
@@ -536,7 +537,7 @@ public class RenderManager {
      * geometry's {@link Geometry#getWorldMatrix() world transform matrix} is used. 
      * <p>
      * Once the world matrix is applied, the proper material is chosen for rendering.
-     * If a {@link #setForcedMaterial(com.jme3.scene.material.Material) forced material} is
+     * If a {@link #setForcedMaterial(com.scene.material.Material) forced material} is
      * set on this RenderManager, then it is used for rendering the geometry,
      * otherwise, the {@link Geometry#getMaterial() geometry's material} is used.
      * <p>
@@ -546,7 +547,7 @@ public class RenderManager {
      * of the {@link MaterialDef#getDefaultTechniques() default techniques} is
      * used.
      * <p>
-     * If a {@link #setForcedRenderState(com.jme3.scene.material.RenderState) forced
+     * If a {@link #setForcedRenderState(com.scene.material.RenderState) forced
      * render state} is set on this RenderManager, then it is used
      * for rendering the material, and the material's own render state is ignored.
      * Otherwise, the material's render state is used as intended.
@@ -556,7 +557,7 @@ public class RenderManager {
      * @see Technique
      * @see RenderState
      * @see Material#selectTechnique(java.lang.String, com.jme3.renderer.RenderManager) 
-     * @see Material#render(com.jme3.scene.Geometry, com.jme3.renderer.RenderManager) 
+     * @see Material#render(com.scene.Geometry, com.jme3.renderer.RenderManager) 
      */
     public void renderGeometry(Geometry geom) {
         if (geom.isIgnoreTransform()) {
@@ -621,12 +622,12 @@ public class RenderManager {
      * Renders the given GeometryList.
      * <p>
      * For every geometry in the list, the 
-     * {@link #renderGeometry(com.jme3.scene.Geometry) } method is called.
+     * {@link #renderGeometry(com.scene.Geometry) } method is called.
      * 
      * @param gl The geometry list to render.
      * 
      * @see GeometryList
-     * @see #renderGeometry(com.jme3.scene.Geometry) 
+     * @see #renderGeometry(com.scene.Geometry) 
      */
     public void renderGeometryList(GeometryList gl) {
         for (int i = 0; i < gl.size(); i++) {
@@ -681,7 +682,7 @@ public class RenderManager {
      * checking for culling as the call goes down the graph recursively.
      * <p>
      * First, the scene is checked for culling based on the <code>Spatial</code>s
-     * {@link Spatial#setCullHint(com.jme3.scene.Spatial.CullHint) cull hint},
+     * {@link Spatial#setCullHint(com.scene.Spatial.CullHint) cull hint},
      * if the camera frustum contains the scene, then this method is recursively
      * called on its children.
      * <p>
@@ -692,7 +693,7 @@ public class RenderManager {
      * In addition to enqueuing the visible geometries, this method
      * also scenes which cast or receive shadows, by putting them into the
      * RenderQueue's 
-     * {@link RenderQueue#addToShadowQueue(com.jme3.scene.Geometry, com.jme3.renderer.queue.RenderQueue.ShadowMode) 
+     * {@link RenderQueue#addToShadowQueue(com.scene.Geometry, com.jme3.renderer.queue.RenderQueue.ShadowMode) 
      * shadow queue}. Each Spatial which has its 
      * {@link Spatial#setShadowMode(com.jme3.renderer.queue.RenderQueue.ShadowMode) shadow mode}
      * set to not off, will be put into the appropriate shadow queue, note that

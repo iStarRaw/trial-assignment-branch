@@ -40,7 +40,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
-import com.jme3.scene.material.Material;
+import com.scene.material.Material;
 
 import java.io.IOException;
 

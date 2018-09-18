@@ -33,9 +33,9 @@ package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
 import com.jme3.math.*;
-import com.jme3.scene.Node;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.JmeCloneable;
+import com.scene.Node;
 import com.jme3.util.clone.Cloner;
 import java.io.IOException;
 import java.util.ArrayList;
