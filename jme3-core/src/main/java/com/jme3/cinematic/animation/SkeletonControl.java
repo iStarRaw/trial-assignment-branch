@@ -37,18 +37,17 @@ import com.jme3.math.Matrix4f;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.RendererException;
 import com.jme3.renderer.ViewPort;
+import com.jme3.scene.*;
+import com.jme3.scene.VertexBuffer.Type;
+import com.jme3.scene.control.AbstractControl;
+import com.jme3.scene.control.Control;
+import com.jme3.scene.material.MatParam;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.shader.VarType;
 import com.jme3.util.SafeArrayList;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-
-import scene.*;
-import scene.VertexBuffer.Type;
-import scene.control.AbstractControl;
-import scene.control.Control;
-import scene.material.MatParam;
-import scene.material.Material;
-import scene.shader.VarType;
 
 import java.io.IOException;
 import java.nio.Buffer;

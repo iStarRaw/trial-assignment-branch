@@ -32,12 +32,11 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
+import com.jme3.scene.Spatial;
 import com.jme3.util.SafeArrayList;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-
-import scene.Spatial;
 
 import java.io.IOException;
 

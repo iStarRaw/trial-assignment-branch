@@ -50,13 +50,12 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
+import com.jme3.scene.Geometry;
+import com.jme3.scene.Spatial;
+import com.jme3.scene.control.Control;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-
-import scene.Geometry;
-import scene.Spatial;
-import scene.control.Control;
 
 import java.io.IOException;
 

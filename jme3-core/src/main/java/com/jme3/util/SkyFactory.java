@@ -36,14 +36,12 @@ import com.jme3.asset.TextureKey;
 import com.jme3.math.Vector3f;
 import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
+import com.jme3.scene.Geometry;
+import com.jme3.scene.Spatial;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.shape.Sphere;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
-
-import scene.Geometry;
-import scene.Spatial;
-import scene.material.Material;
-import scene.shape.Sphere;
-
 import com.jme3.texture.Texture;
 import com.jme3.texture.TextureCubeMap;
 import java.nio.ByteBuffer;

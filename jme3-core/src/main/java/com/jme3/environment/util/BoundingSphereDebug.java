@@ -34,12 +34,11 @@ package com.jme3.environment.util;
 import com.jme3.asset.AssetManager;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
+import com.jme3.scene.Geometry;
+import com.jme3.scene.Mesh;
+import com.jme3.scene.VertexBuffer.Type;
+import com.jme3.scene.material.Material;
 import com.jme3.util.BufferUtils;
-
-import scene.Geometry;
-import scene.Mesh;
-import scene.VertexBuffer.Type;
-import scene.material.Material;
 
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;

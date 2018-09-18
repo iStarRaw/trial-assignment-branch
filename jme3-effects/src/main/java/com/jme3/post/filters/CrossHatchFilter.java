@@ -36,8 +36,7 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
-
-import scene.material.Material;
+import com.jme3.scene.material.Material;
 
 /**
  * A Post Processing filter that makes the screen look like it was drawn as

@@ -38,10 +38,9 @@ import com.jme3.cinematic.collision.UnsupportedCollisionException;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.math.*;
+import com.jme3.scene.Spatial;
 import com.jme3.util.BufferUtils;
 import com.jme3.util.TempVars;
-
-import scene.Spatial;
 
 import java.io.IOException;
 import java.nio.FloatBuffer;

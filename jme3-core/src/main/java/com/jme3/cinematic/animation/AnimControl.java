@@ -34,14 +34,12 @@ package com.jme3.cinematic.animation;
 import com.jme3.export.*;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
+import com.jme3.scene.Mesh;
+import com.jme3.scene.Spatial;
+import com.jme3.scene.control.AbstractControl;
+import com.jme3.scene.control.Control;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-
-import scene.Mesh;
-import scene.Spatial;
-import scene.control.AbstractControl;
-import scene.control.Control;
-
 import com.jme3.util.TempVars;
 import java.io.IOException;
 import java.util.ArrayList;

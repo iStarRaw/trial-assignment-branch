@@ -38,12 +38,11 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Statistics;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
+import com.jme3.scene.Node;
+import com.jme3.scene.Spatial;
+import com.jme3.scene.control.Control;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-
-import scene.Node;
-import scene.Spatial;
-import scene.control.Control;
 
 /**
  * The <code>StatsView</code> provides a heads-up display (HUD) of various

@@ -38,11 +38,9 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
+import com.jme3.scene.material.Material;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image.Format;
-
-import scene.material.Material;
-
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import java.io.IOException;

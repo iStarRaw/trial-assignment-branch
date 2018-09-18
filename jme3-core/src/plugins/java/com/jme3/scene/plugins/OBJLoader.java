@@ -35,17 +35,16 @@ import com.jme3.asset.*;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
+import com.jme3.scene.*;
+import com.jme3.scene.Mesh.Mode;
+import com.jme3.scene.VertexBuffer.Type;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.material.MaterialList;
+import com.jme3.scene.mesh.IndexBuffer;
+import com.jme3.scene.mesh.IndexIntBuffer;
+import com.jme3.scene.mesh.IndexShortBuffer;
 import com.jme3.util.BufferUtils;
 import com.jme3.util.IntMap;
-
-import scene.*;
-import scene.Mesh.Mode;
-import scene.VertexBuffer.Type;
-import scene.material.Material;
-import scene.material.MaterialList;
-import scene.mesh.IndexBuffer;
-import scene.mesh.IndexIntBuffer;
-import scene.mesh.IndexShortBuffer;
 
 import java.io.File;
 import java.io.IOException;

@@ -33,8 +33,7 @@ package com.jme3.app.state;
 
 import com.jme3.app.Application;
 import com.jme3.renderer.ViewPort;
-
-import scene.Node;
+import com.jme3.scene.Node;
 
 /**
  * AppState that manages and updates a RootNode attached to a ViewPort, the

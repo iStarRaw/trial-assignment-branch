@@ -36,12 +36,11 @@ import com.jme3.asset.TextureKey;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
+import com.jme3.scene.Geometry;
+import com.jme3.scene.material.Material;
+import com.jme3.scene.material.RenderState.BlendMode;
+import com.jme3.scene.shape.Quad;
 import com.jme3.texture.Texture2D;
-
-import scene.Geometry;
-import scene.material.Material;
-import scene.material.RenderState.BlendMode;
-import scene.shape.Quad;
 
 /**
  * A <code>Picture</code> represents a 2D image drawn on the screen.
