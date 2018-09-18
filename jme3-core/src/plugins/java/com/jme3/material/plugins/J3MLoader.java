@@ -41,16 +41,17 @@ import com.jme3.texture.image.ColorSpace;
 import com.jme3.util.PlaceholderAssets;
 import com.jme3.util.blockparser.BlockLanguageParser;
 import com.jme3.util.blockparser.Statement;
-import com.scene.material.*;
-import com.scene.material.RenderState.BlendEquation;
-import com.scene.material.RenderState.BlendMode;
-import com.scene.material.RenderState.FaceCullMode;
-import com.scene.material.TechniqueDef.LightMode;
-import com.scene.material.TechniqueDef.ShadowMode;
-import com.scene.material.logic.*;
-import com.scene.shader.DefineList;
-import com.scene.shader.Shader;
-import com.scene.shader.VarType;
+
+import scene.material.*;
+import scene.material.RenderState.BlendEquation;
+import scene.material.RenderState.BlendMode;
+import scene.material.RenderState.FaceCullMode;
+import scene.material.TechniqueDef.LightMode;
+import scene.material.TechniqueDef.ShadowMode;
+import scene.material.logic.*;
+import scene.shader.DefineList;
+import scene.shader.Shader;
+import scene.shader.VarType;
 
 import java.io.IOException;
 import java.io.InputStream;

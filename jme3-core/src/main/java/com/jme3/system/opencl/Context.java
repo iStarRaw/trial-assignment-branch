@@ -40,7 +40,8 @@ import com.jme3.system.opencl.Image.ImageFormat;
 import com.jme3.system.opencl.Image.ImageType;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Texture;
-import com.scene.VertexBuffer;
+
+import scene.VertexBuffer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

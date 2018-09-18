@@ -43,12 +43,13 @@ import com.jme3.renderer.Statistics;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.light.LightList;
-import com.scene.material.RenderState;
-import com.scene.shader.Shader;
-import com.scene.shader.Shader.ShaderSource;
+
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.light.LightList;
+import scene.material.RenderState;
+import scene.shader.Shader;
+import scene.shader.Shader.ShaderSource;
 
 import java.util.EnumMap;
 

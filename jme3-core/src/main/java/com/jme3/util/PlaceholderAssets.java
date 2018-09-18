@@ -38,10 +38,11 @@ import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
 import com.jme3.texture.Texture;
 import com.jme3.texture.image.ColorSpace;
-import com.scene.Geometry;
-import com.scene.Spatial;
-import com.scene.material.Material;
-import com.scene.shape.Box;
+
+import scene.Geometry;
+import scene.Spatial;
+import scene.material.Material;
+import scene.shape.Box;
 
 import java.nio.ByteBuffer;
 

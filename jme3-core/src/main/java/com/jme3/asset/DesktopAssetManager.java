@@ -39,11 +39,12 @@ import com.jme3.renderer.Caps;
 import com.jme3.renderer.post.FilterPostProcessor;
 import com.jme3.system.JmeSystem;
 import com.jme3.texture.Texture;
-import com.scene.Spatial;
-import com.scene.material.Material;
-import com.scene.shader.Glsl100ShaderGenerator;
-import com.scene.shader.Glsl150ShaderGenerator;
-import com.scene.shader.ShaderGenerator;
+
+import scene.Spatial;
+import scene.material.Material;
+import scene.shader.Glsl100ShaderGenerator;
+import scene.shader.Glsl150ShaderGenerator;
+import scene.shader.ShaderGenerator;
 
 import java.io.IOException;
 import java.io.InputStream;

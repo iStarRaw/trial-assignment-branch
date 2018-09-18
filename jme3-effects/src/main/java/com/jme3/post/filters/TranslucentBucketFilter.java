@@ -42,9 +42,10 @@ import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
-import com.scene.Node;
-import com.scene.Spatial;
-import com.scene.material.Material;
+
+import scene.Node;
+import scene.Spatial;
+import scene.material.Material;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

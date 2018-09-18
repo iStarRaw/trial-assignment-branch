@@ -36,8 +36,9 @@ import com.jme3.renderer.post.SceneProcessor;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.util.SafeArrayList;
-import com.scene.Geometry;
-import com.scene.Spatial;
+
+import scene.Geometry;
+import scene.Spatial;
 
 import java.util.List;
 
@@ -46,7 +47,7 @@ import java.util.List;
  * window or a {@link FrameBuffer} to which scenes will be rendered. 
  * <p>
  * A viewport has a {@link #ViewPort(java.lang.String, com.jme3.renderer.Camera) camera}
- * which is used to render a set of {@link #attachScene(com.scene.Spatial) scenes}.
+ * which is used to render a set of {@link #attachScene(scene.Spatial) scenes}.
  * A view port has a location on the screen as set by the 
  * {@link Camera#setViewPort(float, float, float, float) } method.
  * By default, a view port does not clear the framebuffer, but it can be
@@ -314,7 +315,7 @@ public class ViewPort {
      * 
      * @param scene The scene to detach
      * 
-     * @see #attachScene(com.scene.Spatial) 
+     * @see #attachScene(scene.Spatial) 
      */
     public void detachScene(Spatial scene){
         if (scene == null) {
@@ -329,7 +330,7 @@ public class ViewPort {
     /**
      * Removes all attached scenes.
      * 
-     * @see #attachScene(com.scene.Spatial) 
+     * @see #attachScene(scene.Spatial) 
      */
     public void clearScenes() {
         sceneList.clear();
@@ -340,7 +341,7 @@ public class ViewPort {
      * 
      * @return a list of all attached scenes.
      * 
-     * @see #attachScene(com.scene.Spatial) 
+     * @see #attachScene(scene.Spatial) 
      */
     public SafeArrayList<Spatial> getScenes(){
         return sceneList;

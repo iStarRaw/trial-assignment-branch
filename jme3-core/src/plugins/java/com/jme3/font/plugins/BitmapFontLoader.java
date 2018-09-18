@@ -36,9 +36,10 @@ import com.jme3.font.BitmapCharacter;
 import com.jme3.font.BitmapCharacterSet;
 import com.jme3.font.BitmapFont;
 import com.jme3.texture.Texture;
-import com.scene.material.Material;
-import com.scene.material.MaterialDef;
-import com.scene.material.RenderState.BlendMode;
+
+import scene.material.Material;
+import scene.material.MaterialDef;
+import scene.material.RenderState.BlendMode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

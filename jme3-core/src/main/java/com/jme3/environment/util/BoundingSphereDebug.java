@@ -35,10 +35,11 @@ import com.jme3.asset.AssetManager;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.util.BufferUtils;
-import com.scene.Geometry;
-import com.scene.Mesh;
-import com.scene.VertexBuffer.Type;
-import com.scene.material.Material;
+
+import scene.Geometry;
+import scene.Mesh;
+import scene.VertexBuffer.Type;
+import scene.material.Material;
 
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;

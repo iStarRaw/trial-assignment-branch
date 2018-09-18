@@ -6,9 +6,10 @@
 package com.jme3.util.mikktspace;
 
 import com.jme3.util.BufferUtils;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.mesh.IndexBuffer;
+
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.mesh.IndexBuffer;
 
 import java.nio.FloatBuffer;
 

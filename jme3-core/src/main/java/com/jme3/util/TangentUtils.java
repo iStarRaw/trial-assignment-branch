@@ -1,6 +1,6 @@
 package com.jme3.util;
 
-import com.scene.*;
+import scene.*;
 
 /**
  * Created by Nehon on 03/10/2016.

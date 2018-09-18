@@ -36,9 +36,10 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
-import com.scene.material.Material;
-import com.scene.material.RenderState;
-import com.scene.material.RenderState.FaceCullMode;
+
+import scene.material.Material;
+import scene.material.RenderState;
+import scene.material.RenderState.FaceCullMode;
 
 /**
  * Processor that lays depth first, this can improve performance in complex

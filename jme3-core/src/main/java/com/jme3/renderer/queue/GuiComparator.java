@@ -32,7 +32,8 @@
 package com.jme3.renderer.queue;
 
 import com.jme3.renderer.Camera;
-import com.scene.Geometry;
+
+import scene.Geometry;
 
 /**
  * <code>GuiComparator</code> sorts geometries back-to-front based

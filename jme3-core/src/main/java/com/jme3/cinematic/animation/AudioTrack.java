@@ -39,8 +39,9 @@ import com.jme3.export.OutputCapsule;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.Node;
-import com.scene.Spatial;
+
+import scene.Node;
+import scene.Spatial;
 
 import java.io.IOException;
 import java.util.logging.Level;

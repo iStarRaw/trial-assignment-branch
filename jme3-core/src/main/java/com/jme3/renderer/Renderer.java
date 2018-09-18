@@ -37,11 +37,12 @@ import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
 import com.jme3.util.NativeObject;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.material.RenderState;
-import com.scene.shader.Shader;
-import com.scene.shader.Shader.ShaderSource;
+
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.material.RenderState;
+import scene.shader.Shader;
+import scene.shader.Shader.ShaderSource;
 
 import java.nio.ByteBuffer;
 import java.util.EnumMap;
@@ -173,7 +174,7 @@ public interface Renderer {
      * the attached shader sources.
      * 
      * @param shader Shader to delete.
-     * @see #deleteShaderSource(com.scene.shader.Shader.ShaderSource) 
+     * @see #deleteShaderSource(scene.shader.Shader.ShaderSource) 
      */
     public void deleteShader(Shader shader);
 
@@ -286,7 +287,7 @@ public interface Renderer {
      * per-instance vertex attribute to the shader.
      *
      * @param mesh The mesh to render
-     * @param lod The LOD level to use, see {@link Mesh#setLodLevels(com.scene.VertexBuffer[]) }.
+     * @param lod The LOD level to use, see {@link Mesh#setLodLevels(scene.VertexBuffer[]) }.
      * @param count Number of mesh instances to render
      * @param instanceData When count is greater than 1, these buffers provide
      *                     the per-instance attributes.

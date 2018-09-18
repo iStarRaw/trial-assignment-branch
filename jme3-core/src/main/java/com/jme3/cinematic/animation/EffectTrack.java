@@ -41,11 +41,12 @@ import com.jme3.renderer.ViewPort;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.Node;
-import com.scene.Spatial;
-import com.scene.Spatial.CullHint;
-import com.scene.control.AbstractControl;
-import com.scene.control.Control;
+
+import scene.Node;
+import scene.Spatial;
+import scene.Spatial.CullHint;
+import scene.control.AbstractControl;
+import scene.control.Control;
 
 import java.io.IOException;
 import java.util.logging.Level;

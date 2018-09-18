@@ -46,8 +46,9 @@ import com.jme3.texture.Texture2D;
 import com.jme3.texture.TextureCubeMap;
 import com.jme3.texture.image.ColorSpace;
 import com.jme3.util.BufferUtils;
-import com.scene.Spatial;
-import com.scene.light.LightProbe;
+
+import scene.Spatial;
+import scene.light.LightProbe;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

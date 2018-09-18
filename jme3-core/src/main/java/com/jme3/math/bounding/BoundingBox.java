@@ -41,8 +41,9 @@ import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.math.*;
 import com.jme3.util.TempVars;
-import com.scene.Mesh;
-import com.scene.Spatial;
+
+import scene.Mesh;
+import scene.Spatial;
 
 import java.io.IOException;
 import java.nio.FloatBuffer;

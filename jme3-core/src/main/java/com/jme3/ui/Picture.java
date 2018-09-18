@@ -37,10 +37,11 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.texture.Texture2D;
-import com.scene.Geometry;
-import com.scene.material.Material;
-import com.scene.material.RenderState.BlendMode;
-import com.scene.shape.Quad;
+
+import scene.Geometry;
+import scene.material.Material;
+import scene.material.RenderState.BlendMode;
+import scene.shape.Quad;
 
 /**
  * A <code>Picture</code> represents a 2D image drawn on the screen.

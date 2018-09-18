@@ -45,8 +45,10 @@ import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.post.Filter.Pass;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.Image.Format;
-import com.scene.material.Material;
-import com.scene.shader.VarType;
+
+import scene.material.Material;
+import scene.shader.VarType;
+
 import com.jme3.texture.Texture;
 import java.io.IOException;
 import java.util.ArrayList;

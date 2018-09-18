@@ -41,7 +41,8 @@ import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
 import com.jme3.util.SafeArrayList;
-import com.scene.material.Material;
+
+import scene.material.Material;
 
 import java.io.IOException;
 import java.util.ArrayList;

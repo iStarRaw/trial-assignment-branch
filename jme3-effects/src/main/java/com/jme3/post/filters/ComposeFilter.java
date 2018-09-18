@@ -40,7 +40,8 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
 import com.jme3.texture.Texture2D;
-import com.scene.material.Material;
+
+import scene.material.Material;
 
 import java.io.IOException;
 

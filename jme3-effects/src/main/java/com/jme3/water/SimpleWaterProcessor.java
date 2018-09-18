@@ -46,10 +46,11 @@ import com.jme3.texture.Texture.WrapMode;
 import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
 import com.jme3.util.TempVars;
-import com.scene.Geometry;
-import com.scene.Spatial;
-import com.scene.material.Material;
-import com.scene.shape.Quad;
+
+import scene.Geometry;
+import scene.Spatial;
+import scene.material.Material;
+import scene.shape.Quad;
 
 /**
  *

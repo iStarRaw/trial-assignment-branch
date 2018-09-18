@@ -36,7 +36,8 @@ import com.jme3.util.SafeArrayList;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.Spatial;
+
+import scene.Spatial;
 
 import java.io.IOException;
 

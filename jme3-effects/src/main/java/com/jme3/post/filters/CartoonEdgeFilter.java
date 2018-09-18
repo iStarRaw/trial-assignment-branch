@@ -40,7 +40,8 @@ import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.post.Filter.Pass;
 import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.Image.Format;
-import com.scene.material.Material;
+
+import scene.material.Material;
 
 /**
  * Applies a cartoon-style edge detection filter to all objects in the scene.

@@ -43,7 +43,8 @@ import com.jme3.texture.Texture.MagFilter;
 import com.jme3.texture.Texture.MinFilter;
 import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
-import com.scene.material.Material;
+
+import scene.material.Material;
 
 import java.util.Collection;
 import java.util.logging.Logger;

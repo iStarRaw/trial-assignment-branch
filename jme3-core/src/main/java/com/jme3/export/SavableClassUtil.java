@@ -33,7 +33,8 @@ package com.jme3.export;
 
 import com.jme3.cinematic.animation.Animation;
 import com.jme3.effect.shapes.*;
-import com.scene.material.MatParamTexture;
+
+import scene.material.MatParamTexture;
 
 import java.io.IOException;
 import java.lang.reflect.Field;

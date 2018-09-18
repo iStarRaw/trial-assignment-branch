@@ -34,11 +34,12 @@ package com.jme3.font;
 import com.jme3.texture.Texture2D;
 import com.jme3.util.BufferUtils;
 import com.jme3.util.clone.Cloner;
-import com.scene.Geometry;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.VertexBuffer.Type;
-import com.scene.material.Material;
+
+import scene.Geometry;
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.VertexBuffer.Type;
+import scene.material.Material;
 
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;

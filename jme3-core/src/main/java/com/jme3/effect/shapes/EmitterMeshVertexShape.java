@@ -40,8 +40,9 @@ import com.jme3.math.Vector3f;
 import com.jme3.util.BufferUtils;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.Mesh;
-import com.scene.VertexBuffer.Type;
+
+import scene.Mesh;
+import scene.VertexBuffer.Type;
 
 import java.io.IOException;
 import java.util.ArrayList;

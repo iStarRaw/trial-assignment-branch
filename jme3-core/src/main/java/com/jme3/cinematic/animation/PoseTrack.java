@@ -33,9 +33,10 @@ package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
 import com.jme3.util.TempVars;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.VertexBuffer.Type;
+
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.VertexBuffer.Type;
 
 import java.io.IOException;
 import java.nio.FloatBuffer;

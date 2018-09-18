@@ -35,7 +35,9 @@ import com.jme3.export.*;
 import com.jme3.math.*;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.Node;
+
+import scene.Node;
+
 import com.jme3.util.clone.Cloner;
 import java.io.IOException;
 import java.util.ArrayList;

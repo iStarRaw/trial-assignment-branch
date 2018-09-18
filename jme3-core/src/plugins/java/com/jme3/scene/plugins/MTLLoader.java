@@ -37,9 +37,10 @@ import com.jme3.texture.Texture;
 import com.jme3.texture.Texture.WrapMode;
 import com.jme3.texture.Texture2D;
 import com.jme3.util.PlaceholderAssets;
-import com.scene.material.Material;
-import com.scene.material.MaterialList;
-import com.scene.material.RenderState.BlendMode;
+
+import scene.material.Material;
+import scene.material.MaterialList;
+import scene.material.RenderState.BlendMode;
 
 import java.io.File;
 import java.io.IOException;

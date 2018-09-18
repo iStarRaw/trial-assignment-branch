@@ -34,10 +34,11 @@ package com.jme3.renderer;
 import com.jme3.math.ColorRGBA;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.material.RenderState;
-import com.scene.shader.Shader;
+
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.material.RenderState;
+import scene.shader.Shader;
 
 /**
  * Represents the current state of the graphics library. This class is used
@@ -46,7 +47,7 @@ import com.scene.shader.Shader;
 public class RenderContext {
 
     /**
-     * @see RenderState#setFaceCullMode(com.scene.material.RenderState.FaceCullMode)
+     * @see RenderState#setFaceCullMode(scene.material.RenderState.FaceCullMode)
      */
     public RenderState.FaceCullMode cullMode = RenderState.FaceCullMode.Off;
 
@@ -96,17 +97,17 @@ public class RenderContext {
     public float lineWidth = 1;
 
     /**
-     * @see RenderState#setBlendMode(com.scene.material.RenderState.BlendMode) 
+     * @see RenderState#setBlendMode(scene.material.RenderState.BlendMode) 
      */
     public RenderState.BlendMode blendMode = RenderState.BlendMode.Off;
 
     /**
-     * @see RenderState#setBlendEquation(com.scene.material.RenderState.BlendEquation) 
+     * @see RenderState#setBlendEquation(scene.material.RenderState.BlendEquation) 
      */
     public RenderState.BlendEquation blendEquation = RenderState.BlendEquation.Add;
     
     /**
-     * @see RenderState#setBlendEquationAlpha(com.scene.material.RenderState.BlendEquationAlpha) 
+     * @see RenderState#setBlendEquationAlpha(scene.material.RenderState.BlendEquationAlpha) 
      */
     public RenderState.BlendEquationAlpha blendEquationAlpha = RenderState.BlendEquationAlpha.InheritColor;
 
@@ -116,12 +117,12 @@ public class RenderContext {
     public boolean wireframe = false;
 
     /**
-     * @see Renderer#setShader(com.scene.shader.Shader) 
+     * @see Renderer#setShader(scene.shader.Shader) 
      */
     public int boundShaderProgram;
     
     /**
-     * @see Renderer#setShader(com.scene.shader.Shader) 
+     * @see Renderer#setShader(scene.shader.Shader) 
      */
     public Shader boundShader;
 
@@ -167,19 +168,19 @@ public class RenderContext {
     /**
      * Currently bound element array vertex buffer.
      * 
-     * @see Renderer#renderMesh(com.scene.Mesh, int, int) 
+     * @see Renderer#renderMesh(scene.Mesh, int, int) 
      */
     public int boundElementArrayVBO;
 
     /**
-     * @see Renderer#renderMesh(com.scene.Mesh, int, int) 
+     * @see Renderer#renderMesh(scene.Mesh, int, int) 
      */
     public int boundVertexArray;
 
     /**
      * Currently bound array vertex buffer.
      * 
-     * @see Renderer#renderMesh(com.scene.Mesh, int, int) 
+     * @see Renderer#renderMesh(scene.Mesh, int, int) 
      */
     public int boundArrayVBO;
     

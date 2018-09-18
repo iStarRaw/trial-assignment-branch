@@ -41,13 +41,14 @@ import com.jme3.util.SafeArrayList;
 import com.jme3.util.TempVars;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.*;
-import com.scene.VertexBuffer.Type;
-import com.scene.control.AbstractControl;
-import com.scene.control.Control;
-import com.scene.material.MatParam;
-import com.scene.material.Material;
-import com.scene.shader.VarType;
+
+import scene.*;
+import scene.VertexBuffer.Type;
+import scene.control.AbstractControl;
+import scene.control.Control;
+import scene.material.MatParam;
+import scene.material.Material;
+import scene.shader.VarType;
 
 import java.io.IOException;
 import java.nio.Buffer;

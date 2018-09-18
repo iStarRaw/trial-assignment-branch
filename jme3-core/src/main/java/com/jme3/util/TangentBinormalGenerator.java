@@ -35,11 +35,12 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
-import com.scene.*;
-import com.scene.VertexBuffer.Format;
-import com.scene.VertexBuffer.Type;
-import com.scene.VertexBuffer.Usage;
-import com.scene.mesh.IndexBuffer;
+
+import scene.*;
+import scene.VertexBuffer.Format;
+import scene.VertexBuffer.Type;
+import scene.VertexBuffer.Usage;
+import scene.mesh.IndexBuffer;
 
 import static com.jme3.util.BufferUtils.*;
 

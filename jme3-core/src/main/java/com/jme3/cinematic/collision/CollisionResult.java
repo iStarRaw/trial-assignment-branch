@@ -33,8 +33,9 @@ package com.jme3.cinematic.collision;
 
 import com.jme3.math.Triangle;
 import com.jme3.math.Vector3f;
-import com.scene.Geometry;
-import com.scene.Mesh;
+
+import scene.Geometry;
+import scene.Mesh;
 
 /**
  * A <code>CollisionResult</code> represents a single collision instance

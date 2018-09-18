@@ -6,8 +6,8 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.scene.shader.Shader;
-import com.scene.shader.Shader.ShaderSource;
+import scene.shader.Shader;
+import scene.shader.Shader.ShaderSource;
 
 public class CgcValidator implements Validator {
 

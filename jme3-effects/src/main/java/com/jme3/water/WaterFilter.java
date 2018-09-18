@@ -47,11 +47,12 @@ import com.jme3.texture.Image.Format;
 import com.jme3.texture.Texture.WrapMode;
 import com.jme3.texture.Texture2D;
 import com.jme3.util.TempVars;
-import com.scene.Node;
-import com.scene.Spatial;
-import com.scene.light.DirectionalLight;
-import com.scene.light.Light;
-import com.scene.material.Material;
+
+import scene.Node;
+import scene.Spatial;
+import scene.light.DirectionalLight;
+import scene.light.Light;
+import scene.material.Material;
 
 import java.io.IOException;
 

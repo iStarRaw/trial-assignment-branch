@@ -70,21 +70,22 @@ import com.jme3.util.BufferUtils;
 import com.jme3.util.ListMap;
 import com.jme3.util.MipMapGenerator;
 import com.jme3.util.NativeObjectManager;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.Mesh.Mode;
-import com.scene.VertexBuffer.Format;
-import com.scene.VertexBuffer.Type;
-import com.scene.VertexBuffer.Usage;
-import com.scene.material.RenderState;
-import com.scene.material.RenderState.BlendFunc;
-import com.scene.material.RenderState.StencilOperation;
-import com.scene.material.RenderState.TestFunction;
-import com.scene.shader.Attribute;
-import com.scene.shader.Shader;
-import com.scene.shader.Uniform;
-import com.scene.shader.Shader.ShaderSource;
-import com.scene.shader.Shader.ShaderType;
+
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.Mesh.Mode;
+import scene.VertexBuffer.Format;
+import scene.VertexBuffer.Type;
+import scene.VertexBuffer.Usage;
+import scene.material.RenderState;
+import scene.material.RenderState.BlendFunc;
+import scene.material.RenderState.StencilOperation;
+import scene.material.RenderState.TestFunction;
+import scene.shader.Attribute;
+import scene.shader.Shader;
+import scene.shader.Uniform;
+import scene.shader.Shader.ShaderSource;
+import scene.shader.Shader.ShaderType;
 
 public final class GLRenderer implements Renderer {
 

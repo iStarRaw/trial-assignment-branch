@@ -4,13 +4,14 @@ import com.jme3.math.Matrix4f;
 import com.jme3.math.Transform;
 import com.jme3.math.Vector3f;
 import com.jme3.util.BufferUtils;
-import com.scene.*;
-import com.scene.Mesh.Mode;
-import com.scene.VertexBuffer.Format;
-import com.scene.VertexBuffer.Type;
-import com.scene.VertexBuffer.Usage;
-import com.scene.material.Material;
-import com.scene.mesh.IndexBuffer;
+
+import scene.*;
+import scene.Mesh.Mode;
+import scene.VertexBuffer.Format;
+import scene.VertexBuffer.Type;
+import scene.VertexBuffer.Usage;
+import scene.material.Material;
+import scene.mesh.IndexBuffer;
 
 import java.nio.Buffer;
 import java.nio.FloatBuffer;

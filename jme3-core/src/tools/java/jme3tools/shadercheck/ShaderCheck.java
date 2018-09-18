@@ -7,10 +7,11 @@ import com.jme3.material.plugins.J3MLoader;
 import com.jme3.renderer.Caps;
 import com.jme3.shader.plugins.GLSLLoader;
 import com.jme3.system.JmeSystem;
-import com.scene.material.MaterialDef;
-import com.scene.material.TechniqueDef;
-import com.scene.shader.DefineList;
-import com.scene.shader.Shader;
+
+import scene.material.MaterialDef;
+import scene.material.TechniqueDef;
+import scene.shader.DefineList;
+import scene.shader.Shader;
 
 import java.util.EnumSet;
 import java.util.logging.Level;

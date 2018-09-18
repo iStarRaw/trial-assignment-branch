@@ -32,7 +32,8 @@
 package com.jme3.font;
 
 import com.jme3.export.*;
-import com.scene.material.Material;
+
+import scene.material.Material;
 
 import java.io.IOException;
 

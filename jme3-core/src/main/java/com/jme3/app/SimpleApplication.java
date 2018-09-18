@@ -44,8 +44,10 @@ import com.jme3.renderer.profile.AppStep;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.system.AppSettings;
 import com.jme3.system.JmeContext.Type;
-import com.scene.Node;
-import com.scene.Spatial.CullHint;
+
+import scene.Node;
+import scene.Spatial.CullHint;
+
 import com.jme3.system.JmeSystem;
 
 /**

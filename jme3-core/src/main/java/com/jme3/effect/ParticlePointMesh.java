@@ -34,9 +34,10 @@ package com.jme3.effect;
 import com.jme3.math.Matrix3f;
 import com.jme3.renderer.Camera;
 import com.jme3.util.BufferUtils;
-import com.scene.VertexBuffer;
-import com.scene.VertexBuffer.Format;
-import com.scene.VertexBuffer.Usage;
+
+import scene.VertexBuffer;
+import scene.VertexBuffer.Format;
+import scene.VertexBuffer.Usage;
 
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;

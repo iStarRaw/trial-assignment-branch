@@ -40,10 +40,11 @@ import com.jme3.cinematic.events.CinematicEvent;
 import com.jme3.export.*;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
-import com.scene.CameraNode;
-import com.scene.Node;
-import com.scene.control.CameraControl;
-import com.scene.control.CameraControl.ControlDirection;
+
+import scene.CameraNode;
+import scene.Node;
+import scene.control.CameraControl;
+import scene.control.CameraControl.ControlDirection;
 
 import java.io.IOException;
 import java.util.ArrayList;

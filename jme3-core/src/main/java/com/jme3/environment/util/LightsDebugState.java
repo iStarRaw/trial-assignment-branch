@@ -35,13 +35,14 @@ import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
 import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.renderer.RenderManager;
-import com.scene.Geometry;
-import com.scene.Node;
-import com.scene.Spatial;
-import com.scene.light.Light;
-import com.scene.light.LightProbe;
-import com.scene.material.Material;
-import com.scene.shape.Sphere;
+
+import scene.Geometry;
+import scene.Node;
+import scene.Spatial;
+import scene.light.Light;
+import scene.light.LightProbe;
+import scene.material.Material;
+import scene.shape.Sphere;
 
 import java.util.ArrayList;
 import java.util.HashMap;

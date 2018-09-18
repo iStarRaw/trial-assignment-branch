@@ -55,13 +55,14 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.RendererException;
 import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.post.Filter.Pass;
-import com.scene.Geometry;
-import com.scene.Node;
-import com.scene.Spatial;
-import com.scene.material.MatParam;
-import com.scene.material.Material;
-import com.scene.shader.Shader;
-import com.scene.shape.Box;
+
+import scene.Geometry;
+import scene.Node;
+import scene.Spatial;
+import scene.material.MatParam;
+import scene.material.Material;
+import scene.shader.Shader;
+import scene.shape.Box;
 
 /**
  * This appState is for debug purpose only, and was made to provide an easy way 

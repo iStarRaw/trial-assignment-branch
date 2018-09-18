@@ -40,13 +40,14 @@ import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import com.jme3.texture.image.ColorSpace;
 import com.jme3.util.BufferUtils;
-import com.scene.Geometry;
-import com.scene.Mesh;
-import com.scene.Spatial;
-import com.scene.VertexBuffer;
-import com.scene.VertexBuffer.Type;
-import com.scene.material.MatParamTexture;
-import com.scene.material.Material;
+
+import scene.Geometry;
+import scene.Mesh;
+import scene.Spatial;
+import scene.VertexBuffer;
+import scene.VertexBuffer.Type;
+import scene.material.MatParamTexture;
+import scene.material.Material;
 
 import java.lang.reflect.InvocationTargetException;
 import java.nio.ByteBuffer;

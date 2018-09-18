@@ -42,9 +42,10 @@ import com.jme3.font.BitmapFont;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.post.FilterPostProcessor;
 import com.jme3.texture.Texture;
-import com.scene.Spatial;
-import com.scene.material.Material;
-import com.scene.shader.ShaderGenerator;
+
+import scene.Spatial;
+import scene.material.Material;
+import scene.shader.ShaderGenerator;
 
 /**
  * <code>AssetManager</code> provides an interface for managing the data assets

@@ -36,10 +36,12 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
-import com.scene.Mesh;
-import com.scene.Spatial;
-import com.scene.control.AbstractControl;
-import com.scene.control.Control;
+
+import scene.Mesh;
+import scene.Spatial;
+import scene.control.AbstractControl;
+import scene.control.Control;
+
 import com.jme3.util.TempVars;
 import java.io.IOException;
 import java.util.ArrayList;

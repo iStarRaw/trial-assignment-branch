@@ -46,14 +46,15 @@ import com.jme3.math.bounding.BoundingBox;
 import com.jme3.math.bounding.BoundingSphere;
 import com.jme3.math.bounding.BoundingVolume;
 import com.jme3.util.TempVars;
-import com.scene.CollisionData;
-import com.scene.Mesh;
-import com.scene.VertexBuffer;
-import com.scene.Mesh.Mode;
-import com.scene.VertexBuffer.Type;
-import com.scene.mesh.IndexBuffer;
-import com.scene.mesh.VirtualIndexBuffer;
-import com.scene.mesh.WrappedIndexBuffer;
+
+import scene.CollisionData;
+import scene.Mesh;
+import scene.VertexBuffer;
+import scene.Mesh.Mode;
+import scene.VertexBuffer.Type;
+import scene.mesh.IndexBuffer;
+import scene.mesh.VirtualIndexBuffer;
+import scene.mesh.WrappedIndexBuffer;
 
 import java.io.IOException;
 import static java.lang.Math.max;

@@ -35,8 +35,10 @@ import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.FrameBuffer.RenderBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
-import com.scene.shader.Shader;
-import com.scene.shader.Shader.ShaderSource;
+
+import scene.shader.Shader;
+import scene.shader.Shader.ShaderSource;
+
 import com.jme3.texture.Texture;
 import java.util.Collection;
 
