@@ -29,16 +29,16 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.util.font;
+package com.jme3.font;
 
+import com.jme3.font.BitmapFont.Align;
+import com.jme3.font.BitmapFont.VAlign;
 import com.jme3.math.ColorRGBA;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Node;
 import com.jme3.scene.material.MatParam;
 import com.jme3.scene.material.Material;
 import com.jme3.util.clone.Cloner;
-import com.jme3.util.font.BitmapFont.Align;
-import com.jme3.util.font.BitmapFont.VAlign;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.jme3.util.font;
+package com.jme3.font;
 
 import com.jme3.math.ColorRGBA;
 import java.nio.ByteBuffer;

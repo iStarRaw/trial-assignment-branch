@@ -34,6 +34,7 @@ package com.jme3.asset;
 import com.jme3.asset.cache.AssetCache;
 import com.jme3.audio.AudioData;
 import com.jme3.audio.AudioKey;
+import com.jme3.font.BitmapFont;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.post.FilterPostProcessor;
 import com.jme3.scene.Spatial;
@@ -43,7 +44,6 @@ import com.jme3.scene.shader.Glsl150ShaderGenerator;
 import com.jme3.scene.shader.ShaderGenerator;
 import com.jme3.system.JmeSystem;
 import com.jme3.texture.Texture;
-import com.jme3.util.font.BitmapFont;
 
 import java.io.IOException;
 import java.io.InputStream;
