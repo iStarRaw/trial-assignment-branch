@@ -44,9 +44,11 @@ import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.post.Filter.Pass;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.shader.VarType;
 import com.jme3.texture.Image.Format;
+
+import general.nieuw.scene.material.Material;
+import general.nieuw.scene.shader.VarType;
+
 import com.jme3.texture.Texture;
 import java.io.IOException;
 import java.util.ArrayList;

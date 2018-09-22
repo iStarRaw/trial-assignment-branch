@@ -32,7 +32,8 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.Savable;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.TempVars;
 
 public interface Track extends Savable, Cloneable {
 

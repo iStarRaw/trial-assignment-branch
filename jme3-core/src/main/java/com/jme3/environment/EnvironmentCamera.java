@@ -40,14 +40,15 @@ import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.light.LightProbe;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture2D;
 import com.jme3.texture.TextureCubeMap;
 import com.jme3.texture.image.ColorSpace;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.light.LightProbe;
+import general.nieuw.util.BufferUtils;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

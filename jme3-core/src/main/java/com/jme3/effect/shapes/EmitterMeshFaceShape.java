@@ -33,9 +33,10 @@ package com.jme3.effect.shapes;
 
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.VertexBuffer.Type;
+import general.nieuw.util.BufferUtils;
 
 import java.util.ArrayList;
 import java.util.List;

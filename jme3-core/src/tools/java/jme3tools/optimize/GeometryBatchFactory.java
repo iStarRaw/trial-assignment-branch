@@ -3,15 +3,15 @@ package jme3tools.optimize;
 import com.jme3.math.Matrix4f;
 import com.jme3.math.Transform;
 import com.jme3.math.Vector3f;
-import com.jme3.scene.*;
-import com.jme3.scene.Mesh.Mode;
-import com.jme3.scene.VertexBuffer.Format;
-import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.scene.VertexBuffer.Usage;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.mesh.IndexBuffer;
-import com.jme3.util.BufferUtils;
 
+import general.nieuw.scene.*;
+import general.nieuw.scene.Mesh.Mode;
+import general.nieuw.scene.VertexBuffer.Format;
+import general.nieuw.scene.VertexBuffer.Type;
+import general.nieuw.scene.VertexBuffer.Usage;
+import general.nieuw.scene.material.Material;
+import general.nieuw.scene.mesh.IndexBuffer;
+import general.nieuw.util.BufferUtils;
 import jme3.com.util.*;
 
 import java.nio.Buffer;

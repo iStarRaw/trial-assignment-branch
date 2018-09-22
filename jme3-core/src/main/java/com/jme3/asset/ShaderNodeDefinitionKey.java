@@ -32,7 +32,8 @@
 package com.jme3.asset;
 
 import com.jme3.asset.cache.AssetCache;
-import com.jme3.scene.shader.ShaderNodeDefinition;
+
+import general.nieuw.scene.shader.ShaderNodeDefinition;
 
 import java.util.List;
 

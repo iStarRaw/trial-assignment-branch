@@ -37,7 +37,9 @@ import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.cinematic.collision.UnsupportedCollisionException;
 import com.jme3.export.*;
 import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.TempVars;
+
 import java.io.IOException;
 
 /**

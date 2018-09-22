@@ -41,10 +41,11 @@ import com.jme3.math.Vector3f;
 import com.jme3.renderer.Camera;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.control.Control;
-import com.jme3.util.clone.Cloner;
-import com.jme3.util.clone.JmeCloneable;
+
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.control.Control;
+import general.nieuw.util.clone.Cloner;
+import general.nieuw.util.clone.JmeCloneable;
 
 import java.io.IOException;
 

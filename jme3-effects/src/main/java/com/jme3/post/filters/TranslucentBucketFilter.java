@@ -39,12 +39,13 @@ import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.material.Material;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
+
+import general.nieuw.scene.Node;
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.material.Material;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

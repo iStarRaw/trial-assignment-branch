@@ -33,7 +33,8 @@ package com.jme3.asset;
 
 import com.jme3.asset.cache.AssetCache;
 import com.jme3.asset.cache.WeakRefCloneAssetCache;
-import com.jme3.scene.Spatial;
+
+import general.nieuw.scene.Spatial;
 
 /**
  * Used to load model files, such as OBJ or Blender models.

@@ -32,8 +32,10 @@
 package com.jme3.math;
 
 import com.jme3.export.*;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.TempVars;
+
 import java.io.IOException;
 import java.nio.FloatBuffer;
 import java.util.logging.Logger;

@@ -40,7 +40,9 @@ import com.jme3.math.Ray;
 import com.jme3.math.Triangle;
 import com.jme3.math.Vector3f;
 import com.jme3.math.bounding.BoundingBox;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.TempVars;
+
 import java.io.IOException;
 import static java.lang.Math.max;
 import static java.lang.Math.min;

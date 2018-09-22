@@ -42,10 +42,12 @@ import com.jme3.font.BitmapText;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.profile.AppStep;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial.CullHint;
 import com.jme3.system.AppSettings;
 import com.jme3.system.JmeContext.Type;
+
+import general.nieuw.scene.Node;
+import general.nieuw.scene.Spatial.CullHint;
+
 import com.jme3.system.JmeSystem;
 
 /**

@@ -37,9 +37,10 @@ import com.jme3.renderer.profile.AppProfiler;
 import com.jme3.renderer.profile.AppStep;
 import com.jme3.renderer.profile.VpStep;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.VertexBuffer.Type;
+import general.nieuw.util.BufferUtils;
 
 import java.nio.FloatBuffer;
 

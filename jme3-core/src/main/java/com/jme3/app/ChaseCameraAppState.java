@@ -44,11 +44,12 @@ import com.jme3.app.state.AppStateManager;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector3f;
-import com.jme3.scene.CameraNode;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.control.CameraControl;
-import com.jme3.util.TempVars;
+
+import general.nieuw.scene.CameraNode;
+import general.nieuw.scene.Node;
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.control.CameraControl;
+import general.nieuw.util.TempVars;
 
 /**
  * This class is a camera controller that allow the camera to follow a target

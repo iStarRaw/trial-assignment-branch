@@ -31,14 +31,15 @@
  */
 package com.jme3.font;
 
-import com.jme3.scene.Geometry;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.scene.material.Material;
 import com.jme3.texture.Texture2D;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.clone.Cloner;
+
+import general.nieuw.scene.Geometry;
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.VertexBuffer;
+import general.nieuw.scene.VertexBuffer.Type;
+import general.nieuw.scene.material.Material;
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.clone.Cloner;
 
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;

@@ -41,10 +41,11 @@ import com.jme3.audio.AudioKey;
 import com.jme3.font.BitmapFont;
 import com.jme3.renderer.Caps;
 import com.jme3.renderer.post.FilterPostProcessor;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.shader.ShaderGenerator;
 import com.jme3.texture.Texture;
+
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.material.Material;
+import general.nieuw.scene.shader.ShaderGenerator;
 
 /**
  * <code>AssetManager</code> provides an interface for managing the data assets

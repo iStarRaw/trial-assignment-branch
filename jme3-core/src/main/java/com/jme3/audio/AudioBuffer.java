@@ -32,8 +32,10 @@
 package com.jme3.audio;
 
 import com.jme3.audio.AudioData.DataType;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.NativeObject;
+
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.NativeObject;
+
 import java.nio.ByteBuffer;
 
 /**

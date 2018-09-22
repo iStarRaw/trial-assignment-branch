@@ -32,7 +32,9 @@
 package com.jme3.system.opencl;
 
 import com.jme3.system.JmeSystem;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.util.BufferUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;

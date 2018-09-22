@@ -34,8 +34,9 @@ package com.jme3.audio.openal;
 import com.jme3.audio.*;
 import com.jme3.audio.AudioSource.Status;
 import com.jme3.math.Vector3f;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.NativeObjectManager;
+
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.NativeObjectManager;
 
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;

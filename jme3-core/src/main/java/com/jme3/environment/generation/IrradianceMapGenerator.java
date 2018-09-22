@@ -37,8 +37,11 @@ import com.jme3.app.Application;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.texture.TextureCubeMap;
+
+import general.nieuw.util.BufferUtils;
+
 import static com.jme3.environment.util.EnvMapUtils.shBandFactor;
-import com.jme3.util.BufferUtils;
+
 import java.nio.ByteBuffer;
 import java.util.concurrent.Callable;
 

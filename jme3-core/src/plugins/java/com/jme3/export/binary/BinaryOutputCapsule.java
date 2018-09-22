@@ -33,8 +33,10 @@ package com.jme3.export.binary;
 
 import com.jme3.export.OutputCapsule;
 import com.jme3.export.Savable;
-import com.jme3.util.IntMap;
-import com.jme3.util.IntMap.Entry;
+
+import general.nieuw.util.IntMap;
+import general.nieuw.util.IntMap.Entry;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;

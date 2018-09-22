@@ -31,12 +31,14 @@
  */
 package com.jme3.renderer;
 
-import com.jme3.scene.shader.Shader;
-import com.jme3.scene.shader.Shader.ShaderSource;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.FrameBuffer.RenderBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
+
+import general.nieuw.scene.shader.Shader;
+import general.nieuw.scene.shader.Shader.ShaderSource;
+
 import com.jme3.texture.Texture;
 import java.util.Collection;
 

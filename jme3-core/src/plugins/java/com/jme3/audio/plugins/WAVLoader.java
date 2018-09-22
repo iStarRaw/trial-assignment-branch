@@ -38,8 +38,10 @@ import com.jme3.audio.AudioData;
 import com.jme3.audio.AudioKey;
 import com.jme3.audio.AudioStream;
 import com.jme3.audio.SeekableStream;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.LittleEndien;
+
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.LittleEndien;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;

@@ -35,8 +35,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import com.jme3.renderer.Camera;
-import com.jme3.scene.Geometry;
-import com.jme3.util.ListSort;
+
+import general.nieuw.scene.Geometry;
+import general.nieuw.util.ListSort;
 
 /**
  * This class is a special purpose list of {@link Geometry} objects for render

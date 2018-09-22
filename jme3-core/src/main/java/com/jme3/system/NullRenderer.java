@@ -40,15 +40,16 @@ import com.jme3.renderer.Caps;
 import com.jme3.renderer.Limits;
 import com.jme3.renderer.Renderer;
 import com.jme3.renderer.Statistics;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.light.LightList;
-import com.jme3.scene.material.RenderState;
-import com.jme3.scene.shader.Shader;
-import com.jme3.scene.shader.Shader.ShaderSource;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
+
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.VertexBuffer;
+import general.nieuw.scene.light.LightList;
+import general.nieuw.scene.material.RenderState;
+import general.nieuw.scene.shader.Shader;
+import general.nieuw.scene.shader.Shader.ShaderSource;
 
 import java.util.EnumMap;
 

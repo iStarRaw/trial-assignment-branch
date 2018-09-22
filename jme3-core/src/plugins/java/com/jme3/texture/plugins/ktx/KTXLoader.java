@@ -39,8 +39,10 @@ import com.jme3.renderer.opengl.GLImageFormat;
 import com.jme3.renderer.opengl.GLImageFormats;
 import com.jme3.texture.Image;
 import com.jme3.texture.image.ColorSpace;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.LittleEndien;
+
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.LittleEndien;
+
 import java.io.DataInput;
 import java.io.DataInputStream;
 import java.io.IOException;

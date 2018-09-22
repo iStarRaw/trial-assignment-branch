@@ -33,7 +33,9 @@ package com.jme3.texture.plugins;
 
 import com.jme3.math.FastMath;
 import com.jme3.texture.Image.Format;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.util.BufferUtils;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 

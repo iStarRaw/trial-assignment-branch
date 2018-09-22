@@ -32,7 +32,9 @@
 package com.jme3.math;
 
 import com.jme3.export.*;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.TempVars;
+
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;

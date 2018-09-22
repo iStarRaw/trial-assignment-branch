@@ -31,11 +31,12 @@
  */
 package com.jme3.renderer;
 
-import com.jme3.scene.Mesh;
-import com.jme3.scene.shader.Shader;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
-import com.jme3.util.IntMap;
+
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.shader.Shader;
+import general.nieuw.util.IntMap;
 
 /**
  * The statistics class allows tracking of real-time rendering statistics.

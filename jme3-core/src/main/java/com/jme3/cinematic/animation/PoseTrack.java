@@ -32,10 +32,11 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.VertexBuffer.Type;
-import com.jme3.util.TempVars;
+
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.VertexBuffer;
+import general.nieuw.scene.VertexBuffer.Type;
+import general.nieuw.util.TempVars;
 
 import java.io.IOException;
 import java.nio.FloatBuffer;

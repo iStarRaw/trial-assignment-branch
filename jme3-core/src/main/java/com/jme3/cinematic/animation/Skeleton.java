@@ -33,9 +33,11 @@ package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
 import com.jme3.math.Matrix4f;
-import com.jme3.util.TempVars;
-import com.jme3.util.clone.JmeCloneable;
-import com.jme3.util.clone.Cloner;
+
+import general.nieuw.util.TempVars;
+import general.nieuw.util.clone.Cloner;
+import general.nieuw.util.clone.JmeCloneable;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

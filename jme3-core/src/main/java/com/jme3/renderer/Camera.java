@@ -35,7 +35,9 @@ import com.jme3.export.*;
 import com.jme3.math.*;
 import com.jme3.math.bounding.BoundingBox;
 import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.TempVars;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

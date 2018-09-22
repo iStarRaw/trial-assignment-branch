@@ -50,12 +50,13 @@ import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.renderer.queue.RenderQueue.ShadowMode;
-import com.jme3.scene.Geometry;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.control.Control;
-import com.jme3.util.TempVars;
-import com.jme3.util.clone.Cloner;
-import com.jme3.util.clone.JmeCloneable;
+
+import general.nieuw.scene.Geometry;
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.control.Control;
+import general.nieuw.util.TempVars;
+import general.nieuw.util.clone.Cloner;
+import general.nieuw.util.clone.JmeCloneable;
 
 import java.io.IOException;
 

@@ -43,15 +43,17 @@ import com.jme3.renderer.Renderer;
 import com.jme3.renderer.ViewPort;
 import com.jme3.renderer.post.Filter;
 import com.jme3.renderer.post.Filter.Pass;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.light.DirectionalLight;
-import com.jme3.scene.light.Light;
-import com.jme3.scene.material.Material;
 import com.jme3.texture.Image.Format;
 import com.jme3.texture.Texture.WrapMode;
+
+import general.nieuw.scene.Node;
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.light.DirectionalLight;
+import general.nieuw.scene.light.Light;
+import general.nieuw.scene.material.Material;
+import general.nieuw.util.TempVars;
+
 import com.jme3.texture.Texture2D;
-import com.jme3.util.TempVars;
 
 import java.io.IOException;
 

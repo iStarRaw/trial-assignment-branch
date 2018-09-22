@@ -41,8 +41,10 @@ import com.jme3.renderer.Caps;
 import com.jme3.renderer.Renderer;
 import com.jme3.texture.image.ColorSpace;
 import com.jme3.texture.image.LastTextureState;
-import com.jme3.util.BufferUtils;
-import com.jme3.util.NativeObject;
+
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.NativeObject;
+
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;

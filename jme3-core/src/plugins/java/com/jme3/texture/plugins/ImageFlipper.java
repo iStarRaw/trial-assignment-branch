@@ -32,7 +32,9 @@
 package com.jme3.texture.plugins;
 
 import com.jme3.texture.Image;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.util.BufferUtils;
+
 import java.nio.ByteBuffer;
 
 /**

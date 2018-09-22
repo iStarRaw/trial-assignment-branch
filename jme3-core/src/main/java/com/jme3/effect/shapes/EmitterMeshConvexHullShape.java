@@ -33,7 +33,8 @@ package com.jme3.effect.shapes;
 
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector3f;
-import com.jme3.scene.Mesh;
+
+import general.nieuw.scene.Mesh;
 
 import java.util.List;
 

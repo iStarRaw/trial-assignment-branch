@@ -35,12 +35,13 @@ import com.jme3.environment.generation.JobProgressListener;
 import com.jme3.environment.generation.PrefilteredEnvMapFaceGenerator;
 import com.jme3.environment.generation.IrradianceMapGenerator;
 import com.jme3.environment.util.EnvMapUtils;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial;
-import com.jme3.scene.light.LightProbe;
 import com.jme3.environment.generation.JobProgressAdapter;
 import com.jme3.app.Application;
 import com.jme3.texture.TextureCubeMap;
+
+import general.nieuw.scene.Node;
+import general.nieuw.scene.Spatial;
+import general.nieuw.scene.light.LightProbe;
 
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
@@ -53,10 +54,10 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
  * The process is the folowing : 
  * 1. Create an EnvironmentCamera
  * 2. give it a position in the scene
- * 3. call {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, com.jme3.scene.Node)}
- * 4. add the created LightProbe to a node with the {@link Node#addLight(com.jme3.scene.light.Light) } method.
+ * 3. call {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, general.nieuw.scene.Node)}
+ * 4. add the created LightProbe to a node with the {@link Node#addLight(general.nieuw.scene.light.Light) } method.
  * 
- * Optionally for step 3 call {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, com.jme3.scene.Node, com.jme3.environment.generation.JobProgressListener) }
+ * Optionally for step 3 call {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, general.nieuw.scene.Node, com.jme3.environment.generation.JobProgressListener) }
  * with a {@link JobProgressListener} to be notified of the progress of the generation process.
  * 
  * The generation will be split in several threads for faster generation. 
@@ -80,7 +81,7 @@ public class LightProbeFactory {
      * The process is thread safe.
      * The created lightProbe will only be marked as ready when the rendering process is done.
      * 
-     * If you want to monitor the process use {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, com.jme3.scene.Node, com.jme3.environment.generation.JobProgressListener) }
+     * If you want to monitor the process use {@link LightProbeFactory#makeProbe(com.jme3.environment.EnvironmentCamera, general.nieuw.scene.Node, com.jme3.environment.generation.JobProgressListener) }
      * 
      *
      * 

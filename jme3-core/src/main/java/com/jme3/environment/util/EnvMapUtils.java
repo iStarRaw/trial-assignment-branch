@@ -35,23 +35,25 @@ import com.jme3.asset.AssetManager;
 import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.math.Vector4f;
-import com.jme3.scene.Geometry;
-import com.jme3.scene.Node;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.shape.Quad;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import com.jme3.texture.TextureCubeMap;
 import com.jme3.texture.image.ColorSpace;
 import com.jme3.ui.Picture;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.scene.Geometry;
+import general.nieuw.scene.Node;
+import general.nieuw.scene.material.Material;
+import general.nieuw.scene.shape.Quad;
+import general.nieuw.util.BufferUtils;
+import general.nieuw.util.TempVars;
+
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import static com.jme3.math.FastMath.*;
 import com.jme3.math.Quaternion;
 import com.jme3.math.Vector2f;
-import com.jme3.util.TempVars;
 
 /**
  *

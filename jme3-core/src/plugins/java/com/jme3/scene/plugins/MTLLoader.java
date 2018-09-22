@@ -33,13 +33,15 @@ package com.jme3.scene.plugins;
 
 import com.jme3.asset.*;
 import com.jme3.math.ColorRGBA;
-import com.jme3.scene.material.Material;
-import com.jme3.scene.material.MaterialList;
-import com.jme3.scene.material.RenderState.BlendMode;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture.WrapMode;
+
+import general.nieuw.scene.material.Material;
+import general.nieuw.scene.material.MaterialList;
+import general.nieuw.scene.material.RenderState.BlendMode;
+import general.nieuw.util.PlaceholderAssets;
+
 import com.jme3.texture.Texture2D;
-import com.jme3.util.PlaceholderAssets;
 
 import java.io.File;
 import java.io.IOException;

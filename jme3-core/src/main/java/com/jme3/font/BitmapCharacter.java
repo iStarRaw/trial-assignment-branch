@@ -32,8 +32,10 @@
 package com.jme3.font;
 
 import com.jme3.export.*;
-import com.jme3.util.IntMap;
-import com.jme3.util.IntMap.Entry;
+
+import general.nieuw.util.IntMap;
+import general.nieuw.util.IntMap.Entry;
+
 import java.io.IOException;
 
 /**

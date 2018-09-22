@@ -32,7 +32,9 @@
 package com.jme3.system.opencl;
 
 import com.jme3.math.*;
-import com.jme3.util.TempVars;
+
+import general.nieuw.util.TempVars;
+
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 

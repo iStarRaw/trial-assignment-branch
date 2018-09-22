@@ -40,7 +40,8 @@ import com.jme3.texture.Image;
 import com.jme3.texture.TextureCubeMap;
 import com.jme3.texture.image.DefaultImageRaster;
 import com.jme3.texture.image.MipMapImageRaster;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.util.BufferUtils;
 
 /**
  * Wraps a Cube map and allows to read from or write pixels into it.

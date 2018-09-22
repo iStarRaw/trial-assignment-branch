@@ -32,7 +32,8 @@
 package com.jme3.cinematic.events;
 
 import com.jme3.cinematic.animation.LoopMode;
-import com.jme3.scene.Spatial;
+
+import general.nieuw.scene.Spatial;
 
 /**
  * @deprecated use AnimationEvent instead

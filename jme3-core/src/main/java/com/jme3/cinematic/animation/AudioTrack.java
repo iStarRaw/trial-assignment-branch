@@ -36,11 +36,12 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.scene.Node;
-import com.jme3.scene.Spatial;
-import com.jme3.util.TempVars;
-import com.jme3.util.clone.Cloner;
-import com.jme3.util.clone.JmeCloneable;
+
+import general.nieuw.scene.Node;
+import general.nieuw.scene.Spatial;
+import general.nieuw.util.TempVars;
+import general.nieuw.util.clone.Cloner;
+import general.nieuw.util.clone.JmeCloneable;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -121,7 +122,7 @@ public class AudioTrack implements ClonableTrack {
      * Internal use only
      *
      * @see Track#setTime(float, float, com.jme3.animation.AnimControl,
-     * com.jme3.animation.AnimChannel, com.jme3.util.TempVars)
+     * com.jme3.animation.AnimChannel, general.nieuw.util.TempVars)
      */
     public void setTime(float time, float weight, AnimControl control, AnimChannel channel, TempVars vars) {
 

@@ -31,7 +31,7 @@
  */
 package com.jme3.audio;
 
-import com.jme3.util.NativeObject;
+import general.nieuw.util.NativeObject;
 
 /**
  * <code>AudioData</code> is an abstract representation

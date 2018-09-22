@@ -45,7 +45,9 @@ import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.system.JmeSystem;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
-import com.jme3.util.BufferUtils;
+
+import general.nieuw.util.BufferUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

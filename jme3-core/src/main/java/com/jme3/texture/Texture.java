@@ -36,7 +36,9 @@ import com.jme3.asset.AssetNotFoundException;
 import com.jme3.asset.CloneableSmartAsset;
 import com.jme3.asset.TextureKey;
 import com.jme3.export.*;
-import com.jme3.util.PlaceholderAssets;
+
+import general.nieuw.util.PlaceholderAssets;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -57,9 +57,10 @@ import com.jme3.app.input.event.MouseMotionEvent;
 import com.jme3.app.input.event.TouchEvent;
 import com.jme3.math.FastMath;
 import com.jme3.math.Vector2f;
-import com.jme3.util.IntMap;
-import com.jme3.util.IntMap.Entry;
-import com.jme3.util.SafeArrayList;
+
+import general.nieuw.util.IntMap;
+import general.nieuw.util.SafeArrayList;
+import general.nieuw.util.IntMap.Entry;
 
 /**
  * The <code>InputManager</code> is responsible for converting input events

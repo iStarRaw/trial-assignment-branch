@@ -36,7 +36,8 @@ import com.jme3.effect.ParticleEmitter;
 import com.jme3.effect.shapes.EmitterShape;
 import com.jme3.export.Savable;
 import com.jme3.math.Vector3f;
-import com.jme3.util.clone.JmeCloneable;
+
+import general.nieuw.util.clone.JmeCloneable;
 
 /**
  * An interface that defines the methods to affect initial velocity of the particles.

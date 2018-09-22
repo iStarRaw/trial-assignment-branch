@@ -32,12 +32,13 @@
 package com.jme3.renderer;
 
 import com.jme3.math.ColorRGBA;
-import com.jme3.scene.Mesh;
-import com.jme3.scene.VertexBuffer;
-import com.jme3.scene.material.RenderState;
-import com.jme3.scene.shader.Shader;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image;
+
+import general.nieuw.scene.Mesh;
+import general.nieuw.scene.VertexBuffer;
+import general.nieuw.scene.material.RenderState;
+import general.nieuw.scene.shader.Shader;
 
 /**
  * Represents the current state of the graphics library. This class is used
@@ -46,7 +47,7 @@ import com.jme3.texture.Image;
 public class RenderContext {
 
     /**
-     * @see RenderState#setFaceCullMode(com.jme3.scene.material.RenderState.FaceCullMode)
+     * @see RenderState#setFaceCullMode(general.nieuw.scene.material.RenderState.FaceCullMode)
      */
     public RenderState.FaceCullMode cullMode = RenderState.FaceCullMode.Off;
 
@@ -96,17 +97,17 @@ public class RenderContext {
     public float lineWidth = 1;
 
     /**
-     * @see RenderState#setBlendMode(com.jme3.scene.material.RenderState.BlendMode) 
+     * @see RenderState#setBlendMode(general.nieuw.scene.material.RenderState.BlendMode) 
      */
     public RenderState.BlendMode blendMode = RenderState.BlendMode.Off;
 
     /**
-     * @see RenderState#setBlendEquation(com.jme3.scene.material.RenderState.BlendEquation) 
+     * @see RenderState#setBlendEquation(general.nieuw.scene.material.RenderState.BlendEquation) 
      */
     public RenderState.BlendEquation blendEquation = RenderState.BlendEquation.Add;
     
     /**
-     * @see RenderState#setBlendEquationAlpha(com.jme3.scene.material.RenderState.BlendEquationAlpha) 
+     * @see RenderState#setBlendEquationAlpha(general.nieuw.scene.material.RenderState.BlendEquationAlpha) 
      */
     public RenderState.BlendEquationAlpha blendEquationAlpha = RenderState.BlendEquationAlpha.InheritColor;
 
@@ -116,12 +117,12 @@ public class RenderContext {
     public boolean wireframe = false;
 
     /**
-     * @see Renderer#setShader(com.jme3.scene.shader.Shader) 
+     * @see Renderer#setShader(general.nieuw.scene.shader.Shader) 
      */
     public int boundShaderProgram;
     
     /**
-     * @see Renderer#setShader(com.jme3.scene.shader.Shader) 
+     * @see Renderer#setShader(general.nieuw.scene.shader.Shader) 
      */
     public Shader boundShader;
 
@@ -167,19 +168,19 @@ public class RenderContext {
     /**
      * Currently bound element array vertex buffer.
      * 
-     * @see Renderer#renderMesh(com.jme3.scene.Mesh, int, int) 
+     * @see Renderer#renderMesh(general.nieuw.scene.Mesh, int, int) 
      */
     public int boundElementArrayVBO;
 
     /**
-     * @see Renderer#renderMesh(com.jme3.scene.Mesh, int, int) 
+     * @see Renderer#renderMesh(general.nieuw.scene.Mesh, int, int) 
      */
     public int boundVertexArray;
 
     /**
      * Currently bound array vertex buffer.
      * 
-     * @see Renderer#renderMesh(com.jme3.scene.Mesh, int, int) 
+     * @see Renderer#renderMesh(general.nieuw.scene.Mesh, int, int) 
      */
     public int boundArrayVBO;
     
