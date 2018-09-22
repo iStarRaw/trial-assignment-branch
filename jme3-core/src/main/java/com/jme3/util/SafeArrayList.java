@@ -31,7 +31,16 @@
  */
 package com.jme3.util;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.NoSuchElementException;
+
+import jme3.com.util.*;
 
 /**
  *  <p>Provides a list with similar modification semantics to java.util.concurrent's

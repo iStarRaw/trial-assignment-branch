@@ -38,8 +38,14 @@ import com.jme3.scene.material.logic.TechniqueDefLogic;
 import com.jme3.scene.shader.*;
 import com.jme3.scene.shader.Shader.ShaderType;
 
+import jme3.com.util.*;
+
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Describes a technique definition.

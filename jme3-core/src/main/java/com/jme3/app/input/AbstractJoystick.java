@@ -31,10 +31,14 @@
  */
 package com.jme3.app.input;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import com.jme3.app.input.controls.JoyAxisTrigger;
 import com.jme3.app.input.controls.JoyButtonTrigger;
+
+import jme3.com.util.*;
 
 /**
  * A joystick represents a single joystick that is installed in the system.

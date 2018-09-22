@@ -36,8 +36,14 @@ import com.jme3.export.*;
 import com.jme3.scene.shader.VarType;
 import com.jme3.texture.image.ColorSpace;
 
+import jme3.com.util.*;
+
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

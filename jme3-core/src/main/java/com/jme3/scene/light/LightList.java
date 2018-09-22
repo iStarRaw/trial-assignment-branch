@@ -35,9 +35,17 @@ import com.jme3.export.*;
 import com.jme3.scene.Spatial;
 import com.jme3.util.clone.Cloner;
 import com.jme3.util.clone.JmeCloneable;
+
+import jme3.com.util.*;
+
 import com.jme3.util.SortUtil;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * <code>LightList</code> is used internally by {@link Spatial}s to manage
