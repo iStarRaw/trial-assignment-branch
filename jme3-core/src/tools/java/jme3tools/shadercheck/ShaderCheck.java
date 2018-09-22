@@ -4,10 +4,10 @@ import com.jme3.asset.AssetManager;
 import com.jme3.asset.plugins.ClasspathLocator;
 import com.jme3.asset.plugins.FileLocator;
 import com.jme3.material.plugins.J3MLoader;
-import com.jme3.renderer.Caps;
 import com.jme3.shader.plugins.GLSLLoader;
 import com.jme3.system.JmeSystem;
 
+import ander.render.renderer.Caps;
 import general.nieuw.scene.material.MaterialDef;
 import general.nieuw.scene.material.TechniqueDef;
 import general.nieuw.scene.shader.DefineList;

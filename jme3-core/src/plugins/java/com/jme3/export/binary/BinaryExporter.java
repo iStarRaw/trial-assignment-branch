@@ -36,7 +36,9 @@ import com.jme3.export.FormatVersion;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.Savable;
 import com.jme3.export.SavableClassUtil;
-import com.jme3.math.FastMath;
+
+import ander.render.math.FastMath;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;

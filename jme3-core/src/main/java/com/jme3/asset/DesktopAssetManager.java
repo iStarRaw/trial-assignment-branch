@@ -35,11 +35,11 @@ import com.jme3.asset.cache.AssetCache;
 import com.jme3.audio.AudioData;
 import com.jme3.audio.AudioKey;
 import com.jme3.font.BitmapFont;
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.post.FilterPostProcessor;
 import com.jme3.system.JmeSystem;
 import com.jme3.texture.Texture;
 
+import ander.render.renderer.Caps;
+import ander.render.renderer.post.FilterPostProcessor;
 import general.nieuw.scene.Spatial;
 import general.nieuw.scene.material.Material;
 import general.nieuw.scene.shader.Glsl100ShaderGenerator;

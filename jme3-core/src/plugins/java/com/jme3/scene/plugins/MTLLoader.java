@@ -32,10 +32,10 @@
 package com.jme3.scene.plugins;
 
 import com.jme3.asset.*;
-import com.jme3.math.ColorRGBA;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture.WrapMode;
 
+import ander.render.math.ColorRGBA;
 import general.nieuw.scene.material.Material;
 import general.nieuw.scene.material.MaterialList;
 import general.nieuw.scene.material.RenderState.BlendMode;

@@ -33,8 +33,8 @@ package general.nieuw.scene;
 
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
-import com.jme3.renderer.Camera;
 
+import ander.render.renderer.Camera;
 import general.nieuw.scene.control.CameraControl;
 import general.nieuw.scene.control.CameraControl.ControlDirection;
 import general.nieuw.util.clone.Cloner;

@@ -32,9 +32,9 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
 
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.Spatial;
 import general.nieuw.scene.control.AbstractControl;

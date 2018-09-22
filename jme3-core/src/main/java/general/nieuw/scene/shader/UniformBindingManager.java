@@ -31,11 +31,11 @@
  */
 package general.nieuw.scene.shader;
 
-import com.jme3.math.*;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.RenderManager;
 import com.jme3.system.Timer;
 
+import ander.render.math.*;
+import ander.render.renderer.Camera;
+import ander.render.renderer.RenderManager;
 import general.nieuw.scene.material.Material;
 
 import java.util.ArrayList;
@@ -215,7 +215,7 @@ public class UniformBindingManager {
     /**
      * Internal use only. Sets the world matrix to use for future
      * rendering. This has no effect unless objects are rendered manually
-     * using {@link Material#render(general.nieuw.scene.Geometry, com.jme3.renderer.RenderManager) }.
+     * using {@link Material#render(general.nieuw.scene.Geometry, ander.render.renderer.RenderManager) }.
      * Using {@link #renderGeometry(general.nieuw.scene.Geometry) } will 
      * override this value.
      * 

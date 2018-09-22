@@ -32,9 +32,9 @@
 package com.jme3.environment.util;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.FastMath;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer.Type;

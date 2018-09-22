@@ -31,13 +31,13 @@
  */
 package general.nieuw.scene.shader;
 
-import com.jme3.math.*;
-
 import general.nieuw.util.BufferUtils;
 
 import java.nio.Buffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
+
+import ander.render.math.*;
 
 public class Uniform extends ShaderVariable {
 

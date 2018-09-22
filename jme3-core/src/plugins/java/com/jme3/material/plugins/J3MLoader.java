@@ -32,13 +32,13 @@
 package com.jme3.material.plugins;
 
 import com.jme3.asset.*;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector2f;
-import com.jme3.math.Vector3f;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import com.jme3.texture.image.ColorSpace;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector2f;
+import ander.render.math.Vector3f;
 import general.nieuw.scene.material.*;
 import general.nieuw.scene.material.RenderState.BlendEquation;
 import general.nieuw.scene.material.RenderState.BlendMode;

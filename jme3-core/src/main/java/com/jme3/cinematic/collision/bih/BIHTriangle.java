@@ -31,8 +31,8 @@
  */
 package com.jme3.cinematic.collision.bih;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.Vector3f;
+import ander.render.math.FastMath;
+import ander.render.math.Vector3f;
 
 public final class BIHTriangle {
 

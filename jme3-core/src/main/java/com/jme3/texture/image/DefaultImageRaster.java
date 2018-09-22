@@ -31,9 +31,11 @@
  */
 package com.jme3.texture.image;
 
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
 import com.jme3.texture.Image;
+
+import ander.render.math.ColorRGBA;
+import ander.render.math.FastMath;
+
 import java.nio.ByteBuffer;
 
 public class DefaultImageRaster extends ImageRaster {

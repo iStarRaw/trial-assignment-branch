@@ -33,13 +33,13 @@ package jme3tools.optimize;
 
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
-import com.jme3.math.Vector2f;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import com.jme3.texture.image.ColorSpace;
 
+import ander.render.math.Vector2f;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.Spatial;

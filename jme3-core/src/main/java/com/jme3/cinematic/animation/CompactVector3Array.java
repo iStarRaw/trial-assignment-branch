@@ -32,7 +32,9 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.math.Vector3f;
+
+import ander.render.math.Vector3f;
+
 import java.io.IOException;
 
 /**

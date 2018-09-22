@@ -33,10 +33,10 @@ package general.nieuw.scene.material;
 
 import com.jme3.asset.TextureKey;
 import com.jme3.export.*;
-import com.jme3.math.*;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture.WrapMode;
 
+import ander.render.math.*;
 import general.nieuw.scene.shader.VarType;
 
 import java.io.IOException;

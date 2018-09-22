@@ -47,9 +47,6 @@
  */
 package jme3tools.optimize;
 
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingSphere;
-
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
@@ -70,6 +67,9 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingSphere;
 
 /**
  * This is an utility class that allows to generated the lod levels for an

@@ -40,13 +40,13 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.export.Savable;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.renderer.Camera;
 import com.jme3.texture.TextureCubeMap;
 
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.math.bounding.BoundingVolume;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;
 import general.nieuw.util.TempVars;

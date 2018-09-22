@@ -31,8 +31,8 @@
  */
 package com.jme3.audio;
 
-import com.jme3.math.Quaternion;
-import com.jme3.math.Vector3f;
+import ander.render.math.Quaternion;
+import ander.render.math.Vector3f;
 
 public class Listener {
 

@@ -35,8 +35,8 @@ import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
 import com.jme3.font.BitmapFont;
 import com.jme3.font.BitmapText;
-import com.jme3.math.ColorRGBA;
 
+import ander.render.math.ColorRGBA;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial.CullHint;

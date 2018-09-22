@@ -36,11 +36,11 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.queue.GeometryList;
-import com.jme3.renderer.queue.RenderQueue;
 
+import ander.render.math.Vector3f;
+import ander.render.renderer.Camera;
+import ander.render.renderer.queue.GeometryList;
+import ander.render.renderer.queue.RenderQueue;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;

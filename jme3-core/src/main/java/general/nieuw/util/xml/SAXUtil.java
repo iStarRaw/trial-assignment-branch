@@ -31,10 +31,11 @@
  */
 package general.nieuw.util.xml;
 
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
 
 /**
  * Utility methods for parsing XML data using SAX.

@@ -31,15 +31,15 @@
  */
 package com.jme3.effect.shapes;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer.Type;
 import general.nieuw.util.BufferUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ander.render.math.FastMath;
+import ander.render.math.Vector3f;
 
 /**
  * This emiter shape emits the particles from the given shape's faces.

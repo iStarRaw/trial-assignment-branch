@@ -35,12 +35,12 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.renderer.Camera;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.Spatial;
 import general.nieuw.util.TempVars;
 
@@ -93,7 +93,7 @@ public class DirectionalLight extends Light {
      * 
      * @return The direction vector of the light.
      * 
-     * @see DirectionalLight#setDirection(com.jme3.math.Vector3f) 
+     * @see DirectionalLight#setDirection(ander.render.math.Vector3f) 
      */
     public Vector3f getDirection() {
         return direction;

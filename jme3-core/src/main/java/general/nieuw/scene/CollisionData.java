@@ -34,8 +34,9 @@ package general.nieuw.scene;
 import com.jme3.cinematic.collision.Collidable;
 import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.export.Savable;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.bounding.BoundingVolume;
+
+import ander.render.math.Matrix4f;
+import ander.render.math.bounding.BoundingVolume;
 
 /**
  * <code>CollisionData</code> is an interface that can be used to 

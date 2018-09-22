@@ -31,8 +31,6 @@
  */
 package general.nieuw.scene.debug;
 
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.scene.VertexBuffer.Type;
@@ -40,6 +38,8 @@ import general.nieuw.scene.VertexBuffer.Usage;
 import general.nieuw.util.BufferUtils;
 
 import java.nio.FloatBuffer;
+
+import ander.render.math.Vector3f;
 
 public class WireFrustum extends Mesh {
 

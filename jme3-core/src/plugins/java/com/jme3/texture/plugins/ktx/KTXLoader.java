@@ -34,12 +34,12 @@ package com.jme3.texture.plugins.ktx;
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetLoader;
 import com.jme3.asset.TextureKey;
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.opengl.GLImageFormat;
-import com.jme3.renderer.opengl.GLImageFormats;
 import com.jme3.texture.Image;
 import com.jme3.texture.image.ColorSpace;
 
+import ander.render.renderer.Caps;
+import ander.render.renderer.opengl.GLImageFormat;
+import ander.render.renderer.opengl.GLImageFormats;
 import general.nieuw.util.BufferUtils;
 import general.nieuw.util.LittleEndien;
 

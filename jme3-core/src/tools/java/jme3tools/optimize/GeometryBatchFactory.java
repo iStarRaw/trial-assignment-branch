@@ -1,9 +1,5 @@
 package jme3tools.optimize;
 
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Transform;
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.*;
 import general.nieuw.scene.Mesh.Mode;
 import general.nieuw.scene.VertexBuffer.Format;
@@ -27,6 +23,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ander.render.math.Matrix4f;
+import ander.render.math.Transform;
+import ander.render.math.Vector3f;
 
 public class GeometryBatchFactory {
 

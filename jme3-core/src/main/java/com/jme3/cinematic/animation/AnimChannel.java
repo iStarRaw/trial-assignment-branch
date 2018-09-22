@@ -31,11 +31,11 @@
  */
 package com.jme3.cinematic.animation;
 
-import com.jme3.math.FastMath;
-
 import general.nieuw.util.TempVars;
 
 import java.util.BitSet;
+
+import ander.render.math.FastMath;
 
 /**
  * <code>AnimChannel</code> provides controls, such as play, pause,

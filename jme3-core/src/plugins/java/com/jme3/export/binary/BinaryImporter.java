@@ -34,7 +34,9 @@ package com.jme3.export.binary;
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetManager;
 import com.jme3.export.*;
-import com.jme3.math.FastMath;
+
+import ander.render.math.FastMath;
+
 import java.io.*;
 import java.net.URL;
 import java.nio.ByteOrder;

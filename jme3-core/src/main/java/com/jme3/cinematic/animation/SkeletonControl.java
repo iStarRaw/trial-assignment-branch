@@ -32,12 +32,12 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.math.FastMath;
-import com.jme3.math.Matrix4f;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.RendererException;
-import com.jme3.renderer.ViewPort;
 
+import ander.render.math.FastMath;
+import ander.render.math.Matrix4f;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.RendererException;
+import ander.render.renderer.ViewPort;
 import general.nieuw.scene.*;
 import general.nieuw.scene.VertexBuffer.Type;
 import general.nieuw.scene.control.AbstractControl;

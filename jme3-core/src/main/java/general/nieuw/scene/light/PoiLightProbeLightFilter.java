@@ -31,11 +31,10 @@
  */
 package general.nieuw.scene.light;
 
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.renderer.Camera;
-
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.math.bounding.BoundingVolume;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.Geometry;
 import general.nieuw.util.TempVars;
 

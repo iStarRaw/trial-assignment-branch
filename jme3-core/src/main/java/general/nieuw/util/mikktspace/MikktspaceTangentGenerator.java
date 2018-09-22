@@ -5,9 +5,6 @@
  */
 package general.nieuw.util.mikktspace;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.*;
 import general.nieuw.util.*;
 
@@ -16,6 +13,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ander.render.math.FastMath;
+import ander.render.math.Vector3f;
 
 /**
  * This tangent generator is Highly experimental.

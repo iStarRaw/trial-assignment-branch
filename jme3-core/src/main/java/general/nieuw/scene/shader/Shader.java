@@ -31,8 +31,6 @@
  */
 package general.nieuw.scene.shader;
 
-import com.jme3.renderer.Renderer;
-
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.util.IntMap;
 import general.nieuw.util.ListMap;
@@ -41,6 +39,8 @@ import general.nieuw.util.IntMap.Entry;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
+import ander.render.renderer.Renderer;
 
 public final class Shader extends NativeObject {
     

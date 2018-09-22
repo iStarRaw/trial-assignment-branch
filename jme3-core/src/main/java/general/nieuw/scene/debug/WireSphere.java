@@ -31,9 +31,6 @@
  */
 package general.nieuw.scene.debug;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.bounding.BoundingSphere;
-
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.scene.Mesh.Mode;
@@ -44,6 +41,9 @@ import general.nieuw.util.BufferUtils;
 
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
+
+import ander.render.math.FastMath;
+import ander.render.math.bounding.BoundingSphere;
 
 public class WireSphere extends Mesh {
 

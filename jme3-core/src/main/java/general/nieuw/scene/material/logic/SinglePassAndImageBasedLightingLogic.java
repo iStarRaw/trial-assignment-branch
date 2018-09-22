@@ -32,10 +32,10 @@
 package general.nieuw.scene.material.logic;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.math.*;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.renderer.*;
 
+import ander.render.math.*;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.renderer.*;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.light.*;
 import general.nieuw.scene.material.*;

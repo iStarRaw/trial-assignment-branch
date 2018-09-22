@@ -31,9 +31,10 @@
  */
 package com.jme3.texture.image;
 
-import com.jme3.math.ColorRGBA;
 import com.jme3.system.JmeSystem;
 import com.jme3.texture.Image;
+
+import ander.render.math.ColorRGBA;
 
 /**
  * Utility class for reading and writing from jME3 {@link Image images}.
@@ -190,7 +191,7 @@ public abstract class ImageRaster {
      * <p>
      * Convenience method that does not take a store argument. Equivalent
      * to calling getPixel(x, y, null). 
-     * See {@link #getPixel(int, int, com.jme3.math.ColorRGBA) } for
+     * See {@link #getPixel(int, int, ander.render.math.ColorRGBA) } for
      * more information.
      * 
      * @param x The x coordinate, from 0 to width - 1.

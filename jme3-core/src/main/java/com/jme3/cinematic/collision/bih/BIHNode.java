@@ -35,12 +35,12 @@ import com.jme3.cinematic.collision.Collidable;
 import com.jme3.cinematic.collision.CollisionResult;
 import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.export.*;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Ray;
-import com.jme3.math.Triangle;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
 
+import ander.render.math.Matrix4f;
+import ander.render.math.Ray;
+import ander.render.math.Triangle;
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
 import general.nieuw.util.TempVars;
 
 import java.io.IOException;

@@ -32,10 +32,10 @@
 package com.jme3.scene.plugins;
 
 import com.jme3.asset.*;
-import com.jme3.math.Vector2f;
-import com.jme3.math.Vector3f;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
 
+import ander.render.math.Vector2f;
+import ander.render.math.Vector3f;
+import ander.render.renderer.queue.RenderQueue.Bucket;
 import general.nieuw.scene.*;
 import general.nieuw.scene.Mesh.Mode;
 import general.nieuw.scene.VertexBuffer.Type;

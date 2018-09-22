@@ -41,10 +41,10 @@ import com.jme3.app.input.controls.MouseButtonTrigger;
 import com.jme3.app.input.controls.Trigger;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.math.FastMath;
-import com.jme3.math.Quaternion;
-import com.jme3.math.Vector3f;
 
+import ander.render.math.FastMath;
+import ander.render.math.Quaternion;
+import ander.render.math.Vector3f;
 import general.nieuw.scene.CameraNode;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;

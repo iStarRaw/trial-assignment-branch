@@ -31,8 +31,9 @@
  */
 package com.jme3.texture.image;
 
-import com.jme3.renderer.Renderer;
 import com.jme3.texture.Texture;
+
+import ander.render.renderer.Renderer;
 
 /**
  * Stores / caches texture state parameters so they don't have to be set 

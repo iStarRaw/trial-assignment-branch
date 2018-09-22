@@ -31,9 +31,6 @@
  */
 package general.nieuw.scene.instancing;
 
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
-
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.GeometryGroupNode;
 import general.nieuw.scene.Mesh;
@@ -48,6 +45,9 @@ import general.nieuw.util.clone.JmeCloneable;
 
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
+
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
 
 import java.io.IOException;
 import java.util.HashMap;

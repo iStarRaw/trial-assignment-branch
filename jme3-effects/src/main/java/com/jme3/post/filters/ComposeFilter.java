@@ -36,11 +36,11 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.post.Filter;
 import com.jme3.texture.Texture2D;
 
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.post.Filter;
 import general.nieuw.scene.material.Material;
 
 import java.io.IOException;

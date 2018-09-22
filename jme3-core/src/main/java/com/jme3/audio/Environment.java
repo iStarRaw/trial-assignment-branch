@@ -31,7 +31,7 @@
  */
 package com.jme3.audio;
 
-import com.jme3.math.FastMath;
+import ander.render.math.FastMath;
 
 /**
  * Audio environment, for reverb effects.

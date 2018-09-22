@@ -31,14 +31,14 @@
  */
 package general.nieuw.scene.shape;
 
-import com.jme3.math.Spline;
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
 
 import java.util.Iterator;
 import java.util.List;
+
+import ander.render.math.Spline;
+import ander.render.math.Vector3f;
 
 /**
  * A

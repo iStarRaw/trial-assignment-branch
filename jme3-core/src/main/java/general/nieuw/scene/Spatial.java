@@ -35,15 +35,15 @@ import com.jme3.asset.AssetKey;
 import com.jme3.asset.CloneableSmartAsset;
 import com.jme3.cinematic.collision.Collidable;
 import com.jme3.export.*;
-import com.jme3.math.*;
-import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.queue.RenderQueue;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
-import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 
+import ander.render.math.*;
+import ander.render.math.bounding.BoundingVolume;
+import ander.render.renderer.Camera;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.queue.RenderQueue;
+import ander.render.renderer.queue.RenderQueue.Bucket;
+import ander.render.renderer.queue.RenderQueue.ShadowMode;
 import general.nieuw.scene.control.Control;
 import general.nieuw.scene.light.Light;
 import general.nieuw.scene.light.LightList;
@@ -540,7 +540,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * <code>lookAt</code> is a convenience method for auto-setting the local
      * rotation based on a position in world space and an up vector. It computes the rotation
      * to transform the z-axis to point onto 'position' and the y-axis to 'up'.
-     * Unlike {@link Quaternion#lookAt(com.jme3.math.Vector3f, com.jme3.math.Vector3f) }
+     * Unlike {@link Quaternion#lookAt(ander.render.math.Vector3f, ander.render.math.Vector3f) }
      * this method takes a world position to look at and not a relative direction.
      *
      * Note : 28/01/2013 this method has been fixed as it was not taking into account the parent rotation.
@@ -1291,7 +1291,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
      * @return The shadow mode of this spatial, if the local shadow
      * mode is set to inherit, then the parent's shadow mode is returned.
      *
-     * @see Spatial#setShadowMode(com.jme3.renderer.queue.RenderQueue.ShadowMode)
+     * @see Spatial#setShadowMode(ander.render.renderer.queue.RenderQueue.ShadowMode)
      * @see ShadowMode
      */
     public RenderQueue.ShadowMode getShadowMode() {
@@ -1738,7 +1738,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
     /**
      * @return The locally set queue bucket mode
      *
-     * @see Spatial#setQueueBucket(com.jme3.renderer.queue.RenderQueue.Bucket)
+     * @see Spatial#setQueueBucket(ander.render.renderer.queue.RenderQueue.Bucket)
      */
     public RenderQueue.Bucket getLocalQueueBucket() {
         return queueBucket;
@@ -1747,7 +1747,7 @@ public abstract class Spatial implements Savable, Cloneable, Collidable, Cloneab
     /**
      * @return The locally set shadow mode
      *
-     * @see Spatial#setShadowMode(com.jme3.renderer.queue.RenderQueue.ShadowMode)
+     * @see Spatial#setShadowMode(ander.render.renderer.queue.RenderQueue.ShadowMode)
      */
     public RenderQueue.ShadowMode getLocalShadowMode() {
         return shadowMode;

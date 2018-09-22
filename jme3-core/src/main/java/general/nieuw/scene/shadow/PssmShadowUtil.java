@@ -31,11 +31,12 @@
  */
 package general.nieuw.scene.shadow;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.queue.GeometryList;
+import ander.render.math.FastMath;
+import ander.render.math.Matrix4f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.renderer.Camera;
+import ander.render.renderer.queue.GeometryList;
+
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 

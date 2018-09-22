@@ -31,21 +31,20 @@
  */
 package general.nieuw.scene.shape;
 
-import com.jme3.math.CurveAndSurfaceMath;
-import com.jme3.math.FastMath;
-import com.jme3.math.Spline.SplineType;
-
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.util.BufferUtils;
-
-import com.jme3.math.Vector3f;
-import com.jme3.math.Vector4f;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import ander.render.math.CurveAndSurfaceMath;
+import ander.render.math.FastMath;
+import ander.render.math.Vector3f;
+import ander.render.math.Vector4f;
+import ander.render.math.Spline.SplineType;
 
 /**
  * This class represents a surface described by knots, weights and control points.

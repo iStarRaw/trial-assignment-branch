@@ -32,8 +32,8 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.math.*;
 
+import ander.render.math.*;
 import general.nieuw.scene.Node;
 import general.nieuw.util.TempVars;
 import general.nieuw.util.clone.Cloner;
@@ -115,7 +115,7 @@ public final class Bone implements Savable, JmeCloneable {
     
     /**
      * Used to handle blending from one animation to another.
-     * See {@link #blendAnimTransforms(com.jme3.math.Vector3f, com.jme3.math.Quaternion, com.jme3.math.Vector3f, float)}
+     * See {@link #blendAnimTransforms(ander.render.math.Vector3f, ander.render.math.Quaternion, ander.render.math.Vector3f, float)}
      * on how this variable is used.
      */
     private transient float currentWeightSum = -1;
@@ -619,7 +619,7 @@ public final class Bone implements Savable, JmeCloneable {
      * 
      * @param translation -
      * @param rotation -
-     * @deprecated use {@link #setUserTransformsInModelSpace(com.jme3.math.Vector3f, com.jme3.math.Quaternion) }
+     * @deprecated use {@link #setUserTransformsInModelSpace(ander.render.math.Vector3f, ander.render.math.Quaternion) }
      */
     @Deprecated
     public void setUserTransformsWorld(Vector3f translation, Quaternion rotation) {

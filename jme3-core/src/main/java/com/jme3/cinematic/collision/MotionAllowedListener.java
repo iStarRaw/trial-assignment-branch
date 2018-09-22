@@ -32,7 +32,7 @@
 
 package com.jme3.cinematic.collision;
 
-import com.jme3.math.Vector3f;
+import ander.render.math.Vector3f;
 
 public interface MotionAllowedListener {
 

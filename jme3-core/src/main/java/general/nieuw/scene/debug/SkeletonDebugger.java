@@ -34,8 +34,8 @@ package general.nieuw.scene.debug;
 import java.util.Map;
 
 import com.jme3.cinematic.animation.Skeleton;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
 
+import ander.render.renderer.queue.RenderQueue.Bucket;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 

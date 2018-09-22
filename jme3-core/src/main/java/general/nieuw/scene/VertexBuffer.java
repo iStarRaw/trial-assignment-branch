@@ -32,9 +32,9 @@
 package general.nieuw.scene;
 
 import com.jme3.export.*;
-import com.jme3.math.FastMath;
-import com.jme3.renderer.Renderer;
 
+import ander.render.math.FastMath;
+import ander.render.renderer.Renderer;
 import general.nieuw.util.BufferUtils;
 import general.nieuw.util.NativeObject;
 

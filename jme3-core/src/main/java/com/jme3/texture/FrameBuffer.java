@@ -31,10 +31,10 @@
  */
 package com.jme3.texture;
 
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.Renderer;
 import com.jme3.texture.Image.Format;
 
+import ander.render.renderer.Caps;
+import ander.render.renderer.Renderer;
 import general.nieuw.util.NativeObject;
 
 import java.util.ArrayList;

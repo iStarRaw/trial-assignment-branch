@@ -31,13 +31,13 @@
  */
 package general.nieuw.scene.light;
 
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.post.SceneProcessor;
-import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
 
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.post.SceneProcessor;
+import ander.render.renderer.queue.RenderQueue;
 import general.nieuw.scene.Spatial;
 import general.nieuw.util.TempVars;
 

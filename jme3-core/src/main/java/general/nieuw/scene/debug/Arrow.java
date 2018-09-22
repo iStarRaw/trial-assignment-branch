@@ -31,14 +31,14 @@
  */
 package general.nieuw.scene.debug;
 
-import com.jme3.math.Quaternion;
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.scene.VertexBuffer.Type;
 
 import java.nio.FloatBuffer;
+
+import ander.render.math.Quaternion;
+import ander.render.math.Vector3f;
 
 /**
  * The <code>Arrow</code> debug shape represents an arrow.

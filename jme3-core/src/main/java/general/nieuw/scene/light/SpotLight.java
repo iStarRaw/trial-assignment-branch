@@ -32,16 +32,16 @@
 package general.nieuw.scene.light;
 
 import com.jme3.export.*;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
-import com.jme3.math.Plane;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.math.bounding.Intersection;
-import com.jme3.renderer.Camera;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.FastMath;
+import ander.render.math.Plane;
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.math.bounding.BoundingVolume;
+import ander.render.math.bounding.Intersection;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.Spatial;
 import general.nieuw.util.TempVars;
 

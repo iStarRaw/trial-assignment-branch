@@ -35,15 +35,15 @@ import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
 import com.jme3.asset.CloneableSmartAsset;
 import com.jme3.export.*;
-import com.jme3.math.*;
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.Renderer;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
 import com.jme3.texture.image.ColorSpace;
 
+import ander.render.math.*;
+import ander.render.renderer.Caps;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.Renderer;
+import ander.render.renderer.queue.RenderQueue.Bucket;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.light.LightList;
 import general.nieuw.scene.material.RenderState.BlendMode;
@@ -319,11 +319,11 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
      * The technique is selected automatically by the {@link RenderManager}
      * based on system capabilities. Users may select their own
      * technique by using
-     * {@link #selectTechnique(java.lang.String, com.jme3.renderer.RenderManager) }.
+     * {@link #selectTechnique(java.lang.String, ander.render.renderer.RenderManager) }.
      *
      * @return the currently active technique.
      *
-     * @see #selectTechnique(java.lang.String, com.jme3.renderer.RenderManager)
+     * @see #selectTechnique(java.lang.String, ander.render.renderer.RenderManager)
      */
     public Technique getActiveTechnique() {
         return technique;
@@ -888,7 +888,7 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
      * <ul>
      * <li>Determine which technique to use to render the material -
      * either what the user selected via
-     * {@link #selectTechnique(java.lang.String, com.jme3.renderer.RenderManager)
+     * {@link #selectTechnique(java.lang.String, ander.render.renderer.RenderManager)
      * Material.selectTechnique()},
      * or the first default technique that the renderer supports
      * (based on the technique's {@link TechniqueDef#getRequiredCaps() requested rendering capabilities})<ul>
@@ -907,7 +907,7 @@ public class Material implements CloneableSmartAsset, Cloneable, Savable {
      * <li>{@link #getAdditionalRenderState() Material Instance Additional RenderState}
      * - i.e. ad-hoc renderstate set per model</li>
      * <li>{@link RenderManager#getForcedRenderState() RenderManager's Forced RenderState}
-     * - i.e. renderstate requested by a {@link com.jme3.renderer.post.SceneProcessor} or
+     * - i.e. renderstate requested by a {@link ander.render.renderer.post.SceneProcessor} or
      * post-processing filter.</li></ol>
      * <li>If the technique {@link TechniqueDef#isUsingShaders() uses a shader}, then the uniforms of the shader must be updated.<ul>
      * <li>Uniforms bound to material parameters are updated based on the current material parameter values.</li>

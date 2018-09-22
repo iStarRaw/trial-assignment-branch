@@ -51,11 +51,11 @@ import com.jme3.app.state.AppStateManager;
 import com.jme3.asset.AssetInfo;
 import com.jme3.asset.AssetKey;
 import com.jme3.asset.AssetManager;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.RendererException;
-import com.jme3.renderer.post.Filter;
-import com.jme3.renderer.post.Filter.Pass;
 
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.RendererException;
+import ander.render.renderer.post.Filter;
+import ander.render.renderer.post.Filter.Pass;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;

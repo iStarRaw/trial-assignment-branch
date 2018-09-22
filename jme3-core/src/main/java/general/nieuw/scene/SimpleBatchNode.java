@@ -31,9 +31,8 @@
  */
 package general.nieuw.scene;
 
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Transform;
-
+import ander.render.math.Matrix4f;
+import ander.render.math.Transform;
 import general.nieuw.util.TempVars;
 
 /**

@@ -32,7 +32,8 @@
 package com.jme3.asset;
 
 import com.jme3.asset.cache.AssetCache;
-import com.jme3.renderer.post.FilterPostProcessor;
+
+import ander.render.renderer.post.FilterPostProcessor;
 
 /**
  * Used to load FilterPostProcessors which are not cached.

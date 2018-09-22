@@ -38,9 +38,9 @@ import com.jme3.cinematic.animation.LoopMode;
 import com.jme3.cinematic.events.AbstractCinematicEvent;
 import com.jme3.cinematic.events.CinematicEvent;
 import com.jme3.export.*;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.RenderManager;
 
+import ander.render.renderer.Camera;
+import ander.render.renderer.RenderManager;
 import general.nieuw.scene.CameraNode;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.control.CameraControl;
@@ -82,7 +82,7 @@ import java.util.logging.Logger;
  *
  * Cinematic has a way to handle several point of view by creating CameraNode
  * over a cam and activating them on schedule.
- * @see Cinematic#bindCamera(java.lang.String, com.jme3.renderer.Camera)
+ * @see Cinematic#bindCamera(java.lang.String, ander.render.renderer.Camera)
  * @see Cinematic#activateCamera(float, java.lang.String)
  * @see Cinematic#setActiveCamera(java.lang.String)
  *
@@ -474,7 +474,7 @@ public class Cinematic extends AbstractCinematicEvent implements AppState {
     /**
      * called internally
      *
-     * @see AppState#render(com.jme3.renderer.RenderManager) 
+     * @see AppState#render(ander.render.renderer.RenderManager) 
      */
     public void render(RenderManager rm) {
     }

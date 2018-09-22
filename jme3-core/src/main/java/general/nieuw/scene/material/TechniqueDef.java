@@ -33,8 +33,8 @@ package general.nieuw.scene.material;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.export.*;
-import com.jme3.renderer.Caps;
 
+import ander.render.renderer.Caps;
 import general.nieuw.scene.material.logic.TechniqueDefLogic;
 import general.nieuw.scene.shader.*;
 import general.nieuw.scene.shader.Shader.ShaderType;

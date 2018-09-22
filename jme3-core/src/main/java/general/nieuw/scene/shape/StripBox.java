@@ -32,12 +32,12 @@
 // $Id: Box.java 4131 2009-03-19 20:15:28Z blaine.dev $
 package general.nieuw.scene.shape;
 
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.VertexBuffer.Type;
 import general.nieuw.util.BufferUtils;
 
 import java.nio.FloatBuffer;
+
+import ander.render.math.Vector3f;
 
 /**
  * A box with solid (filled) faces.
@@ -111,7 +111,7 @@ public class StripBox extends AbstractBox {
      * <p>
      * The minimum and maximum point are provided, these two points define the
      * shape and size of the box but not it’s orientation or position. You should
-     * use the {@link general.nieuw.scene.Spatial#setLocalTranslation(com.jme3.math.Vector3f) } and {@link general.nieuw.scene.Spatial#setLocalRotation(com.jme3.math.Quaternion) }
+     * use the {@link general.nieuw.scene.Spatial#setLocalTranslation(ander.render.math.Vector3f) } and {@link general.nieuw.scene.Spatial#setLocalRotation(ander.render.math.Quaternion) }
      * methods to define those properties.
      * 
      * @param min the minimum point that defines the box.

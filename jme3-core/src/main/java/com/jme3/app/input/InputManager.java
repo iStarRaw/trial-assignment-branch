@@ -55,9 +55,9 @@ import com.jme3.app.input.event.KeyInputEvent;
 import com.jme3.app.input.event.MouseButtonEvent;
 import com.jme3.app.input.event.MouseMotionEvent;
 import com.jme3.app.input.event.TouchEvent;
-import com.jme3.math.FastMath;
-import com.jme3.math.Vector2f;
 
+import ander.render.math.FastMath;
+import ander.render.math.Vector2f;
 import general.nieuw.util.IntMap;
 import general.nieuw.util.SafeArrayList;
 import general.nieuw.util.IntMap.Entry;

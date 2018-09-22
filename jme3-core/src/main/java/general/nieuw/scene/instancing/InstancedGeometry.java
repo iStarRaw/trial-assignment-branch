@@ -36,10 +36,10 @@ import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
 import com.jme3.export.Savable;
-import com.jme3.math.Matrix3f;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Quaternion;
 
+import ander.render.math.Matrix3f;
+import ander.render.math.Matrix4f;
+import ander.render.math.Quaternion;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Spatial;
 import general.nieuw.scene.VertexBuffer;

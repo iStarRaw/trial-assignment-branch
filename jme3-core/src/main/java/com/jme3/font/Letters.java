@@ -34,7 +34,8 @@ package com.jme3.font;
 import com.jme3.font.BitmapFont.Align;
 import com.jme3.font.BitmapFont.VAlign;
 import com.jme3.font.ColorTags.Range;
-import com.jme3.math.ColorRGBA;
+
+import ander.render.math.ColorRGBA;
 
 import java.util.LinkedList;
 

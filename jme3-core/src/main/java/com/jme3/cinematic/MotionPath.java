@@ -34,19 +34,18 @@ package com.jme3.cinematic;
 import com.jme3.asset.AssetManager;
 import com.jme3.cinematic.events.MotionEvent;
 import com.jme3.export.*;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Spline;
-import com.jme3.math.Spline.SplineType;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.Spline;
+import ander.render.math.Vector2f;
+import ander.render.math.Vector3f;
+import ander.render.math.Spline.SplineType;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.material.Material;
 import general.nieuw.scene.shape.Box;
 import general.nieuw.scene.shape.Curve;
 import general.nieuw.util.TempVars;
-
-import com.jme3.math.Vector2f;
-import com.jme3.math.Vector3f;
 
 import java.io.IOException;
 import java.util.ArrayList;

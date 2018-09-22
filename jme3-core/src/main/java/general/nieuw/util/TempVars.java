@@ -33,10 +33,10 @@ package general.nieuw.util;
 
 import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.cinematic.collision.bih.BIHNode.BIHStackData;
-import com.jme3.math.*;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingVolume;
 
+import ander.render.math.*;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingVolume;
 import general.nieuw.scene.Spatial;
 
 import java.nio.FloatBuffer;

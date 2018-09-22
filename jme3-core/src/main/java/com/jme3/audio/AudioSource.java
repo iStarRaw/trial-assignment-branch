@@ -4,7 +4,7 @@
  */
 package com.jme3.audio;
 
-import com.jme3.math.Vector3f;
+import ander.render.math.Vector3f;
 
 /**
  *
@@ -104,14 +104,14 @@ public interface AudioSource {
     /**
      * @return The velocity of the audio source.
      * 
-     * @see AudioSource#setVelocity(com.jme3.math.Vector3f)
+     * @see AudioSource#setVelocity(ander.render.math.Vector3f)
      */
     public Vector3f getPosition();
     
     /**
      * @return The velocity of the audio source.
      * 
-     * @see AudioSource#setVelocity(com.jme3.math.Vector3f)
+     * @see AudioSource#setVelocity(ander.render.math.Vector3f)
      */
     public Vector3f getVelocity();
 
@@ -153,7 +153,7 @@ public interface AudioSource {
     /**
      * @return The direction of this audio source.
      * 
-     * @see AudioSource#setDirection(com.jme3.math.Vector3f)
+     * @see AudioSource#setDirection(ander.render.math.Vector3f)
      */
     public Vector3f getDirection();
 

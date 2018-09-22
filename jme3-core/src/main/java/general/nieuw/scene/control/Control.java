@@ -32,9 +32,9 @@
 package general.nieuw.scene.control;
 
 import com.jme3.export.Savable;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
 
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
 import general.nieuw.scene.Spatial;
 
 /**

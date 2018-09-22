@@ -31,10 +31,10 @@
  */
 package general.nieuw.scene.control;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.math.bounding.BoundingVolume;
+import ander.render.math.FastMath;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.math.bounding.BoundingVolume;
 
 /**
  * <code>AreaUtils</code> is used to calculate the area of various objects, such as bounding volumes.  These

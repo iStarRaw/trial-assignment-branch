@@ -39,12 +39,12 @@ import com.jme3.app.state.AppState;
 import com.jme3.audio.AudioListenerState;
 import com.jme3.font.BitmapFont;
 import com.jme3.font.BitmapText;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.profile.AppStep;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.system.AppSettings;
 import com.jme3.system.JmeContext.Type;
 
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.profile.AppStep;
+import ander.render.renderer.queue.RenderQueue.Bucket;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial.CullHint;
 

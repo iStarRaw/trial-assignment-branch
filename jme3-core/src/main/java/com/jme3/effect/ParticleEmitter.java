@@ -40,17 +40,17 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
-import com.jme3.math.Matrix3f;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
-import com.jme3.renderer.queue.RenderQueue.ShadowMode;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.FastMath;
+import ander.render.math.Matrix3f;
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.renderer.Camera;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.queue.RenderQueue.Bucket;
+import ander.render.renderer.queue.RenderQueue.ShadowMode;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Spatial;
 import general.nieuw.scene.control.Control;
@@ -452,7 +452,7 @@ public class ParticleEmitter extends Geometry {
      *
      * @return the normal which particles are facing.
      *
-     * @see ParticleEmitter#setFaceNormal(com.jme3.math.Vector3f)
+     * @see ParticleEmitter#setFaceNormal(ander.render.math.Vector3f)
      */
     public Vector3f getFaceNormal() {
         if (Vector3f.isValidVector(faceNormal)) {
@@ -590,7 +590,7 @@ public class ParticleEmitter extends Geometry {
      *
      * @return the end color of the particles spawned.
      *
-     * @see ParticleEmitter#setEndColor(com.jme3.math.ColorRGBA)
+     * @see ParticleEmitter#setEndColor(ander.render.math.ColorRGBA)
      */
     public ColorRGBA getEndColor() {
         return endColor;
@@ -640,7 +640,7 @@ public class ParticleEmitter extends Geometry {
      *
      * @return the gravity vector.
      *
-     * @see ParticleEmitter#setGravity(com.jme3.math.Vector3f)
+     * @see ParticleEmitter#setGravity(ander.render.math.Vector3f)
      */
     public Vector3f getGravity() {
         return gravity;
@@ -793,7 +793,7 @@ public class ParticleEmitter extends Geometry {
      *
      * @return the start color of the particles spawned.
      *
-     * @see ParticleEmitter#setStartColor(com.jme3.math.ColorRGBA)
+     * @see ParticleEmitter#setStartColor(ander.render.math.ColorRGBA)
      */
     public ColorRGBA getStartColor() {
         return startColor;
@@ -878,7 +878,7 @@ public class ParticleEmitter extends Geometry {
      * @param variation Set the variation by which the initial velocity
      * of the particle is determined. <code>variation</code> should be a value
      * from 0 to 1, where 0 means particles are to spawn with exactly
-     * the velocity given in {@link ParticleEmitter#setStartVel(com.jme3.math.Vector3f) },
+     * the velocity given in {@link ParticleEmitter#setStartVel(ander.render.math.Vector3f) },
      * and 1 means particles are to spawn with a completely random velocity.
      *
      * @deprecated

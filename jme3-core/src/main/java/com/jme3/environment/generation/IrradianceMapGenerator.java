@@ -34,10 +34,10 @@ package com.jme3.environment.generation;
 import com.jme3.environment.util.CubeMapWrapper;
 import com.jme3.environment.util.EnvMapUtils;
 import com.jme3.app.Application;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
 import com.jme3.texture.TextureCubeMap;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
 import general.nieuw.util.BufferUtils;
 
 import static com.jme3.environment.util.EnvMapUtils.shBandFactor;

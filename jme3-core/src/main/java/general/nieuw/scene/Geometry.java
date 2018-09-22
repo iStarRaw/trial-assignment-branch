@@ -38,10 +38,10 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.renderer.Camera;
 
+import ander.render.math.Matrix4f;
+import ander.render.math.bounding.BoundingVolume;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.VertexBuffer.Type;
 import general.nieuw.scene.material.Material;
 import general.nieuw.util.TempVars;
@@ -427,7 +427,7 @@ public class Geometry extends Spatial {
     /**
      * Sets the model bound to use for this geometry.
      * This alters the bound used on the mesh as well via
-     * {@link Mesh#setBound(com.jme3.math.bounding.BoundingVolume) } and
+     * {@link Mesh#setBound(ander.render.math.bounding.BoundingVolume) } and
      * forces the world bounding volume to be recomputed.
      *
      * @param modelBound The model bound to set

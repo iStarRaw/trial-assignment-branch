@@ -31,18 +31,17 @@
  */
 package general.nieuw.scene.shadow;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Transform;
-import com.jme3.math.Vector2f;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingVolume;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.queue.GeometryList;
-import com.jme3.renderer.queue.RenderQueue;
-
+import ander.render.math.FastMath;
+import ander.render.math.Matrix4f;
+import ander.render.math.Transform;
+import ander.render.math.Vector2f;
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingVolume;
+import ander.render.renderer.Camera;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.queue.GeometryList;
+import ander.render.renderer.queue.RenderQueue;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;

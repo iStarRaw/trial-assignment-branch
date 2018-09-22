@@ -31,11 +31,13 @@
  */
 package general.nieuw.util;
 
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
 import com.jme3.texture.Image;
 import com.jme3.texture.Image.Format;
 import com.jme3.texture.image.ImageRaster;
+
+import ander.render.math.ColorRGBA;
+import ander.render.math.FastMath;
+
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 

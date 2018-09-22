@@ -32,9 +32,9 @@
 package general.nieuw.scene.material;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.RenderManager;
 
+import ander.render.renderer.Caps;
+import ander.render.renderer.RenderManager;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.light.LightList;
 import general.nieuw.scene.material.TechniqueDef.LightMode;
@@ -159,7 +159,7 @@ public final class Technique {
      * 
      * @param renderManager The render manager to perform the rendering against.
      * @param shader The shader that was selected in 
-     * {@link #makeCurrent(com.jme3.renderer.RenderManager, java.util.EnumSet)}.
+     * {@link #makeCurrent(ander.render.renderer.RenderManager, java.util.EnumSet)}.
      * @param geometry The geometry to render
      * @param lights Lights which influence the geometry.
      */

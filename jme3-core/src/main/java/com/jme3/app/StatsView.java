@@ -34,11 +34,11 @@ package com.jme3.app;
 import com.jme3.asset.AssetManager;
 import com.jme3.font.BitmapFont;
 import com.jme3.font.BitmapText;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.Statistics;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
 
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.Statistics;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.queue.RenderQueue.Bucket;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;
 import general.nieuw.scene.control.Control;
@@ -48,12 +48,12 @@ import general.nieuw.util.clone.JmeCloneable;
 /**
  * The <code>StatsView</code> provides a heads-up display (HUD) of various
  * statistics of rendering. The data is retrieved every frame from a
- * {@link com.jme3.renderer.Statistics} and then displayed on screen.<br/>
+ * {@link ander.render.renderer.Statistics} and then displayed on screen.<br/>
  * <br/>
  * Usage:<br/>
  * To use the stats view, you need to retrieve the
- * {@link com.jme3.renderer.Statistics} from the
- * {@link com.jme3.renderer.Renderer} used by the application. Then, attach
+ * {@link ander.render.renderer.Statistics} from the
+ * {@link ander.render.renderer.Renderer} used by the application. Then, attach
  * the <code>StatsView</code> to the scene graph.<br/>
  * <code><br/>
  * Statistics stats = renderer.getStatistics();<br/>

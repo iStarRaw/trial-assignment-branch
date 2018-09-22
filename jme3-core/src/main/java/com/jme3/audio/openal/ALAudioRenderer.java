@@ -33,8 +33,8 @@ package com.jme3.audio.openal;
 
 import com.jme3.audio.*;
 import com.jme3.audio.AudioSource.Status;
-import com.jme3.math.Vector3f;
 
+import ander.render.math.Vector3f;
 import general.nieuw.util.BufferUtils;
 import general.nieuw.util.NativeObjectManager;
 

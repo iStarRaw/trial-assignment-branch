@@ -31,15 +31,17 @@
  */
 package com.jme3.texture.plugins.ktx;
 
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.opengl.GLImageFormat;
-import com.jme3.renderer.opengl.GLImageFormats;
 import com.jme3.texture.Image;
 import com.jme3.texture.Texture;
 import com.jme3.texture.Texture2D;
 import com.jme3.texture.Texture3D;
 import com.jme3.texture.TextureArray;
 import com.jme3.texture.TextureCubeMap;
+
+import ander.render.renderer.Caps;
+import ander.render.renderer.opengl.GLImageFormat;
+import ander.render.renderer.opengl.GLImageFormats;
+
 import java.io.DataOutput;
 import java.io.DataOutputStream;
 import java.io.File;

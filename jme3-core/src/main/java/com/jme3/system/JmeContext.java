@@ -35,7 +35,8 @@ import com.jme3.app.input.JoyInput;
 import com.jme3.app.input.KeyInput;
 import com.jme3.app.input.MouseInput;
 import com.jme3.app.input.TouchInput;
-import com.jme3.renderer.Renderer;
+
+import ander.render.renderer.Renderer;
 
 /**
  * Represents a rendering context within the engine.

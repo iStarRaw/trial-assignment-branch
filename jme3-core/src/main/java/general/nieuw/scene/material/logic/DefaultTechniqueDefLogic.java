@@ -32,11 +32,11 @@
 package general.nieuw.scene.material.logic;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.math.ColorRGBA;
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.Renderer;
 
+import ander.render.math.ColorRGBA;
+import ander.render.renderer.Caps;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.Renderer;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.instancing.InstancedGeometry;

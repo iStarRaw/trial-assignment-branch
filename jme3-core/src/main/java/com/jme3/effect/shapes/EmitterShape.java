@@ -32,8 +32,8 @@
 package com.jme3.effect.shapes;
 
 import com.jme3.export.Savable;
-import com.jme3.math.Vector3f;
 
+import ander.render.math.Vector3f;
 import general.nieuw.util.clone.JmeCloneable;
 
 /**

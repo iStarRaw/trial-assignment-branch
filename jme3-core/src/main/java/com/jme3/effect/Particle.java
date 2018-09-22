@@ -31,8 +31,8 @@
  */
 package com.jme3.effect;
 
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
 
 /**
  * Represents a single particle in a {@link ParticleEmitter}.

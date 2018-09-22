@@ -31,9 +31,10 @@
  */
 package com.jme3.system.opencl;
 
-import com.jme3.math.ColorRGBA;
 import java.nio.ByteBuffer;
 import java.util.Objects;
+
+import ander.render.math.ColorRGBA;
 
 /**
  * Wrapper for an OpenCL image.

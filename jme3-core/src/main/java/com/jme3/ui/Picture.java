@@ -33,11 +33,11 @@ package com.jme3.ui;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.asset.TextureKey;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
-import com.jme3.renderer.queue.RenderQueue.Bucket;
 import com.jme3.texture.Texture2D;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
+import ander.render.renderer.queue.RenderQueue.Bucket;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.material.Material;
 import general.nieuw.scene.material.RenderState.BlendMode;

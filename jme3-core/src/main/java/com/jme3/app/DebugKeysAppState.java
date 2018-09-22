@@ -37,10 +37,10 @@ import com.jme3.app.input.controls.ActionListener;
 import com.jme3.app.input.controls.KeyTrigger;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.math.Quaternion;
-import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
 
+import ander.render.math.Quaternion;
+import ander.render.math.Vector3f;
+import ander.render.renderer.Camera;
 import general.nieuw.util.BufferUtils;
 
 

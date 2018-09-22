@@ -38,8 +38,8 @@ import com.jme3.export.InputCapsule;
 import com.jme3.export.JmeExporter;
 import com.jme3.export.JmeImporter;
 import com.jme3.export.OutputCapsule;
-import com.jme3.math.Vector3f;
 
+import ander.render.math.Vector3f;
 import general.nieuw.scene.Node;
 import general.nieuw.util.PlaceholderAssets;
 import general.nieuw.util.clone.Cloner;
@@ -461,7 +461,7 @@ public class AudioNode extends Node implements AudioSource {
     /**
      * @return The velocity of the audio node.
      *
-     * @see AudioNode#setVelocity(com.jme3.math.Vector3f)
+     * @see AudioNode#setVelocity(ander.render.math.Vector3f)
      */
     public Vector3f getVelocity() {
         return velocity;
@@ -608,7 +608,7 @@ public class AudioNode extends Node implements AudioSource {
      * Does nothing if the audio node is not positional.
      * <br/>
      * After setting directional, you should call
-     * {@link AudioNode#setDirection(com.jme3.math.Vector3f) }
+     * {@link AudioNode#setDirection(ander.render.math.Vector3f) }
      * to set the audio node's direction.
      *
      * @param directional If the audio node is directional
@@ -622,7 +622,7 @@ public class AudioNode extends Node implements AudioSource {
     /**
      * @return The direction of this audio node.
      *
-     * @see AudioNode#setDirection(com.jme3.math.Vector3f)
+     * @see AudioNode#setDirection(ander.render.math.Vector3f)
      */
     public Vector3f getDirection() {
         return direction;

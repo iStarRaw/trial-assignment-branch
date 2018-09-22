@@ -31,11 +31,6 @@
  */
 package general.nieuw.util;
 
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.FastMath;
-import com.jme3.math.Vector2f;
-import com.jme3.math.Vector3f;
-
 import general.nieuw.scene.*;
 import general.nieuw.scene.VertexBuffer.Format;
 import general.nieuw.scene.VertexBuffer.Type;
@@ -60,6 +55,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ander.render.math.ColorRGBA;
+import ander.render.math.FastMath;
+import ander.render.math.Vector2f;
+import ander.render.math.Vector3f;
 
 /**
  * 

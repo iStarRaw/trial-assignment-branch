@@ -34,14 +34,16 @@ package com.jme3.environment.generation;
 import com.jme3.environment.util.CubeMapWrapper;
 import com.jme3.environment.util.EnvMapUtils;
 import com.jme3.app.Application;
-import com.jme3.math.ColorRGBA;
-import static com.jme3.math.FastMath.abs;
-import static com.jme3.math.FastMath.clamp;
-import static com.jme3.math.FastMath.pow;
-import static com.jme3.math.FastMath.sqrt;
-import com.jme3.math.Vector3f;
-import com.jme3.math.Vector4f;
 import com.jme3.texture.TextureCubeMap;
+
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
+import ander.render.math.Vector4f;
+
+import static ander.render.math.FastMath.abs;
+import static ander.render.math.FastMath.clamp;
+import static ander.render.math.FastMath.pow;
+import static ander.render.math.FastMath.sqrt;
 import static com.jme3.environment.util.EnvMapUtils.getHammersleyPoint;
 import static com.jme3.environment.util.EnvMapUtils.getRoughnessFromMip;
 import static com.jme3.environment.util.EnvMapUtils.getSampleFromMip;

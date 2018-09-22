@@ -31,9 +31,8 @@
  */
 package com.jme3.effect;
 
-import com.jme3.math.Matrix3f;
-import com.jme3.renderer.Camera;
-
+import ander.render.math.Matrix3f;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.material.RenderState;
 

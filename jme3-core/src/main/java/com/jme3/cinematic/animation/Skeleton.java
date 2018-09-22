@@ -32,8 +32,8 @@
 package com.jme3.cinematic.animation;
 
 import com.jme3.export.*;
-import com.jme3.math.Matrix4f;
 
+import ander.render.math.Matrix4f;
 import general.nieuw.util.TempVars;
 import general.nieuw.util.clone.Cloner;
 import general.nieuw.util.clone.JmeCloneable;

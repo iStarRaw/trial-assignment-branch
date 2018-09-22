@@ -35,13 +35,13 @@ import com.jme3.cinematic.collision.Collidable;
 import com.jme3.cinematic.collision.CollisionResults;
 import com.jme3.cinematic.collision.bih.BIHTree;
 import com.jme3.export.*;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Triangle;
-import com.jme3.math.Vector2f;
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingVolume;
 
+import ander.render.math.Matrix4f;
+import ander.render.math.Triangle;
+import ander.render.math.Vector2f;
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingVolume;
 import general.nieuw.scene.VertexBuffer.Format;
 import general.nieuw.scene.VertexBuffer.Type;
 import general.nieuw.scene.VertexBuffer.Usage;
@@ -960,8 +960,8 @@ public class Mesh implements Savable, Cloneable, JmeCloneable {
     /**
      * Generates a collision tree for the mesh.
      * Called automatically by {@link #collideWith(com.jme3.cinematic.collision.Collidable,
-     * com.jme3.math.Matrix4f,
-     * com.jme3.math.bounding.BoundingVolume,
+     * ander.render.math.Matrix4f,
+     * ander.render.math.bounding.BoundingVolume,
      * com.jme3.cinematic.collision.CollisionResults) }.
      */
     public void createCollisionData(){

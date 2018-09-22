@@ -32,13 +32,13 @@
 package general.nieuw.scene.material.logic;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.Vector3f;
-import com.jme3.math.Vector4f;
-import com.jme3.renderer.Caps;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.Renderer;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.Vector3f;
+import ander.render.math.Vector4f;
+import ander.render.renderer.Caps;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.Renderer;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.light.DirectionalLight;
 import general.nieuw.scene.light.Light;

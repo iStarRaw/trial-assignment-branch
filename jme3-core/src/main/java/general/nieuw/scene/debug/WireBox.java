@@ -31,9 +31,6 @@
  */
 package general.nieuw.scene.debug;
 
-import com.jme3.math.Vector3f;
-import com.jme3.math.bounding.BoundingBox;
-
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
@@ -43,6 +40,9 @@ import general.nieuw.scene.VertexBuffer.Usage;
 import general.nieuw.util.BufferUtils;
 
 import java.nio.FloatBuffer;
+
+import ander.render.math.Vector3f;
+import ander.render.math.bounding.BoundingBox;
 
 public class WireBox extends Mesh {
 

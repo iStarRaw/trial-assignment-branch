@@ -42,9 +42,9 @@ import java.util.logging.Logger;
 
 import com.jme3.cinematic.collision.Collidable;
 import com.jme3.cinematic.collision.CollisionResults;
-import com.jme3.math.Matrix4f;
-import com.jme3.math.Vector3f;
 
+import ander.render.math.Matrix4f;
+import ander.render.math.Vector3f;
 import general.nieuw.scene.material.Material;
 import general.nieuw.scene.mesh.IndexBuffer;
 import general.nieuw.util.SafeArrayList;

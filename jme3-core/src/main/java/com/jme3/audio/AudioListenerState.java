@@ -33,10 +33,11 @@ package com.jme3.audio;
 
 import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
-import com.jme3.math.Quaternion;
-import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.RenderManager;
+
+import ander.render.math.Quaternion;
+import ander.render.math.Vector3f;
+import ander.render.renderer.Camera;
+import ander.render.renderer.RenderManager;
 
 /**
  * <code>AudioListenerState</code> updates the audio listener's position,

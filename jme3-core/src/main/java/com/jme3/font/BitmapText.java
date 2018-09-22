@@ -33,9 +33,9 @@ package com.jme3.font;
 
 import com.jme3.font.BitmapFont.Align;
 import com.jme3.font.BitmapFont.VAlign;
-import com.jme3.math.ColorRGBA;
-import com.jme3.renderer.RenderManager;
 
+import ander.render.math.ColorRGBA;
+import ander.render.renderer.RenderManager;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.material.MatParam;
 import general.nieuw.scene.material.Material;

@@ -37,8 +37,8 @@ import java.util.Map;
 
 import com.jme3.cinematic.animation.Bone;
 import com.jme3.cinematic.animation.Skeleton;
-import com.jme3.math.Vector3f;
 
+import ander.render.math.Vector3f;
 import general.nieuw.scene.Mesh;
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.scene.VertexBuffer.Format;

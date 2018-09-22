@@ -32,13 +32,6 @@
 package com.jme3.water;
 
 import com.jme3.asset.AssetManager;
-import com.jme3.math.*;
-import com.jme3.renderer.Camera;
-import com.jme3.renderer.RenderManager;
-import com.jme3.renderer.Renderer;
-import com.jme3.renderer.ViewPort;
-import com.jme3.renderer.post.SceneProcessor;
-import com.jme3.renderer.queue.RenderQueue;
 import com.jme3.texture.FrameBuffer;
 import com.jme3.texture.Image.Format;
 import com.jme3.texture.Texture;
@@ -46,6 +39,13 @@ import com.jme3.texture.Texture.WrapMode;
 import com.jme3.texture.Texture2D;
 import com.jme3.ui.Picture;
 
+import ander.render.math.*;
+import ander.render.renderer.Camera;
+import ander.render.renderer.RenderManager;
+import ander.render.renderer.Renderer;
+import ander.render.renderer.ViewPort;
+import ander.render.renderer.post.SceneProcessor;
+import ander.render.renderer.queue.RenderQueue;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Spatial;
 import general.nieuw.scene.material.Material;

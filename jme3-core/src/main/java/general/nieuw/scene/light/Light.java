@@ -32,11 +32,11 @@
 package general.nieuw.scene.light;
 
 import com.jme3.export.*;
-import com.jme3.math.ColorRGBA;
-import com.jme3.math.bounding.BoundingBox;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.renderer.Camera;
 
+import ander.render.math.ColorRGBA;
+import ander.render.math.bounding.BoundingBox;
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.Spatial;
 import general.nieuw.util.TempVars;
 

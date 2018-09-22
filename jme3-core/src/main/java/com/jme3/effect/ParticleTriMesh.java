@@ -31,11 +31,10 @@
  */
 package com.jme3.effect;
 
-import com.jme3.math.FastMath;
-import com.jme3.math.Matrix3f;
-import com.jme3.math.Vector3f;
-import com.jme3.renderer.Camera;
-
+import ander.render.math.FastMath;
+import ander.render.math.Matrix3f;
+import ander.render.math.Vector3f;
+import ander.render.renderer.Camera;
 import general.nieuw.scene.VertexBuffer;
 import general.nieuw.scene.VertexBuffer.Format;
 import general.nieuw.scene.VertexBuffer.Usage;

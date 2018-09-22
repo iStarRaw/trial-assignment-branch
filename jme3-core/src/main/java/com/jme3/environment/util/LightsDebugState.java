@@ -33,9 +33,9 @@ package com.jme3.environment.util;
 
 import com.jme3.app.Application;
 import com.jme3.app.state.BaseAppState;
-import com.jme3.math.bounding.BoundingSphere;
-import com.jme3.renderer.RenderManager;
 
+import ander.render.math.bounding.BoundingSphere;
+import ander.render.renderer.RenderManager;
 import general.nieuw.scene.Geometry;
 import general.nieuw.scene.Node;
 import general.nieuw.scene.Spatial;
